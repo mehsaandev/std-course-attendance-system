@@ -44,21 +44,6 @@ namespace LabTask
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.row1 = new System.Windows.Forms.Panel();
-            this.row1bar = new System.Windows.Forms.Panel();
-            this.row2 = new System.Windows.Forms.Panel();
-            this.row2bar = new System.Windows.Forms.Panel();
-            this.row3 = new System.Windows.Forms.Panel();
-            this.row3bar = new System.Windows.Forms.Panel();
-            this.row4 = new System.Windows.Forms.Panel();
-            this.row4bar = new System.Windows.Forms.Panel();
-            this.row5 = new System.Windows.Forms.Panel();
-            this.row5bar = new System.Windows.Forms.Panel();
-            this.row6 = new System.Windows.Forms.Panel();
-            this.row6bar = new System.Windows.Forms.Panel();
-            this.row7 = new System.Windows.Forms.Panel();
-            this.row7bar = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -67,13 +52,49 @@ namespace LabTask
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.timer7 = new System.Windows.Forms.Timer(this.components);
-            this.regrow1 = new System.Windows.Forms.TextBox();
-            this.namerow1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.MainPanal = new System.Windows.Forms.Panel();
+            this.CoursePanal = new System.Windows.Forms.FlowLayoutPanel();
+            this.row1 = new System.Windows.Forms.Panel();
+            this.save1 = new System.Windows.Forms.Button();
+            this.course1 = new System.Windows.Forms.TextBox();
+            this.name1 = new System.Windows.Forms.TextBox();
+            this.row1bar = new System.Windows.Forms.Panel();
+            this.row2 = new System.Windows.Forms.Panel();
+            this.row2bar = new System.Windows.Forms.Panel();
+            this.save2 = new System.Windows.Forms.Button();
+            this.course2 = new System.Windows.Forms.TextBox();
+            this.name2 = new System.Windows.Forms.TextBox();
+            this.row3 = new System.Windows.Forms.Panel();
+            this.row3bar = new System.Windows.Forms.Panel();
+            this.course3 = new System.Windows.Forms.TextBox();
+            this.save3 = new System.Windows.Forms.Button();
+            this.name3 = new System.Windows.Forms.TextBox();
+            this.row4 = new System.Windows.Forms.Panel();
+            this.row4bar = new System.Windows.Forms.Panel();
+            this.course4 = new System.Windows.Forms.TextBox();
+            this.name4 = new System.Windows.Forms.TextBox();
+            this.save4 = new System.Windows.Forms.Button();
+            this.row5 = new System.Windows.Forms.Panel();
+            this.row5bar = new System.Windows.Forms.Panel();
+            this.course5 = new System.Windows.Forms.TextBox();
+            this.name5 = new System.Windows.Forms.TextBox();
+            this.save5 = new System.Windows.Forms.Button();
+            this.row6 = new System.Windows.Forms.Panel();
+            this.row6bar = new System.Windows.Forms.Panel();
+            this.course6 = new System.Windows.Forms.TextBox();
+            this.name6 = new System.Windows.Forms.TextBox();
+            this.save6 = new System.Windows.Forms.Button();
+            this.row7 = new System.Windows.Forms.Panel();
+            this.row7bar = new System.Windows.Forms.Panel();
+            this.course7 = new System.Windows.Forms.TextBox();
+            this.name7 = new System.Windows.Forms.TextBox();
+            this.save7 = new System.Windows.Forms.Button();
+            this.downBtn = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.MainPanal.SuspendLayout();
+            this.CoursePanal.SuspendLayout();
             this.row1.SuspendLayout();
             this.row2.SuspendLayout();
             this.row3.SuspendLayout();
@@ -93,6 +114,7 @@ namespace LabTask
             this.sidebar.Controls.Add(this.button4);
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(186, 577);
@@ -267,157 +289,6 @@ namespace LabTask
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.flowLayoutPanel1.Controls.Add(this.row1);
-            this.flowLayoutPanel1.Controls.Add(this.row2);
-            this.flowLayoutPanel1.Controls.Add(this.row3);
-            this.flowLayoutPanel1.Controls.Add(this.row4);
-            this.flowLayoutPanel1.Controls.Add(this.row5);
-            this.flowLayoutPanel1.Controls.Add(this.row6);
-            this.flowLayoutPanel1.Controls.Add(this.row7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(205, 100);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(734, 370);
-            this.flowLayoutPanel1.TabIndex = 5;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // row1
-            // 
-            this.row1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row1.Controls.Add(this.checkBox1);
-            this.row1.Controls.Add(this.namerow1);
-            this.row1.Controls.Add(this.regrow1);
-            this.row1.Controls.Add(this.row1bar);
-            this.row1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row1.Location = new System.Drawing.Point(3, 3);
-            this.row1.Name = "row1";
-            this.row1.Size = new System.Drawing.Size(731, 40);
-            this.row1.TabIndex = 2;
-            // 
-            // row1bar
-            // 
-            this.row1bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row1bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row1bar.Location = new System.Drawing.Point(0, 0);
-            this.row1bar.Name = "row1bar";
-            this.row1bar.Size = new System.Drawing.Size(731, 3);
-            this.row1bar.TabIndex = 1;
-            // 
-            // row2
-            // 
-            this.row2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row2.Controls.Add(this.row2bar);
-            this.row2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row2.Location = new System.Drawing.Point(3, 49);
-            this.row2.Name = "row2";
-            this.row2.Size = new System.Drawing.Size(731, 40);
-            this.row2.TabIndex = 2;
-            // 
-            // row2bar
-            // 
-            this.row2bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row2bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row2bar.Location = new System.Drawing.Point(0, 0);
-            this.row2bar.Name = "row2bar";
-            this.row2bar.Size = new System.Drawing.Size(731, 3);
-            this.row2bar.TabIndex = 1;
-            // 
-            // row3
-            // 
-            this.row3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row3.Controls.Add(this.row3bar);
-            this.row3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row3.Location = new System.Drawing.Point(3, 95);
-            this.row3.Name = "row3";
-            this.row3.Size = new System.Drawing.Size(731, 40);
-            this.row3.TabIndex = 2;
-            // 
-            // row3bar
-            // 
-            this.row3bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row3bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row3bar.Location = new System.Drawing.Point(0, 0);
-            this.row3bar.Name = "row3bar";
-            this.row3bar.Size = new System.Drawing.Size(731, 3);
-            this.row3bar.TabIndex = 1;
-            // 
-            // row4
-            // 
-            this.row4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row4.Controls.Add(this.row4bar);
-            this.row4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row4.Location = new System.Drawing.Point(3, 141);
-            this.row4.Name = "row4";
-            this.row4.Size = new System.Drawing.Size(731, 40);
-            this.row4.TabIndex = 2;
-            // 
-            // row4bar
-            // 
-            this.row4bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row4bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row4bar.Location = new System.Drawing.Point(0, 0);
-            this.row4bar.Name = "row4bar";
-            this.row4bar.Size = new System.Drawing.Size(731, 3);
-            this.row4bar.TabIndex = 1;
-            // 
-            // row5
-            // 
-            this.row5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row5.Controls.Add(this.row5bar);
-            this.row5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row5.Location = new System.Drawing.Point(3, 187);
-            this.row5.Name = "row5";
-            this.row5.Size = new System.Drawing.Size(731, 40);
-            this.row5.TabIndex = 2;
-            // 
-            // row5bar
-            // 
-            this.row5bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row5bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row5bar.Location = new System.Drawing.Point(0, 0);
-            this.row5bar.Name = "row5bar";
-            this.row5bar.Size = new System.Drawing.Size(731, 3);
-            this.row5bar.TabIndex = 1;
-            // 
-            // row6
-            // 
-            this.row6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row6.Controls.Add(this.row6bar);
-            this.row6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row6.Location = new System.Drawing.Point(3, 233);
-            this.row6.Name = "row6";
-            this.row6.Size = new System.Drawing.Size(731, 40);
-            this.row6.TabIndex = 2;
-            // 
-            // row6bar
-            // 
-            this.row6bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row6bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row6bar.Location = new System.Drawing.Point(0, 0);
-            this.row6bar.Name = "row6bar";
-            this.row6bar.Size = new System.Drawing.Size(731, 3);
-            this.row6bar.TabIndex = 1;
-            // 
-            // row7
-            // 
-            this.row7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row7.Controls.Add(this.row7bar);
-            this.row7.Location = new System.Drawing.Point(3, 279);
-            this.row7.Name = "row7";
-            this.row7.Size = new System.Drawing.Size(731, 40);
-            this.row7.TabIndex = 2;
-            // 
-            // row7bar
-            // 
-            this.row7bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.row7bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row7bar.Location = new System.Drawing.Point(0, 0);
-            this.row7bar.Name = "row7bar";
-            this.row7bar.Size = new System.Drawing.Size(731, 3);
-            this.row7bar.TabIndex = 1;
-            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -427,7 +298,7 @@ namespace LabTask
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button7.Location = new System.Drawing.Point(208, 52);
+            this.button7.Location = new System.Drawing.Point(13, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(45, 45);
             this.button7.TabIndex = 6;
@@ -469,40 +340,409 @@ namespace LabTask
             this.timer7.Interval = 1;
             this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
             // 
-            // regrow1
+            // MainPanal
             // 
-            this.regrow1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.regrow1.Location = new System.Drawing.Point(0, 3);
-            this.regrow1.Multiline = true;
-            this.regrow1.Name = "regrow1";
-            this.regrow1.Size = new System.Drawing.Size(100, 37);
-            this.regrow1.TabIndex = 2;
+            this.MainPanal.Controls.Add(this.CoursePanal);
+            this.MainPanal.Controls.Add(this.button7);
+            this.MainPanal.Location = new System.Drawing.Point(192, 53);
+            this.MainPanal.Name = "MainPanal";
+            this.MainPanal.Size = new System.Drawing.Size(760, 512);
+            this.MainPanal.TabIndex = 7;
             // 
-            // namerow1
+            // CoursePanal
             // 
-            this.namerow1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.namerow1.Location = new System.Drawing.Point(100, 3);
-            this.namerow1.Multiline = true;
-            this.namerow1.Name = "namerow1";
-            this.namerow1.Size = new System.Drawing.Size(100, 37);
-            this.namerow1.TabIndex = 3;
+            this.CoursePanal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.CoursePanal.Controls.Add(this.row1);
+            this.CoursePanal.Controls.Add(this.row2);
+            this.CoursePanal.Controls.Add(this.row3);
+            this.CoursePanal.Controls.Add(this.row4);
+            this.CoursePanal.Controls.Add(this.row5);
+            this.CoursePanal.Controls.Add(this.row6);
+            this.CoursePanal.Controls.Add(this.row7);
+            this.CoursePanal.Controls.Add(this.downBtn);
+            this.CoursePanal.Location = new System.Drawing.Point(0, 51);
+            this.CoursePanal.Name = "CoursePanal";
+            this.CoursePanal.Size = new System.Drawing.Size(760, 370);
+            this.CoursePanal.TabIndex = 7;
             // 
-            // checkBox1
+            // row1
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Ivory;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.checkBox1.FlatAppearance.BorderSize = 0;
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox1.Location = new System.Drawing.Point(200, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox1.Size = new System.Drawing.Size(63, 37);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Checked";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.row1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row1.Controls.Add(this.save1);
+            this.row1.Controls.Add(this.course1);
+            this.row1.Controls.Add(this.name1);
+            this.row1.Controls.Add(this.row1bar);
+            this.row1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row1.Location = new System.Drawing.Point(3, 3);
+            this.row1.Name = "row1";
+            this.row1.Size = new System.Drawing.Size(750, 40);
+            this.row1.TabIndex = 2;
+            // 
+            // save1
+            // 
+            this.save1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save1.Location = new System.Drawing.Point(675, 3);
+            this.save1.Name = "save1";
+            this.save1.Size = new System.Drawing.Size(75, 37);
+            this.save1.TabIndex = 4;
+            this.save1.Text = "Edit";
+            this.save1.UseVisualStyleBackColor = true;
+            // 
+            // course1
+            // 
+            this.course1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course1.Enabled = false;
+            this.course1.Location = new System.Drawing.Point(100, 3);
+            this.course1.Multiline = true;
+            this.course1.Name = "course1";
+            this.course1.Size = new System.Drawing.Size(100, 37);
+            this.course1.TabIndex = 3;
+            // 
+            // name1
+            // 
+            this.name1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name1.Enabled = false;
+            this.name1.Location = new System.Drawing.Point(0, 3);
+            this.name1.Multiline = true;
+            this.name1.Name = "name1";
+            this.name1.Size = new System.Drawing.Size(100, 37);
+            this.name1.TabIndex = 3;
+            // 
+            // row1bar
+            // 
+            this.row1bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row1bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row1bar.Location = new System.Drawing.Point(0, 0);
+            this.row1bar.Name = "row1bar";
+            this.row1bar.Size = new System.Drawing.Size(750, 3);
+            this.row1bar.TabIndex = 1;
+            // 
+            // row2
+            // 
+            this.row2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row2.Controls.Add(this.row2bar);
+            this.row2.Controls.Add(this.save2);
+            this.row2.Controls.Add(this.course2);
+            this.row2.Controls.Add(this.name2);
+            this.row2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row2.Location = new System.Drawing.Point(3, 49);
+            this.row2.Name = "row2";
+            this.row2.Size = new System.Drawing.Size(750, 40);
+            this.row2.TabIndex = 2;
+            // 
+            // row2bar
+            // 
+            this.row2bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row2bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row2bar.Location = new System.Drawing.Point(200, 0);
+            this.row2bar.Name = "row2bar";
+            this.row2bar.Size = new System.Drawing.Size(475, 3);
+            this.row2bar.TabIndex = 1;
+            // 
+            // save2
+            // 
+            this.save2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save2.Location = new System.Drawing.Point(675, 0);
+            this.save2.Name = "save2";
+            this.save2.Size = new System.Drawing.Size(75, 40);
+            this.save2.TabIndex = 4;
+            this.save2.Text = "Edit";
+            this.save2.UseVisualStyleBackColor = true;
+            // 
+            // course2
+            // 
+            this.course2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course2.Enabled = false;
+            this.course2.Location = new System.Drawing.Point(100, 0);
+            this.course2.Multiline = true;
+            this.course2.Name = "course2";
+            this.course2.Size = new System.Drawing.Size(100, 40);
+            this.course2.TabIndex = 3;
+            // 
+            // name2
+            // 
+            this.name2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name2.Enabled = false;
+            this.name2.Location = new System.Drawing.Point(0, 0);
+            this.name2.Multiline = true;
+            this.name2.Name = "name2";
+            this.name2.Size = new System.Drawing.Size(100, 40);
+            this.name2.TabIndex = 3;
+            // 
+            // row3
+            // 
+            this.row3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row3.Controls.Add(this.row3bar);
+            this.row3.Controls.Add(this.course3);
+            this.row3.Controls.Add(this.save3);
+            this.row3.Controls.Add(this.name3);
+            this.row3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row3.Location = new System.Drawing.Point(3, 95);
+            this.row3.Name = "row3";
+            this.row3.Size = new System.Drawing.Size(750, 40);
+            this.row3.TabIndex = 2;
+            // 
+            // row3bar
+            // 
+            this.row3bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row3bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row3bar.Location = new System.Drawing.Point(200, 0);
+            this.row3bar.Name = "row3bar";
+            this.row3bar.Size = new System.Drawing.Size(475, 3);
+            this.row3bar.TabIndex = 1;
+            // 
+            // course3
+            // 
+            this.course3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course3.Enabled = false;
+            this.course3.Location = new System.Drawing.Point(100, 0);
+            this.course3.Multiline = true;
+            this.course3.Name = "course3";
+            this.course3.Size = new System.Drawing.Size(100, 40);
+            this.course3.TabIndex = 3;
+            // 
+            // save3
+            // 
+            this.save3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save3.Location = new System.Drawing.Point(675, 0);
+            this.save3.Name = "save3";
+            this.save3.Size = new System.Drawing.Size(75, 40);
+            this.save3.TabIndex = 4;
+            this.save3.Text = "Edit";
+            this.save3.UseVisualStyleBackColor = true;
+            // 
+            // name3
+            // 
+            this.name3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name3.Enabled = false;
+            this.name3.Location = new System.Drawing.Point(0, 0);
+            this.name3.Multiline = true;
+            this.name3.Name = "name3";
+            this.name3.Size = new System.Drawing.Size(100, 40);
+            this.name3.TabIndex = 3;
+            // 
+            // row4
+            // 
+            this.row4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row4.Controls.Add(this.row4bar);
+            this.row4.Controls.Add(this.course4);
+            this.row4.Controls.Add(this.name4);
+            this.row4.Controls.Add(this.save4);
+            this.row4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row4.Location = new System.Drawing.Point(3, 141);
+            this.row4.Name = "row4";
+            this.row4.Size = new System.Drawing.Size(750, 40);
+            this.row4.TabIndex = 2;
+            // 
+            // row4bar
+            // 
+            this.row4bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row4bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row4bar.Location = new System.Drawing.Point(200, 0);
+            this.row4bar.Name = "row4bar";
+            this.row4bar.Size = new System.Drawing.Size(475, 3);
+            this.row4bar.TabIndex = 1;
+            // 
+            // course4
+            // 
+            this.course4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course4.Enabled = false;
+            this.course4.Location = new System.Drawing.Point(100, 0);
+            this.course4.Multiline = true;
+            this.course4.Name = "course4";
+            this.course4.Size = new System.Drawing.Size(100, 40);
+            this.course4.TabIndex = 3;
+            // 
+            // name4
+            // 
+            this.name4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name4.Enabled = false;
+            this.name4.Location = new System.Drawing.Point(0, 0);
+            this.name4.Multiline = true;
+            this.name4.Name = "name4";
+            this.name4.Size = new System.Drawing.Size(100, 40);
+            this.name4.TabIndex = 3;
+            // 
+            // save4
+            // 
+            this.save4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save4.Location = new System.Drawing.Point(675, 0);
+            this.save4.Name = "save4";
+            this.save4.Size = new System.Drawing.Size(75, 40);
+            this.save4.TabIndex = 4;
+            this.save4.Text = "Edit";
+            this.save4.UseVisualStyleBackColor = true;
+            // 
+            // row5
+            // 
+            this.row5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row5.Controls.Add(this.row5bar);
+            this.row5.Controls.Add(this.course5);
+            this.row5.Controls.Add(this.name5);
+            this.row5.Controls.Add(this.save5);
+            this.row5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row5.Location = new System.Drawing.Point(3, 187);
+            this.row5.Name = "row5";
+            this.row5.Size = new System.Drawing.Size(750, 40);
+            this.row5.TabIndex = 2;
+            // 
+            // row5bar
+            // 
+            this.row5bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row5bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row5bar.Location = new System.Drawing.Point(200, 0);
+            this.row5bar.Name = "row5bar";
+            this.row5bar.Size = new System.Drawing.Size(475, 3);
+            this.row5bar.TabIndex = 1;
+            // 
+            // course5
+            // 
+            this.course5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course5.Enabled = false;
+            this.course5.Location = new System.Drawing.Point(100, 0);
+            this.course5.Multiline = true;
+            this.course5.Name = "course5";
+            this.course5.Size = new System.Drawing.Size(100, 40);
+            this.course5.TabIndex = 3;
+            // 
+            // name5
+            // 
+            this.name5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name5.Enabled = false;
+            this.name5.Location = new System.Drawing.Point(0, 0);
+            this.name5.Multiline = true;
+            this.name5.Name = "name5";
+            this.name5.Size = new System.Drawing.Size(100, 40);
+            this.name5.TabIndex = 3;
+            // 
+            // save5
+            // 
+            this.save5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save5.Location = new System.Drawing.Point(675, 0);
+            this.save5.Name = "save5";
+            this.save5.Size = new System.Drawing.Size(75, 40);
+            this.save5.TabIndex = 4;
+            this.save5.Text = "Edit";
+            this.save5.UseVisualStyleBackColor = true;
+            // 
+            // row6
+            // 
+            this.row6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row6.Controls.Add(this.row6bar);
+            this.row6.Controls.Add(this.course6);
+            this.row6.Controls.Add(this.name6);
+            this.row6.Controls.Add(this.save6);
+            this.row6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row6.Location = new System.Drawing.Point(3, 233);
+            this.row6.Name = "row6";
+            this.row6.Size = new System.Drawing.Size(750, 40);
+            this.row6.TabIndex = 2;
+            // 
+            // row6bar
+            // 
+            this.row6bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row6bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row6bar.Location = new System.Drawing.Point(200, 0);
+            this.row6bar.Name = "row6bar";
+            this.row6bar.Size = new System.Drawing.Size(475, 3);
+            this.row6bar.TabIndex = 1;
+            // 
+            // course6
+            // 
+            this.course6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course6.Enabled = false;
+            this.course6.Location = new System.Drawing.Point(100, 0);
+            this.course6.Multiline = true;
+            this.course6.Name = "course6";
+            this.course6.Size = new System.Drawing.Size(100, 40);
+            this.course6.TabIndex = 3;
+            // 
+            // name6
+            // 
+            this.name6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name6.Enabled = false;
+            this.name6.Location = new System.Drawing.Point(0, 0);
+            this.name6.Multiline = true;
+            this.name6.Name = "name6";
+            this.name6.Size = new System.Drawing.Size(100, 40);
+            this.name6.TabIndex = 3;
+            // 
+            // save6
+            // 
+            this.save6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save6.Location = new System.Drawing.Point(675, 0);
+            this.save6.Name = "save6";
+            this.save6.Size = new System.Drawing.Size(75, 40);
+            this.save6.TabIndex = 4;
+            this.save6.Text = "Edit";
+            this.save6.UseVisualStyleBackColor = true;
+            // 
+            // row7
+            // 
+            this.row7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row7.Controls.Add(this.row7bar);
+            this.row7.Controls.Add(this.course7);
+            this.row7.Controls.Add(this.name7);
+            this.row7.Controls.Add(this.save7);
+            this.row7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row7.Location = new System.Drawing.Point(3, 279);
+            this.row7.Name = "row7";
+            this.row7.Size = new System.Drawing.Size(750, 40);
+            this.row7.TabIndex = 2;
+            // 
+            // row7bar
+            // 
+            this.row7bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.row7bar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.row7bar.Location = new System.Drawing.Point(200, 0);
+            this.row7bar.Name = "row7bar";
+            this.row7bar.Size = new System.Drawing.Size(475, 3);
+            this.row7bar.TabIndex = 1;
+            // 
+            // course7
+            // 
+            this.course7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.course7.Enabled = false;
+            this.course7.Location = new System.Drawing.Point(100, 0);
+            this.course7.Multiline = true;
+            this.course7.Name = "course7";
+            this.course7.Size = new System.Drawing.Size(100, 40);
+            this.course7.TabIndex = 3;
+            // 
+            // name7
+            // 
+            this.name7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.name7.Enabled = false;
+            this.name7.Location = new System.Drawing.Point(0, 0);
+            this.name7.Multiline = true;
+            this.name7.Name = "name7";
+            this.name7.Size = new System.Drawing.Size(100, 40);
+            this.name7.TabIndex = 3;
+            // 
+            // save7
+            // 
+            this.save7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.save7.Location = new System.Drawing.Point(675, 0);
+            this.save7.Name = "save7";
+            this.save7.Size = new System.Drawing.Size(75, 40);
+            this.save7.TabIndex = 4;
+            this.save7.Text = "Edit";
+            this.save7.UseVisualStyleBackColor = true;
+            // 
+            // downBtn
+            // 
+            this.downBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.downBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.downBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("downBtn.BackgroundImage")));
+            this.downBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.downBtn.FlatAppearance.BorderSize = 0;
+            this.downBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.downBtn.Location = new System.Drawing.Point(3, 325);
+            this.downBtn.Name = "downBtn";
+            this.downBtn.Size = new System.Drawing.Size(754, 45);
+            this.downBtn.TabIndex = 3;
+            this.downBtn.UseVisualStyleBackColor = false;
+            this.downBtn.Click += new System.EventHandler(this.downBtn_Click);
             // 
             // Dashboard
             // 
@@ -510,9 +750,8 @@ namespace LabTask
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.MainPanal);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.nav);
@@ -527,15 +766,22 @@ namespace LabTask
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.MainPanal.ResumeLayout(false);
+            this.CoursePanal.ResumeLayout(false);
             this.row1.ResumeLayout(false);
             this.row1.PerformLayout();
             this.row2.ResumeLayout(false);
+            this.row2.PerformLayout();
             this.row3.ResumeLayout(false);
+            this.row3.PerformLayout();
             this.row4.ResumeLayout(false);
+            this.row4.PerformLayout();
             this.row5.ResumeLayout(false);
+            this.row5.PerformLayout();
             this.row6.ResumeLayout(false);
+            this.row6.PerformLayout();
             this.row7.ResumeLayout(false);
+            this.row7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,22 +802,7 @@ namespace LabTask
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel row1;
-        private System.Windows.Forms.Panel row1bar;
-        private System.Windows.Forms.Panel row2;
-        private System.Windows.Forms.Panel row2bar;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel row3;
-        private System.Windows.Forms.Panel row3bar;
-        private System.Windows.Forms.Panel row4;
-        private System.Windows.Forms.Panel row4bar;
-        private System.Windows.Forms.Panel row5;
-        private System.Windows.Forms.Panel row5bar;
-        private System.Windows.Forms.Panel row6;
-        private System.Windows.Forms.Panel row6bar;
-        private System.Windows.Forms.Panel row7;
-        private System.Windows.Forms.Panel row7bar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
@@ -579,9 +810,44 @@ namespace LabTask
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.Timer timer6;
         private System.Windows.Forms.Timer timer7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox namerow1;
-        private System.Windows.Forms.TextBox regrow1;
+        private System.Windows.Forms.Panel MainPanal;
+        private System.Windows.Forms.FlowLayoutPanel CoursePanal;
+        private System.Windows.Forms.Panel row1;
+        private System.Windows.Forms.Button save1;
+        private System.Windows.Forms.TextBox course1;
+        private System.Windows.Forms.TextBox name1;
+        private System.Windows.Forms.Panel row1bar;
+        private System.Windows.Forms.Panel row2;
+        private System.Windows.Forms.Panel row2bar;
+        private System.Windows.Forms.Button save2;
+        private System.Windows.Forms.TextBox course2;
+        private System.Windows.Forms.TextBox name2;
+        private System.Windows.Forms.Panel row3;
+        private System.Windows.Forms.Panel row3bar;
+        private System.Windows.Forms.TextBox course3;
+        private System.Windows.Forms.Button save3;
+        private System.Windows.Forms.TextBox name3;
+        private System.Windows.Forms.Panel row4;
+        private System.Windows.Forms.Panel row4bar;
+        private System.Windows.Forms.TextBox course4;
+        private System.Windows.Forms.TextBox name4;
+        private System.Windows.Forms.Button save4;
+        private System.Windows.Forms.Panel row5;
+        private System.Windows.Forms.Panel row5bar;
+        private System.Windows.Forms.TextBox course5;
+        private System.Windows.Forms.TextBox name5;
+        private System.Windows.Forms.Button save5;
+        private System.Windows.Forms.Panel row6;
+        private System.Windows.Forms.Panel row6bar;
+        private System.Windows.Forms.TextBox course6;
+        private System.Windows.Forms.TextBox name6;
+        private System.Windows.Forms.Button save6;
+        private System.Windows.Forms.Panel row7;
+        private System.Windows.Forms.Panel row7bar;
+        private System.Windows.Forms.TextBox course7;
+        private System.Windows.Forms.TextBox name7;
+        private System.Windows.Forms.Button save7;
+        private System.Windows.Forms.Button downBtn;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }

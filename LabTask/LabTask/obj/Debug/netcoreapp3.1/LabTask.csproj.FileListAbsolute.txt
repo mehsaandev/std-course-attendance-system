@@ -22,7 +22,6 @@ D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\b
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\LabTask.runtimeconfig.dev.json
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\LabTask.dll
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\LabTask.pdb
-D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.csproj.AssemblyReference.cache
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.AddStudent.resources
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.Dashboard.resources
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.Properties.Resources.resources
@@ -34,3 +33,14 @@ D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\o
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.dll
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.pdb
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.genruntimeconfig.cache
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.Table.resources
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.csproj.AssemblyReference.cache
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.User_Controls.AttendenceSheet.resources
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.AddCourseForm.resources
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.csproj.CopyComplete
