@@ -113,7 +113,7 @@ namespace LabTask
         {
             if (row2.Width < 731)
             {
-                row2.Width += 30;
+                row2.Width += 40;
             }
             else
             {
@@ -126,7 +126,7 @@ namespace LabTask
         {
             if (row3.Width < 731)
             {
-                row3.Width += 30;
+                row3.Width += 50;
             }
             else
             {
@@ -139,7 +139,7 @@ namespace LabTask
         {
             if (row4.Width < 731)
             {
-                row4.Width += 30;
+                row4.Width += 60;
             }
             else
             {
@@ -152,7 +152,7 @@ namespace LabTask
         {
             if (row5.Width < 731)
             {
-                row5.Width += 30;
+                row5.Width += 70;
             }
             else
             {
@@ -165,7 +165,7 @@ namespace LabTask
         {
             if (row6.Width < 731)
             {
-                row6.Width += 30;
+                row6.Width += 80;
             }
             else
             {
@@ -178,7 +178,7 @@ namespace LabTask
         {
             if (row7.Width < 731)
             {
-                row7.Width += 30;
+                row7.Width += 90;
             }
             else
             {
