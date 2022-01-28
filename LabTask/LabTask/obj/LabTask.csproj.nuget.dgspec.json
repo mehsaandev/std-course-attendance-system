@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\LabTask\\LabTask\\LabTask.csproj": {}
+    "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\Home Task\\dblab2App\\LabTask\\LabTask\\LabTask.csproj": {}
   },
   "projects": {
-    "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\LabTask\\LabTask\\LabTask.csproj": {
+    "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\Home Task\\dblab2App\\LabTask\\LabTask\\LabTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\LabTask\\LabTask\\LabTask.csproj",
+        "projectUniqueName": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\Home Task\\dblab2App\\LabTask\\LabTask\\LabTask.csproj",
         "projectName": "LabTask",
-        "projectPath": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\LabTask\\LabTask\\LabTask.csproj",
+        "projectPath": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\Home Task\\dblab2App\\LabTask\\LabTask\\LabTask.csproj",
         "packagesPath": "C:\\Users\\Ehsaan\\.nuget\\packages\\",
-        "outputPath": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\LabTask\\LabTask\\obj\\",
+        "outputPath": "D:\\UET\\Semester 4\\Database Lab\\Lab2\\Week02\\Home Task\\dblab2App\\LabTask\\LabTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ehsaan\\AppData\\Roaming\\NuGet\\NuGet.Config",

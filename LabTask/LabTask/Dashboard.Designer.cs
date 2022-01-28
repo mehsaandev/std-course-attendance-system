@@ -61,6 +61,12 @@ namespace LabTask
             this.row7bar = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.timer7 = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -282,7 +288,7 @@ namespace LabTask
             this.row2.Dock = System.Windows.Forms.DockStyle.Top;
             this.row2.Location = new System.Drawing.Point(3, 3);
             this.row2.Name = "row2";
-            this.row2.Size = new System.Drawing.Size(70, 40);
+            this.row2.Size = new System.Drawing.Size(0, 40);
             this.row2.TabIndex = 2;
             // 
             // row2bar
@@ -291,7 +297,7 @@ namespace LabTask
             this.row2bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row2bar.Location = new System.Drawing.Point(0, 0);
             this.row2bar.Name = "row2bar";
-            this.row2bar.Size = new System.Drawing.Size(70, 3);
+            this.row2bar.Size = new System.Drawing.Size(0, 3);
             this.row2bar.TabIndex = 1;
             // 
             // row1
@@ -299,9 +305,9 @@ namespace LabTask
             this.row1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row1.Controls.Add(this.row1bar);
             this.row1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row1.Location = new System.Drawing.Point(3, 49);
+            this.row1.Location = new System.Drawing.Point(9, 3);
             this.row1.Name = "row1";
-            this.row1.Size = new System.Drawing.Size(731, 40);
+            this.row1.Size = new System.Drawing.Size(0, 40);
             this.row1.TabIndex = 2;
             // 
             // row1bar
@@ -310,7 +316,7 @@ namespace LabTask
             this.row1bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row1bar.Location = new System.Drawing.Point(0, 0);
             this.row1bar.Name = "row1bar";
-            this.row1bar.Size = new System.Drawing.Size(731, 3);
+            this.row1bar.Size = new System.Drawing.Size(0, 3);
             this.row1bar.TabIndex = 1;
             // 
             // row3
@@ -318,9 +324,9 @@ namespace LabTask
             this.row3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row3.Controls.Add(this.row3bar);
             this.row3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row3.Location = new System.Drawing.Point(3, 95);
+            this.row3.Location = new System.Drawing.Point(15, 3);
             this.row3.Name = "row3";
-            this.row3.Size = new System.Drawing.Size(731, 40);
+            this.row3.Size = new System.Drawing.Size(0, 40);
             this.row3.TabIndex = 2;
             // 
             // row3bar
@@ -329,7 +335,7 @@ namespace LabTask
             this.row3bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row3bar.Location = new System.Drawing.Point(0, 0);
             this.row3bar.Name = "row3bar";
-            this.row3bar.Size = new System.Drawing.Size(731, 3);
+            this.row3bar.Size = new System.Drawing.Size(0, 3);
             this.row3bar.TabIndex = 1;
             // 
             // row4
@@ -337,9 +343,9 @@ namespace LabTask
             this.row4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row4.Controls.Add(this.row4bar);
             this.row4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row4.Location = new System.Drawing.Point(3, 141);
+            this.row4.Location = new System.Drawing.Point(21, 3);
             this.row4.Name = "row4";
-            this.row4.Size = new System.Drawing.Size(731, 40);
+            this.row4.Size = new System.Drawing.Size(0, 40);
             this.row4.TabIndex = 2;
             // 
             // row4bar
@@ -348,7 +354,7 @@ namespace LabTask
             this.row4bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row4bar.Location = new System.Drawing.Point(0, 0);
             this.row4bar.Name = "row4bar";
-            this.row4bar.Size = new System.Drawing.Size(731, 3);
+            this.row4bar.Size = new System.Drawing.Size(0, 3);
             this.row4bar.TabIndex = 1;
             // 
             // row5
@@ -356,9 +362,9 @@ namespace LabTask
             this.row5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row5.Controls.Add(this.row5bar);
             this.row5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row5.Location = new System.Drawing.Point(3, 187);
+            this.row5.Location = new System.Drawing.Point(27, 3);
             this.row5.Name = "row5";
-            this.row5.Size = new System.Drawing.Size(731, 40);
+            this.row5.Size = new System.Drawing.Size(0, 40);
             this.row5.TabIndex = 2;
             // 
             // row5bar
@@ -367,7 +373,7 @@ namespace LabTask
             this.row5bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row5bar.Location = new System.Drawing.Point(0, 0);
             this.row5bar.Name = "row5bar";
-            this.row5bar.Size = new System.Drawing.Size(731, 3);
+            this.row5bar.Size = new System.Drawing.Size(0, 3);
             this.row5bar.TabIndex = 1;
             // 
             // row6
@@ -375,9 +381,9 @@ namespace LabTask
             this.row6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row6.Controls.Add(this.row6bar);
             this.row6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row6.Location = new System.Drawing.Point(3, 233);
+            this.row6.Location = new System.Drawing.Point(33, 3);
             this.row6.Name = "row6";
-            this.row6.Size = new System.Drawing.Size(731, 40);
+            this.row6.Size = new System.Drawing.Size(0, 40);
             this.row6.TabIndex = 2;
             // 
             // row6bar
@@ -386,7 +392,7 @@ namespace LabTask
             this.row6bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row6bar.Location = new System.Drawing.Point(0, 0);
             this.row6bar.Name = "row6bar";
-            this.row6bar.Size = new System.Drawing.Size(731, 3);
+            this.row6bar.Size = new System.Drawing.Size(0, 3);
             this.row6bar.TabIndex = 1;
             // 
             // row7
@@ -394,9 +400,9 @@ namespace LabTask
             this.row7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row7.Controls.Add(this.row7bar);
             this.row7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.row7.Location = new System.Drawing.Point(3, 279);
+            this.row7.Location = new System.Drawing.Point(39, 3);
             this.row7.Name = "row7";
-            this.row7.Size = new System.Drawing.Size(731, 40);
+            this.row7.Size = new System.Drawing.Size(0, 40);
             this.row7.TabIndex = 2;
             // 
             // row7bar
@@ -405,7 +411,7 @@ namespace LabTask
             this.row7bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row7bar.Location = new System.Drawing.Point(0, 0);
             this.row7bar.Name = "row7bar";
-            this.row7bar.Size = new System.Drawing.Size(731, 3);
+            this.row7bar.Size = new System.Drawing.Size(0, 3);
             this.row7bar.TabIndex = 1;
             // 
             // button7
@@ -426,7 +432,38 @@ namespace LabTask
             // 
             // timer1
             // 
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 1;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 1;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // timer5
+            // 
+            this.timer5.Interval = 1;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            // 
+            // timer6
+            // 
+            this.timer6.Interval = 1;
+            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
+            // 
+            // timer7
+            // 
+            this.timer7.Interval = 1;
+            this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
             // 
             // Dashboard
             // 
@@ -496,6 +533,12 @@ namespace LabTask
         private System.Windows.Forms.Panel row7;
         private System.Windows.Forms.Panel row7bar;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Timer timer7;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }

@@ -27,6 +27,7 @@ namespace LabTask
         public Dashboard()
         {
             InitializeComponent();
+            timer1.Enabled = true;
             
 
 
@@ -93,12 +94,96 @@ namespace LabTask
         {
             AddStudent std = new AddStudent();
             std.ShowDialog();
-        }
-
+        } 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // 734 
-            
+            if (row1.Width < 731)
+            {
+                row1.Width += 30;
+            }
+            else
+            {
+                timer1.Enabled = false;
+                timer2.Enabled = true;
+
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (row2.Width < 731)
+            {
+                row2.Width += 30;
+            }
+            else
+            {
+                timer2.Enabled = false;
+                timer3.Enabled = true;
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (row3.Width < 731)
+            {
+                row3.Width += 30;
+            }
+            else
+            {
+                timer3.Enabled = false;
+                timer4.Enabled = true;
+            }
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (row4.Width < 731)
+            {
+                row4.Width += 30;
+            }
+            else
+            {
+                timer4.Enabled = false;
+                timer5.Enabled = true;
+            }
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            if (row5.Width < 731)
+            {
+                row5.Width += 30;
+            }
+            else
+            {
+                timer5.Enabled = false;
+                timer6.Enabled = true;
+            }
+        }
+
+        private void timer6_Tick(object sender, EventArgs e)
+        {
+            if (row6.Width < 731)
+            {
+                row6.Width += 30;
+            }
+            else
+            {
+                timer6.Enabled = false;
+                timer7.Enabled = true;
+            }
+        }
+
+        private void timer7_Tick(object sender, EventArgs e)
+        {
+            if (row7.Width < 731)
+            {
+                row7.Width += 30;
+            }
+            else
+            {
+                timer7.Enabled = false;
+            }
         }
     }
 }
