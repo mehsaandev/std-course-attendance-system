@@ -27,8 +27,10 @@ namespace LabTask
         public Dashboard()
         {
             InitializeComponent();
-            timer1.Enabled = true;
-            
+            InitializeTable();
+
+
+
 
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
@@ -38,6 +40,17 @@ namespace LabTask
             button4.BackColor = Color.FromArgb(46, 51, 73);
         }
 
+        private void InitializeTable()
+        {
+            row2.Width = 0;
+            row1.Width = 0;
+            row3.Width = 0;
+            row4.Width = 0;
+            row5.Width = 0;
+            row6.Width = 0;
+            row7.Width = 0;
+            timer1.Enabled = true;
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             button1.BackColor = Color.FromArgb(24, 30, 54);
@@ -97,9 +110,9 @@ namespace LabTask
         } 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (row1.Width < 731)
+            if (row2.Width < 731)
             {
-                row1.Width += 30;
+                row2.Width += 30;
             }
             else
             {
@@ -111,9 +124,9 @@ namespace LabTask
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if (row2.Width < 731)
+            if (row1.Width < 731)
             {
-                row2.Width += 40;
+                row1.Width += 40;
             }
             else
             {
@@ -178,12 +191,13 @@ namespace LabTask
         {
             if (row7.Width < 731)
             {
-                row7.Width += 90;
+                row7.Width += 80;
             }
             else
             {
                 timer7.Enabled = false;
             }
         }
+
     }
 }
