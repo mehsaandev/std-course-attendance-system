@@ -45,3 +45,4 @@ D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\b
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.csproj.CopyComplete
 D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.User_Controls.CourseControl.resources
+D:\UET\Semester 4\Database Lab\Lab2\Week02\Home Task\dblab2App\LabTask\LabTask\obj\Debug\netcoreapp3.1\LabTask.MyCourses.resources

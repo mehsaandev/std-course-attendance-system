@@ -34,9 +34,9 @@ namespace LabTask
         public Dashboard()
         {
             InitializeComponent();
-           /* CourseDashboard.Enabled = false;
-            StudentDashboard.Enabled = false;*/
-
+            /* CourseDashboard.Enabled = false;
+             StudentDashboard.Enabled = false;*/
+            InitializeDashboards();
             InitializeStudentTable();
 
             // Course Dashboard location : 192, 77
@@ -49,12 +49,31 @@ namespace LabTask
             nav.Left = studentDashboardbn.Left;
             studentDashboardbn.BackColor = Color.FromArgb(46, 51, 73);
         }
+        private void InitializeDashboards()
+        {
+            CourseDashboard.Location = new System.Drawing.Point(900, 900);
+            CourseDashboard.Enabled = false;
+            CourseDashboard.Visible = false;
+            CourseDashboard.Width = 0;
+            CourseDashboard.Height = 0;
+
+            StudentDashboard.Location = new System.Drawing.Point(900, 900);
+            StudentDashboard.Visible = false;
+            StudentDashboard.Enabled = false;
+            StudentDashboard.Width = 0;
+            StudentDashboard.Height = 0;
+
+        }
         private void InitializeStudentTable()
         {
-
+            StudentDashboard.Location = new System.Drawing.Point(192, 77);
             StudentDashboard.Enabled = true;
+            StudentDashboard.Visible = true;
             StudentDashboard.Width = 760;
             StudentDashboard.Height = 512;
+
+
+
             stddownbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
             stdUpbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
             stdrow1.Width = 0;
@@ -71,55 +90,59 @@ namespace LabTask
             FirstRowIndex = 0;
             dtCourses = new DataTable();
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("Select * from Course", con);
+            SqlCommand cmd = new SqlCommand("Select [RegistrationNumber],[Name] from Student", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtCourses);
 
             TableSize = dtCourses.Rows.Count;
-            /*   try
+               try
                {
-                   name1.Text = dtCourses.Rows[0].ItemArray[0].ToString();
-                   course1.Text = dtCourses.Rows[0].ItemArray[1].ToString();
+                   RegNo1.Text = dtCourses.Rows[0].ItemArray[0].ToString();
+                   stdName1.Text = dtCourses.Rows[0].ItemArray[1].ToString();
                    checkNum++;
 
-                   name2.Text = dtCourses.Rows[1].ItemArray[0].ToString();
-                   course2.Text = dtCourses.Rows[1].ItemArray[1].ToString();
+                   RegNo2.Text = dtCourses.Rows[1].ItemArray[0].ToString();
+                   stdName2.Text = dtCourses.Rows[1].ItemArray[1].ToString();
                    checkNum++;
 
-                   name3.Text = dtCourses.Rows[2].ItemArray[0].ToString();
-                   course3.Text = dtCourses.Rows[2].ItemArray[1].ToString();
+                   RegNo3.Text = dtCourses.Rows[2].ItemArray[0].ToString();
+                   stdName3.Text = dtCourses.Rows[2].ItemArray[1].ToString();
                    checkNum++;
 
-                   name4.Text = dtCourses.Rows[3].ItemArray[0].ToString();
-                   course4.Text = dtCourses.Rows[3].ItemArray[1].ToString();
+                   RegNo4.Text = dtCourses.Rows[3].ItemArray[0].ToString();
+                   stdName4.Text = dtCourses.Rows[3].ItemArray[1].ToString();
                    checkNum++;
 
-                   name5.Text = dtCourses.Rows[4].ItemArray[0].ToString();
-                   course5.Text = dtCourses.Rows[4].ItemArray[1].ToString();
+                   RegNo5.Text = dtCourses.Rows[4].ItemArray[0].ToString();
+                   stdName5.Text = dtCourses.Rows[4].ItemArray[1].ToString();
                    checkNum++;
 
-                   name6.Text = dtCourses.Rows[5].ItemArray[0].ToString();
-                   course6.Text = dtCourses.Rows[5].ItemArray[1].ToString();
+                   RegNo6.Text = dtCourses.Rows[5].ItemArray[0].ToString();
+                   stdName6.Text = dtCourses.Rows[5].ItemArray[1].ToString();
                    checkNum++;
 
-                   name7.Text = dtCourses.Rows[6].ItemArray[0].ToString();
-                   course7.Text = dtCourses.Rows[6].ItemArray[1].ToString();
+                   RegNo7.Text = dtCourses.Rows[6].ItemArray[0].ToString();
+                   stdName7.Text = dtCourses.Rows[6].ItemArray[1].ToString();
                    checkNum++;
 
                }
                catch (Exception)
                {
-               }*/
-            checkNum = 8;
+               }
+
             LastRowIndex = checkNum;
             //   MessageBox.Show(LastRowIndex.ToString());
             timer1.Enabled = true;
         }
         private void InitializeCourseTable()
         {
+
+            CourseDashboard.Location = new System.Drawing.Point(192, 77);
             CourseDashboard.Enabled = true;
+            CourseDashboard.Visible = true;
             CourseDashboard.Width = 760;
             CourseDashboard.Height = 512;
+
             downBtn.BackColor = Color.FromArgb(100, 101, 110, 118);
             upbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
             row2.Width = 0;
@@ -190,7 +213,11 @@ namespace LabTask
             nav.Top = studentDashboardbn.Top;
             nav.Left = studentDashboardbn.Left;
             studentDashboardbn.BackColor = Color.FromArgb(46, 51, 73);
+
+            CourseDashboard.Location = new System.Drawing.Point(900, 900);
+            CourseDashboard.Enabled = false;
             CourseDashboard.Visible = false;
+
 
             InitializeStudentTable();
         }
@@ -218,8 +245,17 @@ namespace LabTask
             nav.Top = coursedashboardbtn.Top;
             nav.Left = coursedashboardbtn.Left;
             coursedashboardbtn.BackColor = Color.FromArgb(46, 51, 73);
+
+
+
+            StudentDashboard.Location = new System.Drawing.Point(900,900);
+            StudentDashboard.Enabled = false;
+            StudentDashboard.Visible = false;
+
             InitializeCourseTable();
-            CourseDashboard.Visible = true;
+            // CourseDashboard.Location.X = 192;
+
+            //  CourseDashboard.Location.Y = 77;
 
         }
 
@@ -481,12 +517,80 @@ namespace LabTask
                     timer7.Enabled = false;
                     if (TableSize > 7)
                     {
-                        downBtn.Width = 750;
+                        stddownbtn.Width = 750;
                     }
                 }
             }
             
         }
+
+
+        private void StddownBtn_Click(object sender, EventArgs e)
+        {
+
+            if (LastRowIndex >= 7 && LastRowIndex < dtCourses.Rows.Count)
+            {
+                FirstRowIndex++;
+                stdUpbtn.Width = 406;
+                LastRowIndex++;
+                RegNo1.Text = dtCourses.Rows[(LastRowIndex) - 7].ItemArray[0].ToString();
+                stdName1.Text = dtCourses.Rows[LastRowIndex - 7].ItemArray[1].ToString();
+
+                RegNo2.Text = dtCourses.Rows[LastRowIndex - 6].ItemArray[0].ToString();
+                stdName2.Text = dtCourses.Rows[LastRowIndex - 6].ItemArray[1].ToString();
+
+                RegNo3.Text = dtCourses.Rows[LastRowIndex - 5].ItemArray[0].ToString();
+                stdName3.Text = dtCourses.Rows[LastRowIndex - 5].ItemArray[1].ToString();
+
+                RegNo4.Text = dtCourses.Rows[LastRowIndex - 4].ItemArray[0].ToString();
+                stdName4.Text = dtCourses.Rows[LastRowIndex - 4].ItemArray[1].ToString();
+
+                RegNo5.Text = dtCourses.Rows[LastRowIndex - 3].ItemArray[0].ToString();
+                stdName5.Text = dtCourses.Rows[LastRowIndex - 3].ItemArray[1].ToString();
+
+                RegNo6.Text = dtCourses.Rows[LastRowIndex - 2].ItemArray[0].ToString();
+                stdName6.Text = dtCourses.Rows[LastRowIndex - 2].ItemArray[1].ToString();
+
+                RegNo7.Text = dtCourses.Rows[LastRowIndex - 1].ItemArray[0].ToString();
+                stdName7.Text = dtCourses.Rows[LastRowIndex - 1].ItemArray[1].ToString();
+            }
+        }
+
+        private void StdupBtn_Click(object sender, EventArgs e)
+        {
+            if (FirstRowIndex >= 1)
+            {
+                stdUpbtn.Width = 406;
+                RegNo1.Text = dtCourses.Rows[FirstRowIndex - 1].ItemArray[0].ToString();
+                stdName1.Text = dtCourses.Rows[FirstRowIndex - 1].ItemArray[1].ToString();
+
+                RegNo2.Text = dtCourses.Rows[(FirstRowIndex + 1) - 1].ItemArray[0].ToString();
+                stdName2.Text = dtCourses.Rows[(FirstRowIndex + 1) - 1].ItemArray[1].ToString();
+
+                RegNo3.Text = dtCourses.Rows[FirstRowIndex + 2 - 1].ItemArray[0].ToString();
+                stdName3.Text = dtCourses.Rows[FirstRowIndex + 2 - 1].ItemArray[1].ToString();
+
+                RegNo4.Text = dtCourses.Rows[FirstRowIndex + 3 - 1].ItemArray[0].ToString();
+                stdName4.Text = dtCourses.Rows[FirstRowIndex + 3 - 1].ItemArray[1].ToString();
+
+                RegNo5.Text = dtCourses.Rows[FirstRowIndex + 4 - 1].ItemArray[0].ToString();
+                stdName5.Text = dtCourses.Rows[FirstRowIndex + 4 - 1].ItemArray[1].ToString();
+
+                RegNo6.Text = dtCourses.Rows[FirstRowIndex + 5 - 1].ItemArray[0].ToString();
+                stdName6.Text = dtCourses.Rows[FirstRowIndex + 5 - 1].ItemArray[1].ToString();
+
+                RegNo7.Text = dtCourses.Rows[FirstRowIndex + 6 - 1].ItemArray[0].ToString();
+                stdName7.Text = dtCourses.Rows[FirstRowIndex + 6 - 1].ItemArray[1].ToString();
+                FirstRowIndex--;
+                LastRowIndex--;
+                if (FirstRowIndex == 0)
+                {
+                    stdUpbtn.Width = 0;
+                }
+            }
+        }
+
+
         private void upBtn_Click(object sender, EventArgs e)
         {
            // MessageBox.Show(FirstRowIndex+"");
@@ -557,6 +661,13 @@ namespace LabTask
         {
             AddStudent std = new AddStudent();
             std.ShowDialog();
+            InitializeStudentTable();
+        }
+
+        private void mycourse1_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo1.Text);
+            mycourse1.ShowDialog();
         }
     }
 }

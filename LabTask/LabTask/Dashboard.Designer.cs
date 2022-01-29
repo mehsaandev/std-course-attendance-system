@@ -101,46 +101,53 @@ namespace LabTask
             this.StudentDashboard = new System.Windows.Forms.Panel();
             this.studenttablepanel = new System.Windows.Forms.FlowLayoutPanel();
             this.stdrow1 = new System.Windows.Forms.Panel();
+            this.mycourse1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.stdName1 = new System.Windows.Forms.TextBox();
+            this.RegNo1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.stdrow2 = new System.Windows.Forms.Panel();
+            this.button20 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.stdName2 = new System.Windows.Forms.TextBox();
+            this.RegNo2 = new System.Windows.Forms.TextBox();
             this.stdrow3 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.stdName3 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.RegNo3 = new System.Windows.Forms.TextBox();
             this.stdrow4 = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.stdName4 = new System.Windows.Forms.TextBox();
+            this.RegNo4 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.stdrow5 = new System.Windows.Forms.Panel();
+            this.button23 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.stdName5 = new System.Windows.Forms.TextBox();
+            this.RegNo5 = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.stdrow6 = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.stdName6 = new System.Windows.Forms.TextBox();
+            this.RegNo6 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.stdrow7 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.stdName7 = new System.Windows.Forms.TextBox();
+            this.RegNo7 = new System.Windows.Forms.TextBox();
             this.button18 = new System.Windows.Forms.Button();
             this.stddownbtn = new System.Windows.Forms.Button();
             this.stdaddbtn = new System.Windows.Forms.Button();
@@ -902,6 +909,7 @@ namespace LabTask
             this.downBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.downBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("downBtn.BackgroundImage")));
             this.downBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.downBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.downBtn.FlatAppearance.BorderSize = 0;
             this.downBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.downBtn.Location = new System.Drawing.Point(3, 325);
@@ -972,16 +980,33 @@ namespace LabTask
             // stdrow1
             // 
             this.stdrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow1.Controls.Add(this.mycourse1);
             this.stdrow1.Controls.Add(this.button1);
             this.stdrow1.Controls.Add(this.button3);
-            this.stdrow1.Controls.Add(this.textBox2);
-            this.stdrow1.Controls.Add(this.textBox3);
+            this.stdrow1.Controls.Add(this.stdName1);
+            this.stdrow1.Controls.Add(this.RegNo1);
             this.stdrow1.Controls.Add(this.panel3);
             this.stdrow1.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow1.Location = new System.Drawing.Point(3, 3);
             this.stdrow1.Name = "stdrow1";
             this.stdrow1.Size = new System.Drawing.Size(750, 40);
             this.stdrow1.TabIndex = 2;
+            // 
+            // mycourse1
+            // 
+            this.mycourse1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse1.FlatAppearance.BorderSize = 0;
+            this.mycourse1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse1.Location = new System.Drawing.Point(525, 3);
+            this.mycourse1.Name = "mycourse1";
+            this.mycourse1.Size = new System.Drawing.Size(75, 37);
+            this.mycourse1.TabIndex = 4;
+            this.mycourse1.Text = "Courses";
+            this.mycourse1.UseVisualStyleBackColor = false;
+            this.mycourse1.Click += new System.EventHandler(this.mycourse1_Click);
             // 
             // button1
             // 
@@ -1008,25 +1033,25 @@ namespace LabTask
             this.button3.Text = "Edit";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // stdName1
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(100, 3);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 37);
-            this.textBox2.TabIndex = 3;
+            this.stdName1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName1.Enabled = false;
+            this.stdName1.Location = new System.Drawing.Point(100, 3);
+            this.stdName1.Multiline = true;
+            this.stdName1.Name = "stdName1";
+            this.stdName1.Size = new System.Drawing.Size(100, 37);
+            this.stdName1.TabIndex = 3;
             // 
-            // textBox3
+            // RegNo1
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(0, 3);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 37);
-            this.textBox3.TabIndex = 3;
+            this.RegNo1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo1.Enabled = false;
+            this.RegNo1.Location = new System.Drawing.Point(0, 3);
+            this.RegNo1.Multiline = true;
+            this.RegNo1.Name = "RegNo1";
+            this.RegNo1.Size = new System.Drawing.Size(100, 37);
+            this.RegNo1.TabIndex = 3;
             // 
             // panel3
             // 
@@ -1040,16 +1065,32 @@ namespace LabTask
             // stdrow2
             // 
             this.stdrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow2.Controls.Add(this.button20);
             this.stdrow2.Controls.Add(this.button4);
             this.stdrow2.Controls.Add(this.panel5);
             this.stdrow2.Controls.Add(this.button8);
-            this.stdrow2.Controls.Add(this.textBox4);
-            this.stdrow2.Controls.Add(this.textBox5);
+            this.stdrow2.Controls.Add(this.stdName2);
+            this.stdrow2.Controls.Add(this.RegNo2);
             this.stdrow2.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow2.Location = new System.Drawing.Point(3, 49);
             this.stdrow2.Name = "stdrow2";
             this.stdrow2.Size = new System.Drawing.Size(750, 40);
             this.stdrow2.TabIndex = 2;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button20.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button20.Location = new System.Drawing.Point(525, 3);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 37);
+            this.button20.TabIndex = 4;
+            this.button20.Text = "Courses";
+            this.button20.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -1085,39 +1126,55 @@ namespace LabTask
             this.button8.Text = "Edit";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // stdName2
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(100, 0);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 40);
-            this.textBox4.TabIndex = 3;
+            this.stdName2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName2.Enabled = false;
+            this.stdName2.Location = new System.Drawing.Point(100, 0);
+            this.stdName2.Multiline = true;
+            this.stdName2.Name = "stdName2";
+            this.stdName2.Size = new System.Drawing.Size(100, 40);
+            this.stdName2.TabIndex = 3;
             // 
-            // textBox5
+            // RegNo2
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(0, 0);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 40);
-            this.textBox5.TabIndex = 3;
+            this.RegNo2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo2.Enabled = false;
+            this.RegNo2.Location = new System.Drawing.Point(0, 0);
+            this.RegNo2.Multiline = true;
+            this.RegNo2.Name = "RegNo2";
+            this.RegNo2.Size = new System.Drawing.Size(100, 40);
+            this.RegNo2.TabIndex = 3;
             // 
             // stdrow3
             // 
             this.stdrow3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow3.Controls.Add(this.button21);
             this.stdrow3.Controls.Add(this.button9);
             this.stdrow3.Controls.Add(this.panel7);
-            this.stdrow3.Controls.Add(this.textBox6);
+            this.stdrow3.Controls.Add(this.stdName3);
             this.stdrow3.Controls.Add(this.button10);
-            this.stdrow3.Controls.Add(this.textBox7);
+            this.stdrow3.Controls.Add(this.RegNo3);
             this.stdrow3.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow3.Location = new System.Drawing.Point(3, 95);
             this.stdrow3.Name = "stdrow3";
             this.stdrow3.Size = new System.Drawing.Size(750, 40);
             this.stdrow3.TabIndex = 2;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button21.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button21.Location = new System.Drawing.Point(525, 3);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 37);
+            this.button21.TabIndex = 4;
+            this.button21.Text = "Courses";
+            this.button21.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
@@ -1143,15 +1200,15 @@ namespace LabTask
             this.panel7.Size = new System.Drawing.Size(475, 3);
             this.panel7.TabIndex = 1;
             // 
-            // textBox6
+            // stdName3
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(100, 0);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 40);
-            this.textBox6.TabIndex = 3;
+            this.stdName3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName3.Enabled = false;
+            this.stdName3.Location = new System.Drawing.Point(100, 0);
+            this.stdName3.Multiline = true;
+            this.stdName3.Name = "stdName3";
+            this.stdName3.Size = new System.Drawing.Size(100, 40);
+            this.stdName3.TabIndex = 3;
             // 
             // button10
             // 
@@ -1163,29 +1220,45 @@ namespace LabTask
             this.button10.Text = "Edit";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // RegNo3
             // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(0, 0);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 40);
-            this.textBox7.TabIndex = 3;
+            this.RegNo3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo3.Enabled = false;
+            this.RegNo3.Location = new System.Drawing.Point(0, 0);
+            this.RegNo3.Multiline = true;
+            this.RegNo3.Name = "RegNo3";
+            this.RegNo3.Size = new System.Drawing.Size(100, 40);
+            this.RegNo3.TabIndex = 3;
             // 
             // stdrow4
             // 
             this.stdrow4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow4.Controls.Add(this.button22);
             this.stdrow4.Controls.Add(this.button11);
             this.stdrow4.Controls.Add(this.panel9);
-            this.stdrow4.Controls.Add(this.textBox8);
-            this.stdrow4.Controls.Add(this.textBox9);
+            this.stdrow4.Controls.Add(this.stdName4);
+            this.stdrow4.Controls.Add(this.RegNo4);
             this.stdrow4.Controls.Add(this.button12);
             this.stdrow4.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow4.Location = new System.Drawing.Point(3, 141);
             this.stdrow4.Name = "stdrow4";
             this.stdrow4.Size = new System.Drawing.Size(750, 40);
             this.stdrow4.TabIndex = 2;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button22.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button22.Location = new System.Drawing.Point(525, 3);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 37);
+            this.button22.TabIndex = 4;
+            this.button22.Text = "Courses";
+            this.button22.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
@@ -1211,25 +1284,25 @@ namespace LabTask
             this.panel9.Size = new System.Drawing.Size(475, 3);
             this.panel9.TabIndex = 1;
             // 
-            // textBox8
+            // stdName4
             // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(100, 0);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 40);
-            this.textBox8.TabIndex = 3;
+            this.stdName4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName4.Enabled = false;
+            this.stdName4.Location = new System.Drawing.Point(100, 0);
+            this.stdName4.Multiline = true;
+            this.stdName4.Name = "stdName4";
+            this.stdName4.Size = new System.Drawing.Size(100, 40);
+            this.stdName4.TabIndex = 3;
             // 
-            // textBox9
+            // RegNo4
             // 
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(0, 0);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 40);
-            this.textBox9.TabIndex = 3;
+            this.RegNo4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo4.Enabled = false;
+            this.RegNo4.Location = new System.Drawing.Point(0, 0);
+            this.RegNo4.Multiline = true;
+            this.RegNo4.Name = "RegNo4";
+            this.RegNo4.Size = new System.Drawing.Size(100, 40);
+            this.RegNo4.TabIndex = 3;
             // 
             // button12
             // 
@@ -1244,16 +1317,32 @@ namespace LabTask
             // stdrow5
             // 
             this.stdrow5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow5.Controls.Add(this.button23);
             this.stdrow5.Controls.Add(this.button13);
             this.stdrow5.Controls.Add(this.panel11);
-            this.stdrow5.Controls.Add(this.textBox10);
-            this.stdrow5.Controls.Add(this.textBox11);
+            this.stdrow5.Controls.Add(this.stdName5);
+            this.stdrow5.Controls.Add(this.RegNo5);
             this.stdrow5.Controls.Add(this.button14);
             this.stdrow5.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow5.Location = new System.Drawing.Point(3, 187);
             this.stdrow5.Name = "stdrow5";
             this.stdrow5.Size = new System.Drawing.Size(750, 40);
             this.stdrow5.TabIndex = 2;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button23.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button23.Location = new System.Drawing.Point(525, 3);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 37);
+            this.button23.TabIndex = 4;
+            this.button23.Text = "Courses";
+            this.button23.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
@@ -1279,25 +1368,25 @@ namespace LabTask
             this.panel11.Size = new System.Drawing.Size(475, 3);
             this.panel11.TabIndex = 1;
             // 
-            // textBox10
+            // stdName5
             // 
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(100, 0);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 40);
-            this.textBox10.TabIndex = 3;
+            this.stdName5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName5.Enabled = false;
+            this.stdName5.Location = new System.Drawing.Point(100, 0);
+            this.stdName5.Multiline = true;
+            this.stdName5.Name = "stdName5";
+            this.stdName5.Size = new System.Drawing.Size(100, 40);
+            this.stdName5.TabIndex = 3;
             // 
-            // textBox11
+            // RegNo5
             // 
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(0, 0);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 40);
-            this.textBox11.TabIndex = 3;
+            this.RegNo5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo5.Enabled = false;
+            this.RegNo5.Location = new System.Drawing.Point(0, 0);
+            this.RegNo5.Multiline = true;
+            this.RegNo5.Name = "RegNo5";
+            this.RegNo5.Size = new System.Drawing.Size(100, 40);
+            this.RegNo5.TabIndex = 3;
             // 
             // button14
             // 
@@ -1312,16 +1401,32 @@ namespace LabTask
             // stdrow6
             // 
             this.stdrow6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow6.Controls.Add(this.button24);
             this.stdrow6.Controls.Add(this.button15);
             this.stdrow6.Controls.Add(this.panel13);
-            this.stdrow6.Controls.Add(this.textBox12);
-            this.stdrow6.Controls.Add(this.textBox13);
+            this.stdrow6.Controls.Add(this.stdName6);
+            this.stdrow6.Controls.Add(this.RegNo6);
             this.stdrow6.Controls.Add(this.button16);
             this.stdrow6.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow6.Location = new System.Drawing.Point(3, 233);
             this.stdrow6.Name = "stdrow6";
             this.stdrow6.Size = new System.Drawing.Size(750, 40);
             this.stdrow6.TabIndex = 2;
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button24.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button24.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button24.Location = new System.Drawing.Point(525, 3);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 37);
+            this.button24.TabIndex = 4;
+            this.button24.Text = "Courses";
+            this.button24.UseVisualStyleBackColor = false;
             // 
             // button15
             // 
@@ -1347,25 +1452,25 @@ namespace LabTask
             this.panel13.Size = new System.Drawing.Size(475, 3);
             this.panel13.TabIndex = 1;
             // 
-            // textBox12
+            // stdName6
             // 
-            this.textBox12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(100, 0);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 40);
-            this.textBox12.TabIndex = 3;
+            this.stdName6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName6.Enabled = false;
+            this.stdName6.Location = new System.Drawing.Point(100, 0);
+            this.stdName6.Multiline = true;
+            this.stdName6.Name = "stdName6";
+            this.stdName6.Size = new System.Drawing.Size(100, 40);
+            this.stdName6.TabIndex = 3;
             // 
-            // textBox13
+            // RegNo6
             // 
-            this.textBox13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(0, 0);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 40);
-            this.textBox13.TabIndex = 3;
+            this.RegNo6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo6.Enabled = false;
+            this.RegNo6.Location = new System.Drawing.Point(0, 0);
+            this.RegNo6.Multiline = true;
+            this.RegNo6.Name = "RegNo6";
+            this.RegNo6.Size = new System.Drawing.Size(100, 40);
+            this.RegNo6.TabIndex = 3;
             // 
             // button16
             // 
@@ -1380,16 +1485,32 @@ namespace LabTask
             // stdrow7
             // 
             this.stdrow7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow7.Controls.Add(this.button25);
             this.stdrow7.Controls.Add(this.button17);
             this.stdrow7.Controls.Add(this.panel15);
-            this.stdrow7.Controls.Add(this.textBox14);
-            this.stdrow7.Controls.Add(this.textBox15);
+            this.stdrow7.Controls.Add(this.stdName7);
+            this.stdrow7.Controls.Add(this.RegNo7);
             this.stdrow7.Controls.Add(this.button18);
             this.stdrow7.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow7.Location = new System.Drawing.Point(3, 279);
             this.stdrow7.Name = "stdrow7";
             this.stdrow7.Size = new System.Drawing.Size(750, 40);
             this.stdrow7.TabIndex = 2;
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button25.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button25.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button25.Location = new System.Drawing.Point(525, 3);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 37);
+            this.button25.TabIndex = 4;
+            this.button25.Text = "Courses";
+            this.button25.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
@@ -1415,25 +1536,25 @@ namespace LabTask
             this.panel15.Size = new System.Drawing.Size(475, 3);
             this.panel15.TabIndex = 1;
             // 
-            // textBox14
+            // stdName7
             // 
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(100, 0);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 40);
-            this.textBox14.TabIndex = 3;
+            this.stdName7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.stdName7.Enabled = false;
+            this.stdName7.Location = new System.Drawing.Point(100, 0);
+            this.stdName7.Multiline = true;
+            this.stdName7.Name = "stdName7";
+            this.stdName7.Size = new System.Drawing.Size(100, 40);
+            this.stdName7.TabIndex = 3;
             // 
-            // textBox15
+            // RegNo7
             // 
-            this.textBox15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(0, 0);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 40);
-            this.textBox15.TabIndex = 3;
+            this.RegNo7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RegNo7.Enabled = false;
+            this.RegNo7.Location = new System.Drawing.Point(0, 0);
+            this.RegNo7.Multiline = true;
+            this.RegNo7.Name = "RegNo7";
+            this.RegNo7.Size = new System.Drawing.Size(100, 40);
+            this.RegNo7.TabIndex = 3;
             // 
             // button18
             // 
@@ -1458,6 +1579,7 @@ namespace LabTask
             this.stddownbtn.Size = new System.Drawing.Size(754, 45);
             this.stddownbtn.TabIndex = 3;
             this.stddownbtn.UseVisualStyleBackColor = false;
+            this.stddownbtn.Click += new System.EventHandler(this.StddownBtn_Click);
             // 
             // stdaddbtn
             // 
@@ -1488,6 +1610,7 @@ namespace LabTask
             this.stdUpbtn.Size = new System.Drawing.Size(406, 45);
             this.stdUpbtn.TabIndex = 3;
             this.stdUpbtn.UseVisualStyleBackColor = false;
+            this.stdUpbtn.Click += new System.EventHandler(this.StdupBtn_Click);
             // 
             // Dashboard
             // 
@@ -1622,48 +1745,55 @@ namespace LabTask
         private System.Windows.Forms.Panel stdrow1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox stdName1;
+        private System.Windows.Forms.TextBox RegNo1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel stdrow2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox stdName2;
+        private System.Windows.Forms.TextBox RegNo2;
         private System.Windows.Forms.Panel stdrow3;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox stdName3;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox RegNo3;
         private System.Windows.Forms.Panel stdrow4;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox stdName4;
+        private System.Windows.Forms.TextBox RegNo4;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel stdrow5;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox stdName5;
+        private System.Windows.Forms.TextBox RegNo5;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Panel stdrow6;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox stdName6;
+        private System.Windows.Forms.TextBox RegNo6;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel stdrow7;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox stdName7;
+        private System.Windows.Forms.TextBox RegNo7;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button stddownbtn;
         private System.Windows.Forms.Button stdaddbtn;
         private System.Windows.Forms.Button stdUpbtn;
+        private System.Windows.Forms.Button mycourse1;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }

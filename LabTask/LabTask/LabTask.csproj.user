@@ -10,6 +10,9 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MyCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="User Controls\AttendenceSheet.cs">
       <SubType>UserControl</SubType>
     </Compile>
