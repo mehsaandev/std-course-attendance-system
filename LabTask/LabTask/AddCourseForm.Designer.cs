@@ -48,6 +48,7 @@ namespace LabTask
             this.MainPanel.Controls.Add(this.addbtn);
             this.MainPanel.Controls.Add(this.coursename);
             this.MainPanel.Controls.Add(this.coursecode);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(412, 435);
@@ -86,7 +87,7 @@ namespace LabTask
             this.title.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.title.Font = new System.Drawing.Font("Yu Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.title.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.title.Location = new System.Drawing.Point(78, 39);
+            this.title.Location = new System.Drawing.Point(79, 31);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(252, 38);
             this.title.TabIndex = 2;

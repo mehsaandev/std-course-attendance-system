@@ -34,22 +34,94 @@ namespace LabTask
         public Dashboard()
         {
             InitializeComponent();
-            InitializeTable();
+           /* CourseDashboard.Enabled = false;
+            StudentDashboard.Enabled = false;*/
 
-           // MainPanal.Size = 760, 512);
-            downBtn.BackColor = Color.FromArgb(100,101, 110, 118);
-            upbtn.BackColor = Color.FromArgb(100,101, 110, 118);
+            InitializeStudentTable();
+
+            // Course Dashboard location : 192, 77
+
+            // MainPanal.Size = 760, 512);
+
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            nav.Height = button4.Height;
-            nav.Top = button4.Top;
-            nav.Left = button4.Left;
-            button4.BackColor = Color.FromArgb(46, 51, 73);
+            nav.Height = studentDashboardbn.Height;
+            nav.Top = studentDashboardbn.Top;
+            nav.Left = studentDashboardbn.Left;
+            studentDashboardbn.BackColor = Color.FromArgb(46, 51, 73);
         }
-
-        private void InitializeTable()
+        private void InitializeStudentTable()
         {
 
-           
+            StudentDashboard.Enabled = true;
+            StudentDashboard.Width = 760;
+            StudentDashboard.Height = 512;
+            stddownbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
+            stdUpbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
+            stdrow1.Width = 0;
+            stdrow2.Width = 0;
+            stdrow3.Width = 0;
+            stdrow4.Width = 0;
+            stdrow5.Width = 0;
+            stdrow6.Width = 0;
+            stdrow7.Width = 0;
+            stdUpbtn.Width = 0;
+            stddownbtn.Width = 0;
+            checkNum = 0;
+            LastRowIndex = 0;
+            FirstRowIndex = 0;
+            dtCourses = new DataTable();
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("Select * from Course", con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dtCourses);
+
+            TableSize = dtCourses.Rows.Count;
+            /*   try
+               {
+                   name1.Text = dtCourses.Rows[0].ItemArray[0].ToString();
+                   course1.Text = dtCourses.Rows[0].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name2.Text = dtCourses.Rows[1].ItemArray[0].ToString();
+                   course2.Text = dtCourses.Rows[1].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name3.Text = dtCourses.Rows[2].ItemArray[0].ToString();
+                   course3.Text = dtCourses.Rows[2].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name4.Text = dtCourses.Rows[3].ItemArray[0].ToString();
+                   course4.Text = dtCourses.Rows[3].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name5.Text = dtCourses.Rows[4].ItemArray[0].ToString();
+                   course5.Text = dtCourses.Rows[4].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name6.Text = dtCourses.Rows[5].ItemArray[0].ToString();
+                   course6.Text = dtCourses.Rows[5].ItemArray[1].ToString();
+                   checkNum++;
+
+                   name7.Text = dtCourses.Rows[6].ItemArray[0].ToString();
+                   course7.Text = dtCourses.Rows[6].ItemArray[1].ToString();
+                   checkNum++;
+
+               }
+               catch (Exception)
+               {
+               }*/
+            checkNum = 8;
+            LastRowIndex = checkNum;
+            //   MessageBox.Show(LastRowIndex.ToString());
+            timer1.Enabled = true;
+        }
+        private void InitializeCourseTable()
+        {
+            CourseDashboard.Enabled = true;
+            CourseDashboard.Width = 760;
+            CourseDashboard.Height = 512;
+            downBtn.BackColor = Color.FromArgb(100, 101, 110, 118);
+            upbtn.BackColor = Color.FromArgb(100, 101, 110, 118);
             row2.Width = 0;
             row1.Width = 0;
             row3.Width = 0;
@@ -105,51 +177,56 @@ namespace LabTask
             }
             LastRowIndex = checkNum;
             //   MessageBox.Show(LastRowIndex.ToString());
-            MessageBox.Show(FirstRowIndex+"");
             timer1.Enabled = true;
 
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void studentbtn(object sender, EventArgs e)
         {
-            button1.BackColor = Color.FromArgb(24, 30, 54);
-            button3.BackColor = Color.FromArgb(24, 30, 54);
+            Dashboardtitle.Text = "Student Dashboard";
+            Attendencedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
+            coursedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
             button5.BackColor = Color.FromArgb(24, 30, 54);
-            nav.Height = button4.Height;
-            nav.Top = button4.Top;
-            nav.Left = button4.Left;
-            button4.BackColor = Color.FromArgb(46, 51, 73);
+            nav.Height = studentDashboardbn.Height;
+            nav.Top = studentDashboardbn.Top;
+            nav.Left = studentDashboardbn.Left;
+            studentDashboardbn.BackColor = Color.FromArgb(46, 51, 73);
+            CourseDashboard.Visible = false;
+
+            InitializeStudentTable();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void attendencebtn(object sender, EventArgs e)
         {
-            button4.BackColor = Color.FromArgb(24, 30, 54);
-            button3.BackColor = Color.FromArgb(24, 30, 54);
+            Dashboardtitle.Text = "Attendence Dashboard";
+            studentDashboardbn.BackColor = Color.FromArgb(24, 30, 54);
+            coursedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
             button5.BackColor = Color.FromArgb(24, 30, 54);
-            nav.Height = button1.Height;
-            nav.Top = button1.Top;
-            nav.Left = button1.Left;
-            button1.BackColor = Color.FromArgb(46, 51, 73);
+            nav.Height = Attendencedashboardbtn.Height;
+            nav.Top = Attendencedashboardbtn.Top;
+            nav.Left = Attendencedashboardbtn.Left;
+            Attendencedashboardbtn.BackColor = Color.FromArgb(46, 51, 73);
+            CourseDashboard.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void coursebtn(object sender, EventArgs e)
         {
-            button4.BackColor = Color.FromArgb(24, 30, 54);
-            button1.BackColor = Color.FromArgb(24, 30, 54);
+            Dashboardtitle.Text = "Course Dashboard";
+            studentDashboardbn.BackColor = Color.FromArgb(24, 30, 54);
+            Attendencedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
             button5.BackColor = Color.FromArgb(24, 30, 54);
-            nav.Height = button3.Height;
-            nav.Top = button3.Top;
-            nav.Left = button3.Left;
-            button3.BackColor = Color.FromArgb(46, 51, 73);
+            nav.Height = coursedashboardbtn.Height;
+            nav.Top = coursedashboardbtn.Top;
+            nav.Left = coursedashboardbtn.Left;
+            coursedashboardbtn.BackColor = Color.FromArgb(46, 51, 73);
+            InitializeCourseTable();
+            CourseDashboard.Visible = true;
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -165,119 +242,250 @@ namespace LabTask
         {
             AddCourseForm addCrs = new AddCourseForm();
             addCrs.ShowDialog();
-            InitializeTable();
+            InitializeCourseTable();
         } 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (row1.Width < 731)
+            if(CourseDashboard.Location.X != 900)
             {
-                row1.Width += 50;
-            }
-            else
-            {
-                timer1.Enabled = false;
-                if(checkNum > 1)
+                if (row1.Width < 731)
                 {
-                    timer2.Enabled = true;
+                    row1.Width += 50;
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    if (checkNum > 1)
+                    {
+                        timer2.Enabled = true;
+                    }
                 }
             }
+            else if(StudentDashboard.Location.X != 900)
+            {
+                if (stdrow1.Width < 731)
+                {
+                    stdrow1.Width += 50;
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    if (checkNum > 1)
+                    {
+                        timer2.Enabled = true;
+                    }
+                }
+            }
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if (row2.Width < 731)
+            if(CourseDashboard.Location.X !=900)
             {
-                row2.Width += 50;
-            }
-            else
-            {
-                timer2.Enabled = false;
-                if (checkNum > 2)
+                if (row2.Width < 731)
                 {
-                    timer3.Enabled = true;
+                    row2.Width += 50;
+                }
+                else
+                {
+                    timer2.Enabled = false;
+                    if (checkNum > 2)
+                    {
+                        timer3.Enabled = true;
+                    }
                 }
             }
+            else if (StudentDashboard.Location.X != 900)
+            {
+                if (stdrow2.Width < 731)
+                {
+                    stdrow2.Width += 50;
+                }
+                else
+                {
+                    timer2.Enabled = false;
+                    if (checkNum > 2)
+                    {
+                        timer3.Enabled = true;
+                    }
+                }
+            }
+           
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            if (row3.Width < 731)
+            if (CourseDashboard.Location.X != 900)
             {
-                row3.Width += 75;
-            }
-            else
-            {
-                timer3.Enabled = false;
-                if (checkNum > 3)
+                if (row3.Width < 731)
                 {
-                    timer4.Enabled = true;
+                    row3.Width += 75;
+                }
+                else
+                {
+                    timer3.Enabled = false;
+                    if (checkNum > 3)
+                    {
+                        timer4.Enabled = true;
+                    }
                 }
             }
+            else if (StudentDashboard.Location.X != 900)
+            {
+                if (stdrow3.Width < 731)
+                {
+                    stdrow3.Width += 75;
+                }
+                else
+                {
+                    timer3.Enabled = false;
+                    if (checkNum > 3)
+                    {
+                        timer4.Enabled = true;
+                    }
+                }
+            }
+            
         }
 
         private void timer4_Tick(object sender, EventArgs e)
         {
-            if (row4.Width < 731)
+            if(CourseDashboard.Location.X != 900)
             {
-                row4.Width += 75;
-            }
-            else
-            {
-                timer4.Enabled = false;
-                if (checkNum > 4)
+                if (row4.Width < 731)
                 {
-                    timer5.Enabled = true;
+                    row4.Width += 75;
+                }
+                else
+                {
+                    timer4.Enabled = false;
+                    if (checkNum > 4)
+                    {
+                        timer5.Enabled = true;
+                    }
                 }
             }
+            else if(StudentDashboard.Location.X != 900)
+            {
+                if (stdrow4.Width < 731)
+                {
+                    stdrow4.Width += 75;
+                }
+                else
+                {
+                    timer4.Enabled = false;
+                    if (checkNum > 4)
+                    {
+                        timer5.Enabled = true;
+                    }
+                }
+            }
+            
         }
 
         private void timer5_Tick(object sender, EventArgs e)
         {
-            if (row5.Width < 731)
+            if (CourseDashboard.Location.X != 900)
             {
-                row5.Width += 75;
-            }
-            else
-            {
-                timer5.Enabled = false;
-                if (checkNum > 5)
+                if (stdrow5.Width < 731)
                 {
-                    timer6.Enabled = true;
+                    stdrow5.Width += 75;
+                }
+                else
+                {
+                    timer5.Enabled = false;
+                    if (checkNum > 5)
+                    {
+                        timer6.Enabled = true;
+                    }
+                }
+            }
+            else if (StudentDashboard.Location.X != 900)
+            {
+                if (stdrow5.Width < 731)
+                {
+                    stdrow5.Width += 75;
+                }
+                else
+                {
+                    timer5.Enabled = false;
+                    if (checkNum > 4)
+                    {
+                        timer6.Enabled = true;
+                    }
                 }
             }
         }
 
         private void timer6_Tick(object sender, EventArgs e)
         {
-            if (row6.Width < 731)
+            if (CourseDashboard.Location.X != 900)
             {
-                row6.Width += 75;
-            }
-            else
-            {
-                timer6.Enabled = false;
-                if (checkNum > 6)
-                if (checkNum > 6)
+                if (stdrow6.Width < 731)
                 {
-                    timer7.Enabled = true;
+                    stdrow6.Width += 75;
+                }
+                else
+                {
+                    timer6.Enabled = false;
+                    if (checkNum > 6)
+                    {
+                        timer7.Enabled = true;
+                    }
                 }
             }
+            else if (StudentDashboard.Location.X != 900)
+            {
+                if (stdrow6.Width < 731)
+                {
+                    stdrow6.Width += 75;
+                }
+                else
+                {
+                    timer6.Enabled = false;
+                    if (checkNum > 4)
+                    {
+                        timer7.Enabled = true;
+                    }
+                }
+            }
+
         }
 
         private void timer7_Tick(object sender, EventArgs e)
         {
-            if (row7.Width < 731)
+            if (CourseDashboard.Location.X != 900)
             {
-                row7.Width += 75;
-            }
-            else
-            {
-                timer7.Enabled = false;
-                if(TableSize>7)
+                if (row7.Width < 731)
                 {
-                    downBtn.Width = 750;
+                    row7.Width += 75;
+                }
+                else
+                {
+                    timer7.Enabled = false;
+                    if (TableSize > 7)
+                    {
+                        downBtn.Width = 750;
+                    }
                 }
             }
+            else if (StudentDashboard.Location.X != 900)
+            {
+                if (stdrow7.Width < 731)
+                {
+                    stdrow7.Width += 75;
+                }
+                else
+                {
+                    timer7.Enabled = false;
+                    if (TableSize > 7)
+                    {
+                        downBtn.Width = 750;
+                    }
+                }
+            }
+            
         }
         private void upBtn_Click(object sender, EventArgs e)
         {
@@ -345,5 +553,10 @@ namespace LabTask
             }
         }
 
+        private void AddStdbtn(object sender, EventArgs e)
+        {
+            AddStudent std = new AddStudent();
+            std.ShowDialog();
+        }
     }
 }

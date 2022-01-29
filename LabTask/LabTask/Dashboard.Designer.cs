@@ -34,15 +34,15 @@ namespace LabTask
             this.sidebar = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.coursedashboardbtn = new System.Windows.Forms.Button();
+            this.Attendencedashboardbtn = new System.Windows.Forms.Button();
+            this.studentDashboardbn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nav = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Dashboardtitle = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -51,7 +51,7 @@ namespace LabTask
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.timer7 = new System.Windows.Forms.Timer(this.components);
-            this.MainPanal = new System.Windows.Forms.Panel();
+            this.CourseDashboard = new System.Windows.Forms.Panel();
             this.CoursePanal = new System.Windows.Forms.FlowLayoutPanel();
             this.row1 = new System.Windows.Forms.Panel();
             this.delete1 = new System.Windows.Forms.Button();
@@ -98,10 +98,57 @@ namespace LabTask
             this.downBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.upbtn = new System.Windows.Forms.Button();
+            this.StudentDashboard = new System.Windows.Forms.Panel();
+            this.studenttablepanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.stdrow1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.stdrow2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.stdrow3 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.stdrow4 = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.stdrow5 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.stdrow6 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.stdrow7 = new System.Windows.Forms.Panel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.stddownbtn = new System.Windows.Forms.Button();
+            this.stdaddbtn = new System.Windows.Forms.Button();
+            this.stdUpbtn = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.MainPanal.SuspendLayout();
+            this.CourseDashboard.SuspendLayout();
             this.CoursePanal.SuspendLayout();
             this.row1.SuspendLayout();
             this.row2.SuspendLayout();
@@ -110,6 +157,15 @@ namespace LabTask
             this.row5.SuspendLayout();
             this.row6.SuspendLayout();
             this.row7.SuspendLayout();
+            this.StudentDashboard.SuspendLayout();
+            this.studenttablepanel.SuspendLayout();
+            this.stdrow1.SuspendLayout();
+            this.stdrow2.SuspendLayout();
+            this.stdrow3.SuspendLayout();
+            this.stdrow4.SuspendLayout();
+            this.stdrow5.SuspendLayout();
+            this.stdrow6.SuspendLayout();
+            this.stdrow7.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -117,9 +173,9 @@ namespace LabTask
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.sidebar.Controls.Add(this.button2);
             this.sidebar.Controls.Add(this.button5);
-            this.sidebar.Controls.Add(this.button3);
-            this.sidebar.Controls.Add(this.button1);
-            this.sidebar.Controls.Add(this.button4);
+            this.sidebar.Controls.Add(this.coursedashboardbtn);
+            this.sidebar.Controls.Add(this.Attendencedashboardbtn);
+            this.sidebar.Controls.Add(this.studentDashboardbn);
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -158,63 +214,67 @@ namespace LabTask
             this.button5.Size = new System.Drawing.Size(186, 42);
             this.button5.TabIndex = 1;
             this.button5.Text = "Dashboard";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button3
+            // coursedashboardbtn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 42);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Dashboard";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.coursedashboardbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.coursedashboardbtn.FlatAppearance.BorderSize = 0;
+            this.coursedashboardbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.coursedashboardbtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.coursedashboardbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.coursedashboardbtn.Image = ((System.Drawing.Image)(resources.GetObject("coursedashboardbtn.Image")));
+            this.coursedashboardbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.coursedashboardbtn.Location = new System.Drawing.Point(0, 228);
+            this.coursedashboardbtn.Name = "coursedashboardbtn";
+            this.coursedashboardbtn.Size = new System.Drawing.Size(186, 42);
+            this.coursedashboardbtn.TabIndex = 1;
+            this.coursedashboardbtn.Text = "Course";
+            this.coursedashboardbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.coursedashboardbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.coursedashboardbtn.UseVisualStyleBackColor = true;
+            this.coursedashboardbtn.Click += new System.EventHandler(this.coursebtn);
             // 
-            // button1
+            // Attendencedashboardbtn
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dashboard";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Attendencedashboardbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Attendencedashboardbtn.FlatAppearance.BorderSize = 0;
+            this.Attendencedashboardbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencedashboardbtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencedashboardbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.Attendencedashboardbtn.Image = ((System.Drawing.Image)(resources.GetObject("Attendencedashboardbtn.Image")));
+            this.Attendencedashboardbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Attendencedashboardbtn.Location = new System.Drawing.Point(0, 186);
+            this.Attendencedashboardbtn.Name = "Attendencedashboardbtn";
+            this.Attendencedashboardbtn.Size = new System.Drawing.Size(186, 42);
+            this.Attendencedashboardbtn.TabIndex = 1;
+            this.Attendencedashboardbtn.Text = "Attendence";
+            this.Attendencedashboardbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Attendencedashboardbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.Attendencedashboardbtn.UseVisualStyleBackColor = true;
+            this.Attendencedashboardbtn.Click += new System.EventHandler(this.attendencebtn);
             // 
-            // button4
+            // studentDashboardbn
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(0, 144);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 42);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Dashboard";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.studentDashboardbn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.studentDashboardbn.FlatAppearance.BorderSize = 0;
+            this.studentDashboardbn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentDashboardbn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.studentDashboardbn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.studentDashboardbn.Image = ((System.Drawing.Image)(resources.GetObject("studentDashboardbn.Image")));
+            this.studentDashboardbn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.studentDashboardbn.Location = new System.Drawing.Point(0, 144);
+            this.studentDashboardbn.Name = "studentDashboardbn";
+            this.studentDashboardbn.Size = new System.Drawing.Size(186, 42);
+            this.studentDashboardbn.TabIndex = 1;
+            this.studentDashboardbn.Text = "Student";
+            this.studentDashboardbn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentDashboardbn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.studentDashboardbn.UseVisualStyleBackColor = true;
+            this.studentDashboardbn.Click += new System.EventHandler(this.studentbtn);
             // 
             // panel1
             // 
@@ -270,16 +330,16 @@ namespace LabTask
             this.textBox1.TabIndex = 3;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // Dashboardtitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label2.Location = new System.Drawing.Point(205, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 31);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Dashboard";
+            this.Dashboardtitle.AutoSize = true;
+            this.Dashboardtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Dashboardtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.Dashboardtitle.Location = new System.Drawing.Point(205, 9);
+            this.Dashboardtitle.Name = "Dashboardtitle";
+            this.Dashboardtitle.Size = new System.Drawing.Size(156, 31);
+            this.Dashboardtitle.TabIndex = 4;
+            this.Dashboardtitle.Text = "Dashboard";
             // 
             // button6
             // 
@@ -332,16 +392,17 @@ namespace LabTask
             this.timer7.Interval = 1;
             this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
             // 
-            // MainPanal
+            // CourseDashboard
             // 
-            this.MainPanal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.MainPanal.Controls.Add(this.CoursePanal);
-            this.MainPanal.Controls.Add(this.button7);
-            this.MainPanal.Controls.Add(this.upbtn);
-            this.MainPanal.Location = new System.Drawing.Point(192, 65);
-            this.MainPanal.Name = "MainPanal";
-            this.MainPanal.Size = new System.Drawing.Size(760, 512);
-            this.MainPanal.TabIndex = 9;
+            this.CourseDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.CourseDashboard.Controls.Add(this.CoursePanal);
+            this.CourseDashboard.Controls.Add(this.button7);
+            this.CourseDashboard.Controls.Add(this.upbtn);
+            this.CourseDashboard.Location = new System.Drawing.Point(900, 900);
+            this.CourseDashboard.Name = "CourseDashboard";
+            this.CourseDashboard.Size = new System.Drawing.Size(760, 512);
+            this.CourseDashboard.TabIndex = 9;
+            this.CourseDashboard.Visible = false;
             // 
             // CoursePanal
             // 
@@ -881,14 +942,562 @@ namespace LabTask
             this.upbtn.UseVisualStyleBackColor = false;
             this.upbtn.Click += new System.EventHandler(this.upBtn_Click);
             // 
+            // StudentDashboard
+            // 
+            this.StudentDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.StudentDashboard.Controls.Add(this.studenttablepanel);
+            this.StudentDashboard.Controls.Add(this.stdaddbtn);
+            this.StudentDashboard.Controls.Add(this.stdUpbtn);
+            this.StudentDashboard.Location = new System.Drawing.Point(192, 77);
+            this.StudentDashboard.Name = "StudentDashboard";
+            this.StudentDashboard.Size = new System.Drawing.Size(760, 512);
+            this.StudentDashboard.TabIndex = 10;
+            // 
+            // studenttablepanel
+            // 
+            this.studenttablepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.studenttablepanel.Controls.Add(this.stdrow1);
+            this.studenttablepanel.Controls.Add(this.stdrow2);
+            this.studenttablepanel.Controls.Add(this.stdrow3);
+            this.studenttablepanel.Controls.Add(this.stdrow4);
+            this.studenttablepanel.Controls.Add(this.stdrow5);
+            this.studenttablepanel.Controls.Add(this.stdrow6);
+            this.studenttablepanel.Controls.Add(this.stdrow7);
+            this.studenttablepanel.Controls.Add(this.stddownbtn);
+            this.studenttablepanel.Location = new System.Drawing.Point(0, 51);
+            this.studenttablepanel.Name = "studenttablepanel";
+            this.studenttablepanel.Size = new System.Drawing.Size(760, 370);
+            this.studenttablepanel.TabIndex = 7;
+            // 
+            // stdrow1
+            // 
+            this.stdrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow1.Controls.Add(this.button1);
+            this.stdrow1.Controls.Add(this.button3);
+            this.stdrow1.Controls.Add(this.textBox2);
+            this.stdrow1.Controls.Add(this.textBox3);
+            this.stdrow1.Controls.Add(this.panel3);
+            this.stdrow1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow1.Location = new System.Drawing.Point(3, 3);
+            this.stdrow1.Name = "stdrow1";
+            this.stdrow1.Size = new System.Drawing.Size(750, 40);
+            this.stdrow1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(600, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 37);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button3.Location = new System.Drawing.Point(675, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 37);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(100, 3);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 37);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(0, 3);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 37);
+            this.textBox3.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(750, 3);
+            this.panel3.TabIndex = 1;
+            // 
+            // stdrow2
+            // 
+            this.stdrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow2.Controls.Add(this.button4);
+            this.stdrow2.Controls.Add(this.panel5);
+            this.stdrow2.Controls.Add(this.button8);
+            this.stdrow2.Controls.Add(this.textBox4);
+            this.stdrow2.Controls.Add(this.textBox5);
+            this.stdrow2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow2.Location = new System.Drawing.Point(3, 49);
+            this.stdrow2.Name = "stdrow2";
+            this.stdrow2.Size = new System.Drawing.Size(750, 40);
+            this.stdrow2.TabIndex = 2;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Location = new System.Drawing.Point(600, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 37);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(200, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(475, 3);
+            this.panel5.TabIndex = 1;
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button8.Location = new System.Drawing.Point(675, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 40);
+            this.button8.TabIndex = 4;
+            this.button8.Text = "Edit";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(100, 0);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 40);
+            this.textBox4.TabIndex = 3;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(0, 0);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 40);
+            this.textBox5.TabIndex = 3;
+            // 
+            // stdrow3
+            // 
+            this.stdrow3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow3.Controls.Add(this.button9);
+            this.stdrow3.Controls.Add(this.panel7);
+            this.stdrow3.Controls.Add(this.textBox6);
+            this.stdrow3.Controls.Add(this.button10);
+            this.stdrow3.Controls.Add(this.textBox7);
+            this.stdrow3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow3.Location = new System.Drawing.Point(3, 95);
+            this.stdrow3.Name = "stdrow3";
+            this.stdrow3.Size = new System.Drawing.Size(750, 40);
+            this.stdrow3.TabIndex = 2;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Red;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button9.Location = new System.Drawing.Point(600, 3);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 37);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "Delete";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(200, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(475, 3);
+            this.panel7.TabIndex = 1;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(100, 0);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 40);
+            this.textBox6.TabIndex = 3;
+            // 
+            // button10
+            // 
+            this.button10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button10.Location = new System.Drawing.Point(675, 0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 40);
+            this.button10.TabIndex = 4;
+            this.button10.Text = "Edit";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(0, 0);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 40);
+            this.textBox7.TabIndex = 3;
+            // 
+            // stdrow4
+            // 
+            this.stdrow4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow4.Controls.Add(this.button11);
+            this.stdrow4.Controls.Add(this.panel9);
+            this.stdrow4.Controls.Add(this.textBox8);
+            this.stdrow4.Controls.Add(this.textBox9);
+            this.stdrow4.Controls.Add(this.button12);
+            this.stdrow4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow4.Location = new System.Drawing.Point(3, 141);
+            this.stdrow4.Name = "stdrow4";
+            this.stdrow4.Size = new System.Drawing.Size(750, 40);
+            this.stdrow4.TabIndex = 2;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Red;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button11.Location = new System.Drawing.Point(600, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 37);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "Delete";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(200, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(475, 3);
+            this.panel9.TabIndex = 1;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox8.Enabled = false;
+            this.textBox8.Location = new System.Drawing.Point(100, 0);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 40);
+            this.textBox8.TabIndex = 3;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(0, 0);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 40);
+            this.textBox9.TabIndex = 3;
+            // 
+            // button12
+            // 
+            this.button12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button12.Location = new System.Drawing.Point(675, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 40);
+            this.button12.TabIndex = 4;
+            this.button12.Text = "Edit";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // stdrow5
+            // 
+            this.stdrow5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow5.Controls.Add(this.button13);
+            this.stdrow5.Controls.Add(this.panel11);
+            this.stdrow5.Controls.Add(this.textBox10);
+            this.stdrow5.Controls.Add(this.textBox11);
+            this.stdrow5.Controls.Add(this.button14);
+            this.stdrow5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow5.Location = new System.Drawing.Point(3, 187);
+            this.stdrow5.Name = "stdrow5";
+            this.stdrow5.Size = new System.Drawing.Size(750, 40);
+            this.stdrow5.TabIndex = 2;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Red;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button13.Location = new System.Drawing.Point(600, 3);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 37);
+            this.button13.TabIndex = 4;
+            this.button13.Text = "Delete";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(200, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(475, 3);
+            this.panel11.TabIndex = 1;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox10.Enabled = false;
+            this.textBox10.Location = new System.Drawing.Point(100, 0);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 40);
+            this.textBox10.TabIndex = 3;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox11.Enabled = false;
+            this.textBox11.Location = new System.Drawing.Point(0, 0);
+            this.textBox11.Multiline = true;
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 40);
+            this.textBox11.TabIndex = 3;
+            // 
+            // button14
+            // 
+            this.button14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button14.Location = new System.Drawing.Point(675, 0);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 40);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "Edit";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // stdrow6
+            // 
+            this.stdrow6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow6.Controls.Add(this.button15);
+            this.stdrow6.Controls.Add(this.panel13);
+            this.stdrow6.Controls.Add(this.textBox12);
+            this.stdrow6.Controls.Add(this.textBox13);
+            this.stdrow6.Controls.Add(this.button16);
+            this.stdrow6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow6.Location = new System.Drawing.Point(3, 233);
+            this.stdrow6.Name = "stdrow6";
+            this.stdrow6.Size = new System.Drawing.Size(750, 40);
+            this.stdrow6.TabIndex = 2;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Red;
+            this.button15.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button15.Location = new System.Drawing.Point(600, 3);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 37);
+            this.button15.TabIndex = 4;
+            this.button15.Text = "Delete";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(200, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(475, 3);
+            this.panel13.TabIndex = 1;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox12.Enabled = false;
+            this.textBox12.Location = new System.Drawing.Point(100, 0);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(100, 40);
+            this.textBox12.TabIndex = 3;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox13.Enabled = false;
+            this.textBox13.Location = new System.Drawing.Point(0, 0);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 40);
+            this.textBox13.TabIndex = 3;
+            // 
+            // button16
+            // 
+            this.button16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button16.Location = new System.Drawing.Point(675, 0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 40);
+            this.button16.TabIndex = 4;
+            this.button16.Text = "Edit";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // stdrow7
+            // 
+            this.stdrow7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdrow7.Controls.Add(this.button17);
+            this.stdrow7.Controls.Add(this.panel15);
+            this.stdrow7.Controls.Add(this.textBox14);
+            this.stdrow7.Controls.Add(this.textBox15);
+            this.stdrow7.Controls.Add(this.button18);
+            this.stdrow7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stdrow7.Location = new System.Drawing.Point(3, 279);
+            this.stdrow7.Name = "stdrow7";
+            this.stdrow7.Size = new System.Drawing.Size(750, 40);
+            this.stdrow7.TabIndex = 2;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Red;
+            this.button17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button17.Location = new System.Drawing.Point(600, 3);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(75, 37);
+            this.button17.TabIndex = 4;
+            this.button17.Text = "Delete";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(200, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(475, 3);
+            this.panel15.TabIndex = 1;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox14.Enabled = false;
+            this.textBox14.Location = new System.Drawing.Point(100, 0);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 40);
+            this.textBox14.TabIndex = 3;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox15.Enabled = false;
+            this.textBox15.Location = new System.Drawing.Point(0, 0);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 40);
+            this.textBox15.TabIndex = 3;
+            // 
+            // button18
+            // 
+            this.button18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button18.Location = new System.Drawing.Point(675, 0);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 40);
+            this.button18.TabIndex = 4;
+            this.button18.Text = "Edit";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // stddownbtn
+            // 
+            this.stddownbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.stddownbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stddownbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stddownbtn.BackgroundImage")));
+            this.stddownbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stddownbtn.FlatAppearance.BorderSize = 0;
+            this.stddownbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stddownbtn.Location = new System.Drawing.Point(3, 325);
+            this.stddownbtn.Name = "stddownbtn";
+            this.stddownbtn.Size = new System.Drawing.Size(754, 45);
+            this.stddownbtn.TabIndex = 3;
+            this.stddownbtn.UseVisualStyleBackColor = false;
+            // 
+            // stdaddbtn
+            // 
+            this.stdaddbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.stdaddbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stdaddbtn.BackgroundImage")));
+            this.stdaddbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stdaddbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stdaddbtn.FlatAppearance.BorderSize = 0;
+            this.stdaddbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stdaddbtn.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.stdaddbtn.Location = new System.Drawing.Point(13, 0);
+            this.stdaddbtn.Name = "stdaddbtn";
+            this.stdaddbtn.Size = new System.Drawing.Size(45, 45);
+            this.stdaddbtn.TabIndex = 6;
+            this.stdaddbtn.UseVisualStyleBackColor = false;
+            this.stdaddbtn.Click += new System.EventHandler(this.AddStdbtn);
+            // 
+            // stdUpbtn
+            // 
+            this.stdUpbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.stdUpbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.stdUpbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stdUpbtn.BackgroundImage")));
+            this.stdUpbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stdUpbtn.FlatAppearance.BorderSize = 0;
+            this.stdUpbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stdUpbtn.Location = new System.Drawing.Point(187, 3);
+            this.stdUpbtn.Name = "stdUpbtn";
+            this.stdUpbtn.Size = new System.Drawing.Size(406, 45);
+            this.stdUpbtn.TabIndex = 3;
+            this.stdUpbtn.UseVisualStyleBackColor = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.MainPanal);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.StudentDashboard);
+            this.Controls.Add(this.CourseDashboard);
+            this.Controls.Add(this.Dashboardtitle);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.nav);
@@ -898,12 +1507,11 @@ namespace LabTask
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.MainPanal.ResumeLayout(false);
+            this.CourseDashboard.ResumeLayout(false);
             this.CoursePanal.ResumeLayout(false);
             this.row1.ResumeLayout(false);
             this.row1.PerformLayout();
@@ -919,6 +1527,22 @@ namespace LabTask
             this.row6.PerformLayout();
             this.row7.ResumeLayout(false);
             this.row7.PerformLayout();
+            this.StudentDashboard.ResumeLayout(false);
+            this.studenttablepanel.ResumeLayout(false);
+            this.stdrow1.ResumeLayout(false);
+            this.stdrow1.PerformLayout();
+            this.stdrow2.ResumeLayout(false);
+            this.stdrow2.PerformLayout();
+            this.stdrow3.ResumeLayout(false);
+            this.stdrow3.PerformLayout();
+            this.stdrow4.ResumeLayout(false);
+            this.stdrow4.PerformLayout();
+            this.stdrow5.ResumeLayout(false);
+            this.stdrow5.PerformLayout();
+            this.stdrow6.ResumeLayout(false);
+            this.stdrow6.PerformLayout();
+            this.stdrow7.ResumeLayout(false);
+            this.stdrow7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -931,13 +1555,13 @@ namespace LabTask
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel nav;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button studentDashboardbn;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button coursedashboardbtn;
+        private System.Windows.Forms.Button Attendencedashboardbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Dashboardtitle;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
@@ -946,7 +1570,7 @@ namespace LabTask
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.Timer timer6;
         private System.Windows.Forms.Timer timer7;
-        private System.Windows.Forms.Panel MainPanal;
+        private System.Windows.Forms.Panel CourseDashboard;
         private System.Windows.Forms.FlowLayoutPanel CoursePanal;
         private System.Windows.Forms.Panel row1;
         private System.Windows.Forms.Button delete1;
@@ -993,6 +1617,53 @@ namespace LabTask
         private System.Windows.Forms.Button downBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button upbtn;
+        private System.Windows.Forms.Panel StudentDashboard;
+        private System.Windows.Forms.FlowLayoutPanel studenttablepanel;
+        private System.Windows.Forms.Panel stdrow1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel stdrow2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Panel stdrow3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Panel stdrow4;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Panel stdrow5;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Panel stdrow6;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Panel stdrow7;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button stddownbtn;
+        private System.Windows.Forms.Button stdaddbtn;
+        private System.Windows.Forms.Button stdUpbtn;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }
