@@ -55,41 +55,48 @@ namespace LabTask
             this.MainPanal = new System.Windows.Forms.Panel();
             this.CoursePanal = new System.Windows.Forms.FlowLayoutPanel();
             this.row1 = new System.Windows.Forms.Panel();
-            this.save1 = new System.Windows.Forms.Button();
+            this.edit1 = new System.Windows.Forms.Button();
             this.course1 = new System.Windows.Forms.TextBox();
             this.name1 = new System.Windows.Forms.TextBox();
             this.row1bar = new System.Windows.Forms.Panel();
             this.row2 = new System.Windows.Forms.Panel();
             this.row2bar = new System.Windows.Forms.Panel();
-            this.save2 = new System.Windows.Forms.Button();
+            this.edit2 = new System.Windows.Forms.Button();
             this.course2 = new System.Windows.Forms.TextBox();
             this.name2 = new System.Windows.Forms.TextBox();
             this.row3 = new System.Windows.Forms.Panel();
             this.row3bar = new System.Windows.Forms.Panel();
             this.course3 = new System.Windows.Forms.TextBox();
-            this.save3 = new System.Windows.Forms.Button();
+            this.edit3 = new System.Windows.Forms.Button();
             this.name3 = new System.Windows.Forms.TextBox();
             this.row4 = new System.Windows.Forms.Panel();
             this.row4bar = new System.Windows.Forms.Panel();
             this.course4 = new System.Windows.Forms.TextBox();
             this.name4 = new System.Windows.Forms.TextBox();
-            this.save4 = new System.Windows.Forms.Button();
+            this.edit4 = new System.Windows.Forms.Button();
             this.row5 = new System.Windows.Forms.Panel();
             this.row5bar = new System.Windows.Forms.Panel();
             this.course5 = new System.Windows.Forms.TextBox();
             this.name5 = new System.Windows.Forms.TextBox();
-            this.save5 = new System.Windows.Forms.Button();
+            this.edit5 = new System.Windows.Forms.Button();
             this.row6 = new System.Windows.Forms.Panel();
             this.row6bar = new System.Windows.Forms.Panel();
             this.course6 = new System.Windows.Forms.TextBox();
             this.name6 = new System.Windows.Forms.TextBox();
-            this.save6 = new System.Windows.Forms.Button();
+            this.edit6 = new System.Windows.Forms.Button();
             this.row7 = new System.Windows.Forms.Panel();
             this.row7bar = new System.Windows.Forms.Panel();
             this.course7 = new System.Windows.Forms.TextBox();
             this.name7 = new System.Windows.Forms.TextBox();
-            this.save7 = new System.Windows.Forms.Button();
+            this.edit7 = new System.Windows.Forms.Button();
             this.downBtn = new System.Windows.Forms.Button();
+            this.delete1 = new System.Windows.Forms.Button();
+            this.delete2 = new System.Windows.Forms.Button();
+            this.delete3 = new System.Windows.Forms.Button();
+            this.delete4 = new System.Windows.Forms.Button();
+            this.delete5 = new System.Windows.Forms.Button();
+            this.delete6 = new System.Windows.Forms.Button();
+            this.delete7 = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -368,7 +375,8 @@ namespace LabTask
             // row1
             // 
             this.row1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.row1.Controls.Add(this.save1);
+            this.row1.Controls.Add(this.delete1);
+            this.row1.Controls.Add(this.edit1);
             this.row1.Controls.Add(this.course1);
             this.row1.Controls.Add(this.name1);
             this.row1.Controls.Add(this.row1bar);
@@ -378,15 +386,15 @@ namespace LabTask
             this.row1.Size = new System.Drawing.Size(750, 40);
             this.row1.TabIndex = 2;
             // 
-            // save1
+            // edit1
             // 
-            this.save1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save1.Location = new System.Drawing.Point(675, 3);
-            this.save1.Name = "save1";
-            this.save1.Size = new System.Drawing.Size(75, 37);
-            this.save1.TabIndex = 4;
-            this.save1.Text = "Edit";
-            this.save1.UseVisualStyleBackColor = true;
+            this.edit1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit1.Location = new System.Drawing.Point(675, 3);
+            this.edit1.Name = "edit1";
+            this.edit1.Size = new System.Drawing.Size(75, 37);
+            this.edit1.TabIndex = 4;
+            this.edit1.Text = "Edit";
+            this.edit1.UseVisualStyleBackColor = true;
             // 
             // course1
             // 
@@ -420,8 +428,9 @@ namespace LabTask
             // row2
             // 
             this.row2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row2.Controls.Add(this.delete2);
             this.row2.Controls.Add(this.row2bar);
-            this.row2.Controls.Add(this.save2);
+            this.row2.Controls.Add(this.edit2);
             this.row2.Controls.Add(this.course2);
             this.row2.Controls.Add(this.name2);
             this.row2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -439,15 +448,15 @@ namespace LabTask
             this.row2bar.Size = new System.Drawing.Size(475, 3);
             this.row2bar.TabIndex = 1;
             // 
-            // save2
+            // edit2
             // 
-            this.save2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save2.Location = new System.Drawing.Point(675, 0);
-            this.save2.Name = "save2";
-            this.save2.Size = new System.Drawing.Size(75, 40);
-            this.save2.TabIndex = 4;
-            this.save2.Text = "Edit";
-            this.save2.UseVisualStyleBackColor = true;
+            this.edit2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit2.Location = new System.Drawing.Point(675, 0);
+            this.edit2.Name = "edit2";
+            this.edit2.Size = new System.Drawing.Size(75, 40);
+            this.edit2.TabIndex = 4;
+            this.edit2.Text = "Edit";
+            this.edit2.UseVisualStyleBackColor = true;
             // 
             // course2
             // 
@@ -472,9 +481,10 @@ namespace LabTask
             // row3
             // 
             this.row3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row3.Controls.Add(this.delete3);
             this.row3.Controls.Add(this.row3bar);
             this.row3.Controls.Add(this.course3);
-            this.row3.Controls.Add(this.save3);
+            this.row3.Controls.Add(this.edit3);
             this.row3.Controls.Add(this.name3);
             this.row3.Dock = System.Windows.Forms.DockStyle.Top;
             this.row3.Location = new System.Drawing.Point(3, 95);
@@ -501,15 +511,15 @@ namespace LabTask
             this.course3.Size = new System.Drawing.Size(100, 40);
             this.course3.TabIndex = 3;
             // 
-            // save3
+            // edit3
             // 
-            this.save3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save3.Location = new System.Drawing.Point(675, 0);
-            this.save3.Name = "save3";
-            this.save3.Size = new System.Drawing.Size(75, 40);
-            this.save3.TabIndex = 4;
-            this.save3.Text = "Edit";
-            this.save3.UseVisualStyleBackColor = true;
+            this.edit3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit3.Location = new System.Drawing.Point(675, 0);
+            this.edit3.Name = "edit3";
+            this.edit3.Size = new System.Drawing.Size(75, 40);
+            this.edit3.TabIndex = 4;
+            this.edit3.Text = "Edit";
+            this.edit3.UseVisualStyleBackColor = true;
             // 
             // name3
             // 
@@ -524,10 +534,11 @@ namespace LabTask
             // row4
             // 
             this.row4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row4.Controls.Add(this.delete4);
             this.row4.Controls.Add(this.row4bar);
             this.row4.Controls.Add(this.course4);
             this.row4.Controls.Add(this.name4);
-            this.row4.Controls.Add(this.save4);
+            this.row4.Controls.Add(this.edit4);
             this.row4.Dock = System.Windows.Forms.DockStyle.Top;
             this.row4.Location = new System.Drawing.Point(3, 141);
             this.row4.Name = "row4";
@@ -563,23 +574,24 @@ namespace LabTask
             this.name4.Size = new System.Drawing.Size(100, 40);
             this.name4.TabIndex = 3;
             // 
-            // save4
+            // edit4
             // 
-            this.save4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save4.Location = new System.Drawing.Point(675, 0);
-            this.save4.Name = "save4";
-            this.save4.Size = new System.Drawing.Size(75, 40);
-            this.save4.TabIndex = 4;
-            this.save4.Text = "Edit";
-            this.save4.UseVisualStyleBackColor = true;
+            this.edit4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit4.Location = new System.Drawing.Point(675, 0);
+            this.edit4.Name = "edit4";
+            this.edit4.Size = new System.Drawing.Size(75, 40);
+            this.edit4.TabIndex = 4;
+            this.edit4.Text = "Edit";
+            this.edit4.UseVisualStyleBackColor = true;
             // 
             // row5
             // 
             this.row5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row5.Controls.Add(this.delete5);
             this.row5.Controls.Add(this.row5bar);
             this.row5.Controls.Add(this.course5);
             this.row5.Controls.Add(this.name5);
-            this.row5.Controls.Add(this.save5);
+            this.row5.Controls.Add(this.edit5);
             this.row5.Dock = System.Windows.Forms.DockStyle.Top;
             this.row5.Location = new System.Drawing.Point(3, 187);
             this.row5.Name = "row5";
@@ -615,23 +627,24 @@ namespace LabTask
             this.name5.Size = new System.Drawing.Size(100, 40);
             this.name5.TabIndex = 3;
             // 
-            // save5
+            // edit5
             // 
-            this.save5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save5.Location = new System.Drawing.Point(675, 0);
-            this.save5.Name = "save5";
-            this.save5.Size = new System.Drawing.Size(75, 40);
-            this.save5.TabIndex = 4;
-            this.save5.Text = "Edit";
-            this.save5.UseVisualStyleBackColor = true;
+            this.edit5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit5.Location = new System.Drawing.Point(675, 0);
+            this.edit5.Name = "edit5";
+            this.edit5.Size = new System.Drawing.Size(75, 40);
+            this.edit5.TabIndex = 4;
+            this.edit5.Text = "Edit";
+            this.edit5.UseVisualStyleBackColor = true;
             // 
             // row6
             // 
             this.row6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row6.Controls.Add(this.delete6);
             this.row6.Controls.Add(this.row6bar);
             this.row6.Controls.Add(this.course6);
             this.row6.Controls.Add(this.name6);
-            this.row6.Controls.Add(this.save6);
+            this.row6.Controls.Add(this.edit6);
             this.row6.Dock = System.Windows.Forms.DockStyle.Top;
             this.row6.Location = new System.Drawing.Point(3, 233);
             this.row6.Name = "row6";
@@ -667,23 +680,24 @@ namespace LabTask
             this.name6.Size = new System.Drawing.Size(100, 40);
             this.name6.TabIndex = 3;
             // 
-            // save6
+            // edit6
             // 
-            this.save6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save6.Location = new System.Drawing.Point(675, 0);
-            this.save6.Name = "save6";
-            this.save6.Size = new System.Drawing.Size(75, 40);
-            this.save6.TabIndex = 4;
-            this.save6.Text = "Edit";
-            this.save6.UseVisualStyleBackColor = true;
+            this.edit6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit6.Location = new System.Drawing.Point(675, 0);
+            this.edit6.Name = "edit6";
+            this.edit6.Size = new System.Drawing.Size(75, 40);
+            this.edit6.TabIndex = 4;
+            this.edit6.Text = "Edit";
+            this.edit6.UseVisualStyleBackColor = true;
             // 
             // row7
             // 
             this.row7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.row7.Controls.Add(this.delete7);
             this.row7.Controls.Add(this.row7bar);
             this.row7.Controls.Add(this.course7);
             this.row7.Controls.Add(this.name7);
-            this.row7.Controls.Add(this.save7);
+            this.row7.Controls.Add(this.edit7);
             this.row7.Dock = System.Windows.Forms.DockStyle.Top;
             this.row7.Location = new System.Drawing.Point(3, 279);
             this.row7.Name = "row7";
@@ -719,15 +733,15 @@ namespace LabTask
             this.name7.Size = new System.Drawing.Size(100, 40);
             this.name7.TabIndex = 3;
             // 
-            // save7
+            // edit7
             // 
-            this.save7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.save7.Location = new System.Drawing.Point(675, 0);
-            this.save7.Name = "save7";
-            this.save7.Size = new System.Drawing.Size(75, 40);
-            this.save7.TabIndex = 4;
-            this.save7.Text = "Edit";
-            this.save7.UseVisualStyleBackColor = true;
+            this.edit7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.edit7.Location = new System.Drawing.Point(675, 0);
+            this.edit7.Name = "edit7";
+            this.edit7.Size = new System.Drawing.Size(75, 40);
+            this.edit7.TabIndex = 4;
+            this.edit7.Text = "Edit";
+            this.edit7.UseVisualStyleBackColor = true;
             // 
             // downBtn
             // 
@@ -743,6 +757,111 @@ namespace LabTask
             this.downBtn.TabIndex = 3;
             this.downBtn.UseVisualStyleBackColor = false;
             this.downBtn.Click += new System.EventHandler(this.downBtn_Click);
+            // 
+            // delete1
+            // 
+            this.delete1.BackColor = System.Drawing.Color.Red;
+            this.delete1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete1.FlatAppearance.BorderSize = 0;
+            this.delete1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete1.Location = new System.Drawing.Point(600, 3);
+            this.delete1.Name = "delete1";
+            this.delete1.Size = new System.Drawing.Size(75, 37);
+            this.delete1.TabIndex = 4;
+            this.delete1.Text = "Delete";
+            this.delete1.UseVisualStyleBackColor = false;
+            // 
+            // delete2
+            // 
+            this.delete2.BackColor = System.Drawing.Color.Red;
+            this.delete2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete2.FlatAppearance.BorderSize = 0;
+            this.delete2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete2.Location = new System.Drawing.Point(600, 3);
+            this.delete2.Name = "delete2";
+            this.delete2.Size = new System.Drawing.Size(75, 37);
+            this.delete2.TabIndex = 4;
+            this.delete2.Text = "Delete";
+            this.delete2.UseVisualStyleBackColor = false;
+            // 
+            // delete3
+            // 
+            this.delete3.BackColor = System.Drawing.Color.Red;
+            this.delete3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete3.FlatAppearance.BorderSize = 0;
+            this.delete3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete3.Location = new System.Drawing.Point(600, 3);
+            this.delete3.Name = "delete3";
+            this.delete3.Size = new System.Drawing.Size(75, 37);
+            this.delete3.TabIndex = 4;
+            this.delete3.Text = "Delete";
+            this.delete3.UseVisualStyleBackColor = false;
+            // 
+            // delete4
+            // 
+            this.delete4.BackColor = System.Drawing.Color.Red;
+            this.delete4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete4.FlatAppearance.BorderSize = 0;
+            this.delete4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete4.Location = new System.Drawing.Point(600, 3);
+            this.delete4.Name = "delete4";
+            this.delete4.Size = new System.Drawing.Size(75, 37);
+            this.delete4.TabIndex = 4;
+            this.delete4.Text = "Delete";
+            this.delete4.UseVisualStyleBackColor = false;
+            // 
+            // delete5
+            // 
+            this.delete5.BackColor = System.Drawing.Color.Red;
+            this.delete5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete5.FlatAppearance.BorderSize = 0;
+            this.delete5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete5.Location = new System.Drawing.Point(600, 3);
+            this.delete5.Name = "delete5";
+            this.delete5.Size = new System.Drawing.Size(75, 37);
+            this.delete5.TabIndex = 4;
+            this.delete5.Text = "Delete";
+            this.delete5.UseVisualStyleBackColor = false;
+            // 
+            // delete6
+            // 
+            this.delete6.BackColor = System.Drawing.Color.Red;
+            this.delete6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete6.FlatAppearance.BorderSize = 0;
+            this.delete6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete6.Location = new System.Drawing.Point(600, 3);
+            this.delete6.Name = "delete6";
+            this.delete6.Size = new System.Drawing.Size(75, 37);
+            this.delete6.TabIndex = 4;
+            this.delete6.Text = "Delete";
+            this.delete6.UseVisualStyleBackColor = false;
+            // 
+            // delete7
+            // 
+            this.delete7.BackColor = System.Drawing.Color.Red;
+            this.delete7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.delete7.FlatAppearance.BorderSize = 0;
+            this.delete7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.delete7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete7.Location = new System.Drawing.Point(600, 3);
+            this.delete7.Name = "delete7";
+            this.delete7.Size = new System.Drawing.Size(75, 37);
+            this.delete7.TabIndex = 4;
+            this.delete7.Text = "Delete";
+            this.delete7.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -813,41 +932,48 @@ namespace LabTask
         private System.Windows.Forms.Panel MainPanal;
         private System.Windows.Forms.FlowLayoutPanel CoursePanal;
         private System.Windows.Forms.Panel row1;
-        private System.Windows.Forms.Button save1;
+        private System.Windows.Forms.Button edit1;
         private System.Windows.Forms.TextBox course1;
         private System.Windows.Forms.TextBox name1;
         private System.Windows.Forms.Panel row1bar;
         private System.Windows.Forms.Panel row2;
         private System.Windows.Forms.Panel row2bar;
-        private System.Windows.Forms.Button save2;
+        private System.Windows.Forms.Button edit2;
         private System.Windows.Forms.TextBox course2;
         private System.Windows.Forms.TextBox name2;
         private System.Windows.Forms.Panel row3;
         private System.Windows.Forms.Panel row3bar;
         private System.Windows.Forms.TextBox course3;
-        private System.Windows.Forms.Button save3;
+        private System.Windows.Forms.Button edit3;
         private System.Windows.Forms.TextBox name3;
         private System.Windows.Forms.Panel row4;
         private System.Windows.Forms.Panel row4bar;
         private System.Windows.Forms.TextBox course4;
         private System.Windows.Forms.TextBox name4;
-        private System.Windows.Forms.Button save4;
+        private System.Windows.Forms.Button edit4;
         private System.Windows.Forms.Panel row5;
         private System.Windows.Forms.Panel row5bar;
         private System.Windows.Forms.TextBox course5;
         private System.Windows.Forms.TextBox name5;
-        private System.Windows.Forms.Button save5;
+        private System.Windows.Forms.Button edit5;
         private System.Windows.Forms.Panel row6;
         private System.Windows.Forms.Panel row6bar;
         private System.Windows.Forms.TextBox course6;
         private System.Windows.Forms.TextBox name6;
-        private System.Windows.Forms.Button save6;
+        private System.Windows.Forms.Button edit6;
         private System.Windows.Forms.Panel row7;
         private System.Windows.Forms.Panel row7bar;
         private System.Windows.Forms.TextBox course7;
         private System.Windows.Forms.TextBox name7;
-        private System.Windows.Forms.Button save7;
+        private System.Windows.Forms.Button edit7;
         private System.Windows.Forms.Button downBtn;
+        private System.Windows.Forms.Button delete1;
+        private System.Windows.Forms.Button delete2;
+        private System.Windows.Forms.Button delete3;
+        private System.Windows.Forms.Button delete4;
+        private System.Windows.Forms.Button delete5;
+        private System.Windows.Forms.Button delete6;
+        private System.Windows.Forms.Button delete7;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }

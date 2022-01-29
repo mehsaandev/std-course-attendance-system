@@ -30,17 +30,6 @@ namespace LabTask
         int nWidthEllipse,
         int nHeightEllipse
     );
-        public Dashboard(int AddCourse)
-        {
-            InitializeComponent();
-            InitializeTable();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            nav.Height = button4.Height;
-            nav.Top = button4.Top;
-            nav.Left = button4.Left;
-            button4.BackColor = Color.FromArgb(46, 51, 73);
-
-        }
         public Dashboard()
         {
             InitializeComponent();
@@ -64,12 +53,14 @@ namespace LabTask
             row6.Width = 0;
             row7.Width = 0;
             downBtn.Width = 0;
-            
-
+            checkNum = 0;
+            LastRowIndex = 0;
+            dtCourses = new DataTable();
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand("Select * from Course", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtCourses);
+            MessageBox.Show(dtCourses.Rows[0].ItemArray[0].ToString());
             TableSize = dtCourses.Rows.Count;
             try
             {
@@ -106,7 +97,7 @@ namespace LabTask
             {
             }
             LastRowIndex = checkNum;
-            MessageBox.Show(LastRowIndex.ToString());
+         //   MessageBox.Show(LastRowIndex.ToString());
             timer1.Enabled = true;
 
         }
@@ -283,6 +274,7 @@ namespace LabTask
 
         private void downBtn_Click(object sender, EventArgs e)
         {
+
             if(LastRowIndex>=7 && LastRowIndex<dtCourses.Rows.Count)
             {
                 LastRowIndex++;
@@ -306,8 +298,6 @@ namespace LabTask
 
                 name7.Text = dtCourses.Rows[LastRowIndex - 1].ItemArray[0].ToString();
                 course7.Text = dtCourses.Rows[LastRowIndex - 1].ItemArray[1].ToString();
-
-                LastRowIndex++;
             }
         }
     }
