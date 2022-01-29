@@ -13,6 +13,9 @@
     <Compile Update="User Controls\AttendenceSheet.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User Controls\CourseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="User Controls\Table.cs">
       <SubType>UserControl</SubType>
     </Compile>

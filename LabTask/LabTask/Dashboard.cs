@@ -17,6 +17,7 @@ namespace LabTask
     {
         private int checkNum = 0;
         private int LastRowIndex = 0;
+        private int FirstRowIndex = 1;
         private int TableSize = 0;
         private DataTable dtCourses = new DataTable();
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -35,7 +36,9 @@ namespace LabTask
             InitializeComponent();
             InitializeTable();
 
-
+           // MainPanal.Size = 760, 512);
+            downBtn.BackColor = Color.FromArgb(100,101, 110, 118);
+            upbtn.BackColor = Color.FromArgb(100,101, 110, 118);
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             nav.Height = button4.Height;
             nav.Top = button4.Top;
@@ -45,6 +48,8 @@ namespace LabTask
 
         private void InitializeTable()
         {
+
+           
             row2.Width = 0;
             row1.Width = 0;
             row3.Width = 0;
@@ -52,15 +57,17 @@ namespace LabTask
             row5.Width = 0;
             row6.Width = 0;
             row7.Width = 0;
+            upbtn.Width = 0;
             downBtn.Width = 0;
             checkNum = 0;
             LastRowIndex = 0;
+            FirstRowIndex = 0;
             dtCourses = new DataTable();
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand("Select * from Course", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dtCourses);
-            MessageBox.Show(dtCourses.Rows[0].ItemArray[0].ToString());
+            
             TableSize = dtCourses.Rows.Count;
             try
             {
@@ -97,7 +104,8 @@ namespace LabTask
             {
             }
             LastRowIndex = checkNum;
-         //   MessageBox.Show(LastRowIndex.ToString());
+            //   MessageBox.Show(LastRowIndex.ToString());
+            MessageBox.Show(FirstRowIndex+"");
             timer1.Enabled = true;
 
         }
@@ -271,12 +279,48 @@ namespace LabTask
                 }
             }
         }
+        private void upBtn_Click(object sender, EventArgs e)
+        {
+           // MessageBox.Show(FirstRowIndex+"");
+            if (FirstRowIndex>=1)
+            {
+                upbtn.Width = 406;
+                name1.Text = dtCourses.Rows[FirstRowIndex - 1].ItemArray[0].ToString();
+                course1.Text = dtCourses.Rows[FirstRowIndex - 1].ItemArray[1].ToString();
+
+                name2.Text = dtCourses.Rows[(FirstRowIndex+1) - 1].ItemArray[0].ToString();
+                course2.Text = dtCourses.Rows[(FirstRowIndex+1) - 1].ItemArray[1].ToString();
+
+                name3.Text = dtCourses.Rows[FirstRowIndex+2 - 1].ItemArray[0].ToString();
+                course3.Text = dtCourses.Rows[FirstRowIndex+2 - 1].ItemArray[1].ToString();
+
+                name4.Text = dtCourses.Rows[FirstRowIndex+3 - 1].ItemArray[0].ToString();
+                course4.Text = dtCourses.Rows[FirstRowIndex+3 - 1].ItemArray[1].ToString();
+
+                name5.Text = dtCourses.Rows[FirstRowIndex+4 - 1].ItemArray[0].ToString();
+                course5.Text = dtCourses.Rows[FirstRowIndex+4 - 1].ItemArray[1].ToString();
+
+                name6.Text = dtCourses.Rows[FirstRowIndex+5 - 1].ItemArray[0].ToString();
+                course6.Text = dtCourses.Rows[FirstRowIndex+5 - 1].ItemArray[1].ToString();
+
+                name7.Text = dtCourses.Rows[FirstRowIndex+6 - 1].ItemArray[0].ToString();
+                course7.Text = dtCourses.Rows[FirstRowIndex+6 - 1].ItemArray[1].ToString();
+                FirstRowIndex--;
+                LastRowIndex--;
+                if(FirstRowIndex == 0)
+                {
+                    upbtn.Width = 0;
+                }
+            }
+        }
 
         private void downBtn_Click(object sender, EventArgs e)
         {
 
             if(LastRowIndex>=7 && LastRowIndex<dtCourses.Rows.Count)
             {
+                FirstRowIndex++;
+                upbtn.Width = 406;
                 LastRowIndex++;
                 name1.Text = dtCourses.Rows[(LastRowIndex)-7].ItemArray[0].ToString();
                 course1.Text = dtCourses.Rows[LastRowIndex - 7].ItemArray[1].ToString();
@@ -300,5 +344,6 @@ namespace LabTask
                 course7.Text = dtCourses.Rows[LastRowIndex - 1].ItemArray[1].ToString();
             }
         }
+
     }
 }
