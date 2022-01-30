@@ -18,7 +18,7 @@ namespace LabTask
         private int TableSize = 0;
 
 
-        private bool AttendTypeStatus;
+        private bool IsAttendacneLoaded;
         private DataTable dtCourses ;
         private DataTable AttendenceTable;
         private List<DateTime> DateList;
@@ -26,6 +26,7 @@ namespace LabTask
         private List<string> StdRegTempList;
         private List<string> StdNameTempList;
         private List<bool> StdStatusTempList;
+        private List<DateTime> StdDateTempList;
 
 
 
@@ -67,9 +68,12 @@ namespace LabTask
         {
             DateList = new List<DateTime>();
 
-            foreach (var item in AttendenceTable.Rows)
+            for(int i = 0; i< AttendenceTable.Rows.Count;i++)
             {
-                DateTime temp = DateTime.Parse(item.ToString());
+                MessageBox.Show(AttendenceTable.Rows[i].ItemArray[2].ToString());
+
+                MessageBox.Show(dateTimePicker1.Value.ToString());
+                DateTime temp = DateTime.Parse(AttendenceTable.Rows[i].ItemArray[2].ToString());
                 DateList.Add(temp);
             }
         }
@@ -79,12 +83,14 @@ namespace LabTask
             StdRegTempList = new List<string>();
             StdNameTempList = new List<string>();
             StdStatusTempList = new List<bool>();
+            StdDateTempList = new List<DateTime>();
 
             for (int i = 0; i < dtCourses.Rows.Count; i++)
             {
                 StdRegTempList.Add( dtCourses.Rows[i].ItemArray[0].ToString());
                 StdNameTempList.Add(GetStudentName(dtCourses.Rows[i].ItemArray[0].ToString()));
                 StdStatusTempList.Add(false);
+                StdDateTempList.Add(dateTimePicker1.Value);
             }
             
     }
@@ -95,7 +101,7 @@ namespace LabTask
             LastRowIndex = 0;
             FirstRowIndex = 0;
 
-            AttendTypeStatus = false;
+            IsAttendacneLoaded = false;
             LoadAttendData();
             LoadDateList();
 
@@ -104,12 +110,13 @@ namespace LabTask
                 if(item.Date ==date.Date )
                 {
                     LoadDateAttendence(date.Date);
-                    AttendTypeStatus = true;
+                    IsAttendacneLoaded = true;
                     break;
                 }
             }
-            if (!AttendTypeStatus)
+            if (!IsAttendacneLoaded)
             {
+                MarkedCheck.Text = "Not Marked";
                 dtCourses = new DataTable();
                 var con = Configuration.getInstance().getConnection();
                 SqlCommand cmd = new SqlCommand("Select [StudentRegNo] from Enrollments Where CourseName = '" + Coursetitle.Text + "'", con);
@@ -120,30 +127,37 @@ namespace LabTask
                 {
                     regno1.Text = StdRegTempList[0];
                     name1.Text = StdNameTempList[0];
+                    Markbtn1.Checked = false;
                     checkNum++;
 
                     regno2.Text = StdRegTempList[1];
                     name2.Text = StdNameTempList[1];
+                    Markbtn2.Checked = false;
                     checkNum++;
 
                     regno3.Text = StdRegTempList[2];
                     name3.Text = StdNameTempList[2];
+                    Markbtn3.Checked = false;
                     checkNum++;
 
                     regno4.Text = StdRegTempList[3];
                     name4.Text = StdNameTempList[3];
+                    Markbtn4.Checked = false;
                     checkNum++;
 
                     regno5.Text = StdRegTempList[4];
                     name5.Text = StdNameTempList[4];
+                    Markbtn5.Checked = false;
                     checkNum++;
 
                     regno6.Text = StdRegTempList[5];
                     name6.Text = StdNameTempList[5];
+                    Markbtn6.Checked = false;
                     checkNum++;
 
                     regno7.Text = StdRegTempList[6];
                     name7.Text = StdNameTempList[6];
+                    Markbtn7.Checked = false;
                     checkNum++;
 
                 }
@@ -151,17 +165,10 @@ namespace LabTask
                 {
                 }
             }
-
-
-            
-
-
-
-
-           
-           
-            LastRowIndex = checkNum;
+            LastRowIndex = --checkNum;
             //   MessageBox.Show(LastRowIndex.ToString());
+            MessageBox.Show("Last row index is " + LastRowIndex);
+            MessageBox.Show("First  row index is " + FirstRowIndex);
             
 
         }
@@ -172,9 +179,12 @@ namespace LabTask
         }
         public void LoadDateAttendence(DateTime date)
         {
+            MarkedCheck.Text = "Marked";
+            IsAttendacneLoaded = true;
             StdNameTempList = new List<string>();
             StdRegTempList = new List<string>();
             StdStatusTempList = new List<bool>();
+            StdDateTempList = new List<DateTime>();
 
             for (int i = 0; i < AttendenceTable.Rows.Count; i++)
             {
@@ -182,6 +192,7 @@ namespace LabTask
                 {
                     StdRegTempList.Add(AttendenceTable.Rows[i].ItemArray[0].ToString());
                     StdNameTempList.Add(GetStudentName(AttendenceTable.Rows[i].ItemArray[0].ToString()));
+                    StdDateTempList.Add(DateTime.Parse(AttendenceTable.Rows[i].ItemArray[2].ToString()));
                     StdStatusTempList.Add(Boolean.Parse( AttendenceTable.Rows[i].ItemArray[3].ToString()));
                 }
                 
@@ -190,30 +201,37 @@ namespace LabTask
                 {
                     regno1.Text = StdRegTempList[0];
                 name1.Text = StdNameTempList[0];
+                Markbtn1.Checked = StdStatusTempList[0];
                     checkNum++;
 
                     regno2.Text = StdRegTempList[1];
                 name2.Text = StdNameTempList[1];
+                Markbtn2.Checked = StdStatusTempList[1];
                 checkNum++;
 
                     regno3.Text = StdRegTempList[2];
                 name3.Text = StdNameTempList[2];
+                Markbtn3.Checked = StdStatusTempList[2];
                 checkNum++;
 
                     regno4.Text = StdRegTempList[3];
                 name4.Text = StdNameTempList[3];
+                Markbtn4.Checked = StdStatusTempList[3];
                 checkNum++;
 
                     regno5.Text = StdRegTempList[4];
                 name5.Text = StdNameTempList[4];
+                Markbtn5.Checked = StdStatusTempList[4];
                 checkNum++;
 
                     regno6.Text = StdRegTempList[5];
                 name6.Text = StdNameTempList[5];
+                Markbtn6.Checked = StdStatusTempList[5];
                 checkNum++;
 
                     regno7.Text = StdRegTempList[6];
                 name7.Text = StdNameTempList[6];
+                Markbtn7.Checked = StdStatusTempList[6];
                 checkNum++;
 
                 }
@@ -230,6 +248,69 @@ namespace LabTask
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             // LoadDateAttendence();
+            InitializeTable(dateTimePicker1.Value);
+
+
         }
+
+        private void Markbtn1_CheckedChanged(object sender, EventArgs e)
+        {
+            StdStatusTempList[FirstRowIndex + 0] = Markbtn1.Checked;
+            if (Markbtn1.Checked == true)
+                Markbtn1.BackColor = Color.Aqua;
+            else
+                Markbtn1.BackColor = Color.Honeydew;
+            
+        }
+
+        private void Save1_Click(object sender, EventArgs e)
+        {
+            Markbtn1.Enabled = false;
+        }
+
+        private void Edit1_Click(object sender, EventArgs e)
+        {
+            Markbtn1.Enabled = true;
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+             var con = Configuration.getInstance().getConnection();
+            /* foreach (var item in DateList)
+             {
+                 if(item.Date.Equals( dateTimePicker1.Value.Date))
+                 {
+
+                 }
+             }*/
+            if (IsAttendacneLoaded)
+            {
+
+                for (int i = 0; i < StdRegTempList.Count; i++)
+                {
+                    DateTime dateTemp = new DateTime();
+                    dateTemp = StdDateTempList[i];
+                    MessageBox.Show(dateTemp.ToString());
+
+                    SqlCommand cmd = new SqlCommand("Update Attendance Set [Status] = '" + StdStatusTempList[i]+ "' Where TimeStamp = '" + dateTemp + "' And CourseName = '" + Coursetitle.Text + "' And StudentRegNo = '" + StdRegTempList[i] + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfully Updated");
+                }
+            }
+            else
+            {
+                for (int i = 0; i < StdRegTempList.Count; i++)
+                {
+                    SqlCommand cmd = new SqlCommand("Insert into Attendance values (@StudentRegNo, @CourseName, @TimeStamp, @Status)", con);
+                    cmd.Parameters.AddWithValue("@StudentRegNo", StdRegTempList[i]);
+                    cmd.Parameters.AddWithValue("@CourseName", Coursetitle.Text);
+                    cmd.Parameters.AddWithValue("@TimeStamp", dateTimePicker1.Value);
+                    cmd.Parameters.AddWithValue("@Status", StdStatusTempList[i]);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfully saved");
+                }
+            }
+        }
+
     }
 }

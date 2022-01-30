@@ -36,6 +36,7 @@ namespace LabTask
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.attendrow1 = new System.Windows.Forms.Panel();
+            this.MarkedCheck = new System.Windows.Forms.Label();
             this.Markbtn1 = new System.Windows.Forms.CheckBox();
             this.Edit1 = new System.Windows.Forms.Button();
             this.Save1 = new System.Windows.Forms.Button();
@@ -167,6 +168,7 @@ namespace LabTask
             // attendrow1
             // 
             this.attendrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow1.Controls.Add(this.MarkedCheck);
             this.attendrow1.Controls.Add(this.Markbtn1);
             this.attendrow1.Controls.Add(this.Edit1);
             this.attendrow1.Controls.Add(this.Save1);
@@ -178,6 +180,17 @@ namespace LabTask
             this.attendrow1.Name = "attendrow1";
             this.attendrow1.Size = new System.Drawing.Size(750, 40);
             this.attendrow1.TabIndex = 2;
+            // 
+            // MarkedCheck
+            // 
+            this.MarkedCheck.AutoSize = true;
+            this.MarkedCheck.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MarkedCheck.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MarkedCheck.Location = new System.Drawing.Point(488, 3);
+            this.MarkedCheck.Name = "MarkedCheck";
+            this.MarkedCheck.Size = new System.Drawing.Size(68, 30);
+            this.MarkedCheck.TabIndex = 7;
+            this.MarkedCheck.Text = "label1";
             // 
             // Markbtn1
             // 
@@ -194,6 +207,7 @@ namespace LabTask
             this.Markbtn1.TabIndex = 5;
             this.Markbtn1.Text = "Mark";
             this.Markbtn1.UseVisualStyleBackColor = false;
+            this.Markbtn1.CheckedChanged += new System.EventHandler(this.Markbtn1_CheckedChanged);
             // 
             // Edit1
             // 
@@ -207,10 +221,11 @@ namespace LabTask
             this.Edit1.TabIndex = 4;
             this.Edit1.Text = "Edit";
             this.Edit1.UseVisualStyleBackColor = false;
+            this.Edit1.Click += new System.EventHandler(this.Edit1_Click);
             // 
             // Save1
             // 
-            this.Save1.BackColor = System.Drawing.Color.Lime;
+            this.Save1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save1.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save1.FlatAppearance.BorderSize = 0;
             this.Save1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -218,8 +233,9 @@ namespace LabTask
             this.Save1.Name = "Save1";
             this.Save1.Size = new System.Drawing.Size(75, 37);
             this.Save1.TabIndex = 6;
-            this.Save1.Text = "Save";
+            this.Save1.Text = "Lock";
             this.Save1.UseVisualStyleBackColor = false;
+            this.Save1.Click += new System.EventHandler(this.Save1_Click);
             // 
             // name1
             // 
@@ -305,7 +321,7 @@ namespace LabTask
             // 
             // Save2
             // 
-            this.Save2.BackColor = System.Drawing.Color.Lime;
+            this.Save2.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save2.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save2.FlatAppearance.BorderSize = 0;
             this.Save2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -313,7 +329,7 @@ namespace LabTask
             this.Save2.Name = "Save2";
             this.Save2.Size = new System.Drawing.Size(75, 40);
             this.Save2.TabIndex = 4;
-            this.Save2.Text = "Save";
+            this.Save2.Text = "Lock";
             this.Save2.UseVisualStyleBackColor = false;
             // 
             // name2
@@ -401,7 +417,7 @@ namespace LabTask
             // 
             // Save3
             // 
-            this.Save3.BackColor = System.Drawing.Color.Lime;
+            this.Save3.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save3.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save3.FlatAppearance.BorderSize = 0;
             this.Save3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -409,7 +425,7 @@ namespace LabTask
             this.Save3.Name = "Save3";
             this.Save3.Size = new System.Drawing.Size(75, 40);
             this.Save3.TabIndex = 4;
-            this.Save3.Text = "Save";
+            this.Save3.Text = "Lock";
             this.Save3.UseVisualStyleBackColor = false;
             // 
             // regno3
@@ -497,7 +513,7 @@ namespace LabTask
             // 
             // Save4
             // 
-            this.Save4.BackColor = System.Drawing.Color.Lime;
+            this.Save4.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save4.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save4.FlatAppearance.BorderSize = 0;
             this.Save4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -505,7 +521,7 @@ namespace LabTask
             this.Save4.Name = "Save4";
             this.Save4.Size = new System.Drawing.Size(75, 40);
             this.Save4.TabIndex = 4;
-            this.Save4.Text = "Save";
+            this.Save4.Text = "Lock";
             this.Save4.UseVisualStyleBackColor = false;
             // 
             // attendrow5
@@ -583,7 +599,7 @@ namespace LabTask
             // 
             // Save5
             // 
-            this.Save5.BackColor = System.Drawing.Color.Lime;
+            this.Save5.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save5.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save5.FlatAppearance.BorderSize = 0;
             this.Save5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -591,7 +607,7 @@ namespace LabTask
             this.Save5.Name = "Save5";
             this.Save5.Size = new System.Drawing.Size(75, 40);
             this.Save5.TabIndex = 4;
-            this.Save5.Text = "Save";
+            this.Save5.Text = "Lock";
             this.Save5.UseVisualStyleBackColor = false;
             // 
             // attendrow6
@@ -669,7 +685,7 @@ namespace LabTask
             // 
             // Save6
             // 
-            this.Save6.BackColor = System.Drawing.Color.Lime;
+            this.Save6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save6.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save6.FlatAppearance.BorderSize = 0;
             this.Save6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -677,7 +693,7 @@ namespace LabTask
             this.Save6.Name = "Save6";
             this.Save6.Size = new System.Drawing.Size(75, 40);
             this.Save6.TabIndex = 4;
-            this.Save6.Text = "Save";
+            this.Save6.Text = "Lock";
             this.Save6.UseVisualStyleBackColor = false;
             // 
             // attendrow7
@@ -755,7 +771,7 @@ namespace LabTask
             // 
             // Save7
             // 
-            this.Save7.BackColor = System.Drawing.Color.Lime;
+            this.Save7.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Save7.Dock = System.Windows.Forms.DockStyle.Right;
             this.Save7.FlatAppearance.BorderSize = 0;
             this.Save7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -763,7 +779,7 @@ namespace LabTask
             this.Save7.Name = "Save7";
             this.Save7.Size = new System.Drawing.Size(75, 40);
             this.Save7.TabIndex = 4;
-            this.Save7.Text = "Save";
+            this.Save7.Text = "Lock";
             this.Save7.UseVisualStyleBackColor = false;
             // 
             // attenddownbtn
@@ -790,11 +806,12 @@ namespace LabTask
             this.button40.FlatAppearance.BorderSize = 0;
             this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button40.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button40.Location = new System.Drawing.Point(13, 0);
+            this.button40.Location = new System.Drawing.Point(14, 3);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(45, 45);
             this.button40.TabIndex = 6;
             this.button40.UseVisualStyleBackColor = false;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // attendUpbtn
             // 
@@ -902,5 +919,6 @@ namespace LabTask
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button attendUpbtn;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label MarkedCheck;
     }
 }
