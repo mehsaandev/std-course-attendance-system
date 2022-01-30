@@ -16,6 +16,8 @@ namespace LabTask
         private int LastRowIndex = 0;
         private int FirstRowIndex = 1;
         private int TableSize = 0;
+        private int DateChangeCount;
+        private int DateRowIndexTemp;
 
 
         private bool IsAttendacneLoaded;
@@ -34,6 +36,7 @@ namespace LabTask
         public AttendenceForm(string course)
         {
             InitializeComponent();
+            DateChangeCount = 0;
             Coursetitle.Text = course;
             dateTimePicker1.Value = DateTime.Now;
 
@@ -67,13 +70,26 @@ namespace LabTask
         private void LoadDateList()
         {
             DateList = new List<DateTime>();
-
+            MessageBox.Show(AttendenceTable.Rows.Count.ToString());
             for(int i = 0; i< AttendenceTable.Rows.Count;i++)
             {
-                MessageBox.Show(AttendenceTable.Rows[i].ItemArray[2].ToString());
-
-                MessageBox.Show(dateTimePicker1.Value.ToString());
+                
+                
                 DateTime temp = DateTime.Parse(AttendenceTable.Rows[i].ItemArray[2].ToString());
+                
+
+                string MyTempDate =  dateTimePicker1.Value.Year+":"+dateTimePicker1.Value.Month+":"+dateTimePicker1.Value.Day;
+                string DatabaseTempDate = temp.Year + ":" + temp.Month + ":" + temp.Day;
+               /* MessageBox.Show(MyTempDate);
+                 MessageBox.Show(DatabaseTempDate);*/
+               
+
+                if (MyTempDate == DatabaseTempDate)
+                {
+                    DateRowIndexTemp = i;
+                    MessageBox.Show("Index we get is: " + DateRowIndexTemp);
+                    
+                }
                 DateList.Add(temp);
             }
         }
@@ -109,6 +125,7 @@ namespace LabTask
             {
                 if(item.Date ==date.Date )
                 {
+
                     LoadDateAttendence(date.Date);
                     IsAttendacneLoaded = true;
                     break;
@@ -167,8 +184,6 @@ namespace LabTask
             }
             LastRowIndex = --checkNum;
             //   MessageBox.Show(LastRowIndex.ToString());
-            MessageBox.Show("Last row index is " + LastRowIndex);
-            MessageBox.Show("First  row index is " + FirstRowIndex);
             
 
         }
@@ -248,7 +263,13 @@ namespace LabTask
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             // LoadDateAttendence();
-            InitializeTable(dateTimePicker1.Value);
+            if(DateChangeCount > 0)
+            {
+                MessageBox.Show("Date picker");
+                InitializeTable(dateTimePicker1.Value);
+            }
+            DateChangeCount++;
+            
 
 
         }
@@ -288,11 +309,11 @@ namespace LabTask
 
                 for (int i = 0; i < StdRegTempList.Count; i++)
                 {
-                    DateTime dateTemp = new DateTime();
+                  /*  DateTime dateTemp = new DateTime();
                     dateTemp = StdDateTempList[i];
-                    MessageBox.Show(dateTemp.ToString());
-
-                    SqlCommand cmd = new SqlCommand("Update Attendance Set [Status] = '" + StdStatusTempList[i]+ "' Where TimeStamp = '" + dateTemp + "' And CourseName = '" + Coursetitle.Text + "' And StudentRegNo = '" + StdRegTempList[i] + "'", con);
+                    MessageBox.Show(dateTemp.ToString());*/
+                  MessageBox.Show(AttendenceTable.Rows[DateRowIndexTemp].ItemArray[2].ToString());
+                    SqlCommand cmd = new SqlCommand("Update Attendance Set [Status] = '" + StdStatusTempList[i] + "' Where TimeStamp = '" + AttendenceTable.Rows[DateRowIndexTemp].ItemArray[2] + "'",con);// And CourseName = '" + Coursetitle.Text + "' And StudentRegNo = '" + StdRegTempList[i] + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Updated");
                 }
