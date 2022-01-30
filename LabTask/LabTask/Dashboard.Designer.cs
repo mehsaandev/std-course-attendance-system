@@ -152,6 +152,53 @@ namespace LabTask
             this.stddownbtn = new System.Windows.Forms.Button();
             this.stdaddbtn = new System.Windows.Forms.Button();
             this.stdUpbtn = new System.Windows.Forms.Button();
+            this.AttendanceDashBoard = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.attendrow1 = new System.Windows.Forms.Panel();
+            this.Attendencebtn1 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.nostdreg1 = new System.Windows.Forms.TextBox();
+            this.attendCourseName1 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.attendrow2 = new System.Windows.Forms.Panel();
+            this.Attendencebtn2 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button28 = new System.Windows.Forms.Button();
+            this.nostdreg2 = new System.Windows.Forms.TextBox();
+            this.attendCourseName2 = new System.Windows.Forms.TextBox();
+            this.attendrow3 = new System.Windows.Forms.Panel();
+            this.Attendencebtn3 = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.nostdreg3 = new System.Windows.Forms.TextBox();
+            this.button30 = new System.Windows.Forms.Button();
+            this.attendCourseName3 = new System.Windows.Forms.TextBox();
+            this.attendrow4 = new System.Windows.Forms.Panel();
+            this.Attendencebtn4 = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.nostdreg4 = new System.Windows.Forms.TextBox();
+            this.attendCourseName4 = new System.Windows.Forms.TextBox();
+            this.button32 = new System.Windows.Forms.Button();
+            this.attendrow5 = new System.Windows.Forms.Panel();
+            this.Attendencebtn5 = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.nostdreg5 = new System.Windows.Forms.TextBox();
+            this.attendCourseName5 = new System.Windows.Forms.TextBox();
+            this.button34 = new System.Windows.Forms.Button();
+            this.attendrow6 = new System.Windows.Forms.Panel();
+            this.Attendencebtn6 = new System.Windows.Forms.Button();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.nostdreg6 = new System.Windows.Forms.TextBox();
+            this.attendCourseName6 = new System.Windows.Forms.TextBox();
+            this.button36 = new System.Windows.Forms.Button();
+            this.attendrow7 = new System.Windows.Forms.Panel();
+            this.Attendencebtn7 = new System.Windows.Forms.Button();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.nostdreg7 = new System.Windows.Forms.TextBox();
+            this.attendCourseName7 = new System.Windows.Forms.TextBox();
+            this.button38 = new System.Windows.Forms.Button();
+            this.attenddownbtn = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.attendUpbtn = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -173,6 +220,15 @@ namespace LabTask
             this.stdrow5.SuspendLayout();
             this.stdrow6.SuspendLayout();
             this.stdrow7.SuspendLayout();
+            this.AttendanceDashBoard.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.attendrow1.SuspendLayout();
+            this.attendrow2.SuspendLayout();
+            this.attendrow3.SuspendLayout();
+            this.attendrow4.SuspendLayout();
+            this.attendrow5.SuspendLayout();
+            this.attendrow6.SuspendLayout();
+            this.attendrow7.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -357,7 +413,7 @@ namespace LabTask
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button6.Location = new System.Drawing.Point(914, 9);
+            this.button6.Location = new System.Drawing.Point(914, 0);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(25, 25);
             this.button6.TabIndex = 2;
@@ -956,7 +1012,7 @@ namespace LabTask
             this.StudentDashboard.Controls.Add(this.studenttablepanel);
             this.StudentDashboard.Controls.Add(this.stdaddbtn);
             this.StudentDashboard.Controls.Add(this.stdUpbtn);
-            this.StudentDashboard.Location = new System.Drawing.Point(192, 77);
+            this.StudentDashboard.Location = new System.Drawing.Point(900, 900);
             this.StudentDashboard.Name = "StudentDashboard";
             this.StudentDashboard.Size = new System.Drawing.Size(760, 512);
             this.StudentDashboard.TabIndex = 10;
@@ -1612,12 +1668,569 @@ namespace LabTask
             this.stdUpbtn.UseVisualStyleBackColor = false;
             this.stdUpbtn.Click += new System.EventHandler(this.StdupBtn_Click);
             // 
+            // AttendanceDashBoard
+            // 
+            this.AttendanceDashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.AttendanceDashBoard.Controls.Add(this.flowLayoutPanel1);
+            this.AttendanceDashBoard.Controls.Add(this.button40);
+            this.AttendanceDashBoard.Controls.Add(this.attendUpbtn);
+            this.AttendanceDashBoard.Location = new System.Drawing.Point(192, 77);
+            this.AttendanceDashBoard.Name = "AttendanceDashBoard";
+            this.AttendanceDashBoard.Size = new System.Drawing.Size(760, 512);
+            this.AttendanceDashBoard.TabIndex = 11;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.flowLayoutPanel1.Controls.Add(this.attendrow1);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow2);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow3);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow4);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow5);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow6);
+            this.flowLayoutPanel1.Controls.Add(this.attendrow7);
+            this.flowLayoutPanel1.Controls.Add(this.attenddownbtn);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 51);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(760, 370);
+            this.flowLayoutPanel1.TabIndex = 7;
+            // 
+            // attendrow1
+            // 
+            this.attendrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow1.Controls.Add(this.Attendencebtn1);
+            this.attendrow1.Controls.Add(this.button26);
+            this.attendrow1.Controls.Add(this.nostdreg1);
+            this.attendrow1.Controls.Add(this.attendCourseName1);
+            this.attendrow1.Controls.Add(this.panel4);
+            this.attendrow1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow1.Location = new System.Drawing.Point(3, 3);
+            this.attendrow1.Name = "attendrow1";
+            this.attendrow1.Size = new System.Drawing.Size(750, 40);
+            this.attendrow1.TabIndex = 2;
+            // 
+            // Attendencebtn1
+            // 
+            this.Attendencebtn1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn1.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn1.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn1.Name = "Attendencebtn1";
+            this.Attendencebtn1.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn1.TabIndex = 4;
+            this.Attendencebtn1.Text = "Attendence";
+            this.Attendencebtn1.UseVisualStyleBackColor = false;
+            this.Attendencebtn1.Click += new System.EventHandler(this.Attendencebtn1_Click);
+            // 
+            // button26
+            // 
+            this.button26.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button26.Location = new System.Drawing.Point(675, 3);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 37);
+            this.button26.TabIndex = 4;
+            this.button26.Text = "Edit";
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // nostdreg1
+            // 
+            this.nostdreg1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg1.Enabled = false;
+            this.nostdreg1.Location = new System.Drawing.Point(100, 3);
+            this.nostdreg1.Multiline = true;
+            this.nostdreg1.Name = "nostdreg1";
+            this.nostdreg1.Size = new System.Drawing.Size(100, 37);
+            this.nostdreg1.TabIndex = 3;
+            // 
+            // attendCourseName1
+            // 
+            this.attendCourseName1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName1.Enabled = false;
+            this.attendCourseName1.Location = new System.Drawing.Point(0, 3);
+            this.attendCourseName1.Multiline = true;
+            this.attendCourseName1.Name = "attendCourseName1";
+            this.attendCourseName1.Size = new System.Drawing.Size(100, 37);
+            this.attendCourseName1.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(750, 3);
+            this.panel4.TabIndex = 1;
+            // 
+            // attendrow2
+            // 
+            this.attendrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow2.Controls.Add(this.Attendencebtn2);
+            this.attendrow2.Controls.Add(this.panel8);
+            this.attendrow2.Controls.Add(this.button28);
+            this.attendrow2.Controls.Add(this.nostdreg2);
+            this.attendrow2.Controls.Add(this.attendCourseName2);
+            this.attendrow2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow2.Location = new System.Drawing.Point(3, 49);
+            this.attendrow2.Name = "attendrow2";
+            this.attendrow2.Size = new System.Drawing.Size(750, 40);
+            this.attendrow2.TabIndex = 2;
+            // 
+            // Attendencebtn2
+            // 
+            this.Attendencebtn2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn2.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn2.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn2.Name = "Attendencebtn2";
+            this.Attendencebtn2.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn2.TabIndex = 4;
+            this.Attendencebtn2.Text = "Attendence";
+            this.Attendencebtn2.UseVisualStyleBackColor = false;
+            this.Attendencebtn2.Click += new System.EventHandler(this.Attendencebtn2_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(200, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(475, 3);
+            this.panel8.TabIndex = 1;
+            // 
+            // button28
+            // 
+            this.button28.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button28.Location = new System.Drawing.Point(675, 0);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 40);
+            this.button28.TabIndex = 4;
+            this.button28.Text = "Edit";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // nostdreg2
+            // 
+            this.nostdreg2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg2.Enabled = false;
+            this.nostdreg2.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg2.Multiline = true;
+            this.nostdreg2.Name = "nostdreg2";
+            this.nostdreg2.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg2.TabIndex = 3;
+            // 
+            // attendCourseName2
+            // 
+            this.attendCourseName2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName2.Enabled = false;
+            this.attendCourseName2.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName2.Multiline = true;
+            this.attendCourseName2.Name = "attendCourseName2";
+            this.attendCourseName2.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName2.TabIndex = 3;
+            // 
+            // attendrow3
+            // 
+            this.attendrow3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow3.Controls.Add(this.Attendencebtn3);
+            this.attendrow3.Controls.Add(this.panel12);
+            this.attendrow3.Controls.Add(this.nostdreg3);
+            this.attendrow3.Controls.Add(this.button30);
+            this.attendrow3.Controls.Add(this.attendCourseName3);
+            this.attendrow3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow3.Location = new System.Drawing.Point(3, 95);
+            this.attendrow3.Name = "attendrow3";
+            this.attendrow3.Size = new System.Drawing.Size(750, 40);
+            this.attendrow3.TabIndex = 2;
+            // 
+            // Attendencebtn3
+            // 
+            this.Attendencebtn3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn3.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn3.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn3.Name = "Attendencebtn3";
+            this.Attendencebtn3.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn3.TabIndex = 4;
+            this.Attendencebtn3.Text = "Attendence";
+            this.Attendencebtn3.UseVisualStyleBackColor = false;
+            this.Attendencebtn3.Click += new System.EventHandler(this.Attendencebtn3_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(200, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(475, 3);
+            this.panel12.TabIndex = 1;
+            // 
+            // nostdreg3
+            // 
+            this.nostdreg3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg3.Enabled = false;
+            this.nostdreg3.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg3.Multiline = true;
+            this.nostdreg3.Name = "nostdreg3";
+            this.nostdreg3.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg3.TabIndex = 3;
+            // 
+            // button30
+            // 
+            this.button30.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button30.Location = new System.Drawing.Point(675, 0);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(75, 40);
+            this.button30.TabIndex = 4;
+            this.button30.Text = "Edit";
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // attendCourseName3
+            // 
+            this.attendCourseName3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName3.Enabled = false;
+            this.attendCourseName3.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName3.Multiline = true;
+            this.attendCourseName3.Name = "attendCourseName3";
+            this.attendCourseName3.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName3.TabIndex = 3;
+            // 
+            // attendrow4
+            // 
+            this.attendrow4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow4.Controls.Add(this.Attendencebtn4);
+            this.attendrow4.Controls.Add(this.panel16);
+            this.attendrow4.Controls.Add(this.nostdreg4);
+            this.attendrow4.Controls.Add(this.attendCourseName4);
+            this.attendrow4.Controls.Add(this.button32);
+            this.attendrow4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow4.Location = new System.Drawing.Point(3, 141);
+            this.attendrow4.Name = "attendrow4";
+            this.attendrow4.Size = new System.Drawing.Size(750, 40);
+            this.attendrow4.TabIndex = 2;
+            // 
+            // Attendencebtn4
+            // 
+            this.Attendencebtn4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn4.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn4.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn4.Name = "Attendencebtn4";
+            this.Attendencebtn4.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn4.TabIndex = 4;
+            this.Attendencebtn4.Text = "Attendence";
+            this.Attendencebtn4.UseVisualStyleBackColor = false;
+            this.Attendencebtn4.Click += new System.EventHandler(this.Attendencebtn4_Click);
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(200, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(475, 3);
+            this.panel16.TabIndex = 1;
+            // 
+            // nostdreg4
+            // 
+            this.nostdreg4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg4.Enabled = false;
+            this.nostdreg4.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg4.Multiline = true;
+            this.nostdreg4.Name = "nostdreg4";
+            this.nostdreg4.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg4.TabIndex = 3;
+            // 
+            // attendCourseName4
+            // 
+            this.attendCourseName4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName4.Enabled = false;
+            this.attendCourseName4.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName4.Multiline = true;
+            this.attendCourseName4.Name = "attendCourseName4";
+            this.attendCourseName4.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName4.TabIndex = 3;
+            // 
+            // button32
+            // 
+            this.button32.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button32.Location = new System.Drawing.Point(675, 0);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(75, 40);
+            this.button32.TabIndex = 4;
+            this.button32.Text = "Edit";
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // attendrow5
+            // 
+            this.attendrow5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow5.Controls.Add(this.Attendencebtn5);
+            this.attendrow5.Controls.Add(this.panel18);
+            this.attendrow5.Controls.Add(this.nostdreg5);
+            this.attendrow5.Controls.Add(this.attendCourseName5);
+            this.attendrow5.Controls.Add(this.button34);
+            this.attendrow5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow5.Location = new System.Drawing.Point(3, 187);
+            this.attendrow5.Name = "attendrow5";
+            this.attendrow5.Size = new System.Drawing.Size(750, 40);
+            this.attendrow5.TabIndex = 2;
+            // 
+            // Attendencebtn5
+            // 
+            this.Attendencebtn5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn5.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn5.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn5.Name = "Attendencebtn5";
+            this.Attendencebtn5.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn5.TabIndex = 4;
+            this.Attendencebtn5.Text = "Attendence";
+            this.Attendencebtn5.UseVisualStyleBackColor = false;
+            this.Attendencebtn5.Click += new System.EventHandler(this.Attendencebtn5_Click);
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel18.Location = new System.Drawing.Point(200, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(475, 3);
+            this.panel18.TabIndex = 1;
+            // 
+            // nostdreg5
+            // 
+            this.nostdreg5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg5.Enabled = false;
+            this.nostdreg5.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg5.Multiline = true;
+            this.nostdreg5.Name = "nostdreg5";
+            this.nostdreg5.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg5.TabIndex = 3;
+            // 
+            // attendCourseName5
+            // 
+            this.attendCourseName5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName5.Enabled = false;
+            this.attendCourseName5.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName5.Multiline = true;
+            this.attendCourseName5.Name = "attendCourseName5";
+            this.attendCourseName5.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName5.TabIndex = 3;
+            // 
+            // button34
+            // 
+            this.button34.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button34.Location = new System.Drawing.Point(675, 0);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(75, 40);
+            this.button34.TabIndex = 4;
+            this.button34.Text = "Edit";
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // attendrow6
+            // 
+            this.attendrow6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow6.Controls.Add(this.Attendencebtn6);
+            this.attendrow6.Controls.Add(this.panel20);
+            this.attendrow6.Controls.Add(this.nostdreg6);
+            this.attendrow6.Controls.Add(this.attendCourseName6);
+            this.attendrow6.Controls.Add(this.button36);
+            this.attendrow6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow6.Location = new System.Drawing.Point(3, 233);
+            this.attendrow6.Name = "attendrow6";
+            this.attendrow6.Size = new System.Drawing.Size(750, 40);
+            this.attendrow6.TabIndex = 2;
+            // 
+            // Attendencebtn6
+            // 
+            this.Attendencebtn6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn6.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn6.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn6.Name = "Attendencebtn6";
+            this.Attendencebtn6.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn6.TabIndex = 4;
+            this.Attendencebtn6.Text = "Attendence";
+            this.Attendencebtn6.UseVisualStyleBackColor = false;
+            this.Attendencebtn6.Click += new System.EventHandler(this.Attendencebtn6_Click);
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel20.Location = new System.Drawing.Point(200, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(475, 3);
+            this.panel20.TabIndex = 1;
+            // 
+            // nostdreg6
+            // 
+            this.nostdreg6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg6.Enabled = false;
+            this.nostdreg6.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg6.Multiline = true;
+            this.nostdreg6.Name = "nostdreg6";
+            this.nostdreg6.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg6.TabIndex = 3;
+            // 
+            // attendCourseName6
+            // 
+            this.attendCourseName6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName6.Enabled = false;
+            this.attendCourseName6.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName6.Multiline = true;
+            this.attendCourseName6.Name = "attendCourseName6";
+            this.attendCourseName6.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName6.TabIndex = 3;
+            // 
+            // button36
+            // 
+            this.button36.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button36.Location = new System.Drawing.Point(675, 0);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 40);
+            this.button36.TabIndex = 4;
+            this.button36.Text = "Edit";
+            this.button36.UseVisualStyleBackColor = true;
+            // 
+            // attendrow7
+            // 
+            this.attendrow7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendrow7.Controls.Add(this.Attendencebtn7);
+            this.attendrow7.Controls.Add(this.panel22);
+            this.attendrow7.Controls.Add(this.nostdreg7);
+            this.attendrow7.Controls.Add(this.attendCourseName7);
+            this.attendrow7.Controls.Add(this.button38);
+            this.attendrow7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.attendrow7.Location = new System.Drawing.Point(3, 279);
+            this.attendrow7.Name = "attendrow7";
+            this.attendrow7.Size = new System.Drawing.Size(750, 40);
+            this.attendrow7.TabIndex = 2;
+            // 
+            // Attendencebtn7
+            // 
+            this.Attendencebtn7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Attendencebtn7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Attendencebtn7.FlatAppearance.BorderSize = 0;
+            this.Attendencebtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Attendencebtn7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Attendencebtn7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Attendencebtn7.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn7.Name = "Attendencebtn7";
+            this.Attendencebtn7.Size = new System.Drawing.Size(120, 37);
+            this.Attendencebtn7.TabIndex = 4;
+            this.Attendencebtn7.Text = "Attendence";
+            this.Attendencebtn7.UseVisualStyleBackColor = false;
+            this.Attendencebtn7.Click += new System.EventHandler(this.Attendencebtn7_Click);
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel22.Location = new System.Drawing.Point(200, 0);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(475, 3);
+            this.panel22.TabIndex = 1;
+            // 
+            // nostdreg7
+            // 
+            this.nostdreg7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.nostdreg7.Enabled = false;
+            this.nostdreg7.Location = new System.Drawing.Point(100, 0);
+            this.nostdreg7.Multiline = true;
+            this.nostdreg7.Name = "nostdreg7";
+            this.nostdreg7.Size = new System.Drawing.Size(100, 40);
+            this.nostdreg7.TabIndex = 3;
+            // 
+            // attendCourseName7
+            // 
+            this.attendCourseName7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.attendCourseName7.Enabled = false;
+            this.attendCourseName7.Location = new System.Drawing.Point(0, 0);
+            this.attendCourseName7.Multiline = true;
+            this.attendCourseName7.Name = "attendCourseName7";
+            this.attendCourseName7.Size = new System.Drawing.Size(100, 40);
+            this.attendCourseName7.TabIndex = 3;
+            // 
+            // button38
+            // 
+            this.button38.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button38.Location = new System.Drawing.Point(675, 0);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(75, 40);
+            this.button38.TabIndex = 4;
+            this.button38.Text = "Edit";
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // attenddownbtn
+            // 
+            this.attenddownbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.attenddownbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attenddownbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("attenddownbtn.BackgroundImage")));
+            this.attenddownbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.attenddownbtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.attenddownbtn.FlatAppearance.BorderSize = 0;
+            this.attenddownbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.attenddownbtn.Location = new System.Drawing.Point(3, 325);
+            this.attenddownbtn.Name = "attenddownbtn";
+            this.attenddownbtn.Size = new System.Drawing.Size(754, 45);
+            this.attenddownbtn.TabIndex = 3;
+            this.attenddownbtn.UseVisualStyleBackColor = false;
+            this.attenddownbtn.Click += new System.EventHandler(this.AttenddownBtn_Click);
+            // 
+            // button40
+            // 
+            this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.button40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button40.BackgroundImage")));
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button40.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button40.FlatAppearance.BorderSize = 0;
+            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button40.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button40.Location = new System.Drawing.Point(13, 0);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(45, 45);
+            this.button40.TabIndex = 6;
+            this.button40.UseVisualStyleBackColor = false;
+            // 
+            // attendUpbtn
+            // 
+            this.attendUpbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.attendUpbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
+            this.attendUpbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("attendUpbtn.BackgroundImage")));
+            this.attendUpbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.attendUpbtn.FlatAppearance.BorderSize = 0;
+            this.attendUpbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.attendUpbtn.Location = new System.Drawing.Point(184, 0);
+            this.attendUpbtn.Name = "attendUpbtn";
+            this.attendUpbtn.Size = new System.Drawing.Size(406, 45);
+            this.attendUpbtn.TabIndex = 3;
+            this.attendUpbtn.UseVisualStyleBackColor = false;
+            this.attendUpbtn.Click += new System.EventHandler(this.AttendupBtn_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
+            this.Controls.Add(this.AttendanceDashBoard);
             this.Controls.Add(this.StudentDashboard);
             this.Controls.Add(this.CourseDashboard);
             this.Controls.Add(this.Dashboardtitle);
@@ -1666,6 +2279,22 @@ namespace LabTask
             this.stdrow6.PerformLayout();
             this.stdrow7.ResumeLayout(false);
             this.stdrow7.PerformLayout();
+            this.AttendanceDashBoard.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.attendrow1.ResumeLayout(false);
+            this.attendrow1.PerformLayout();
+            this.attendrow2.ResumeLayout(false);
+            this.attendrow2.PerformLayout();
+            this.attendrow3.ResumeLayout(false);
+            this.attendrow3.PerformLayout();
+            this.attendrow4.ResumeLayout(false);
+            this.attendrow4.PerformLayout();
+            this.attendrow5.ResumeLayout(false);
+            this.attendrow5.PerformLayout();
+            this.attendrow6.ResumeLayout(false);
+            this.attendrow6.PerformLayout();
+            this.attendrow7.ResumeLayout(false);
+            this.attendrow7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1794,6 +2423,53 @@ namespace LabTask
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Panel AttendanceDashBoard;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel attendrow1;
+        private System.Windows.Forms.Button Attendencebtn1;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.TextBox nostdreg1;
+        private System.Windows.Forms.TextBox attendCourseName1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel attendrow2;
+        private System.Windows.Forms.Button Attendencebtn2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.TextBox nostdreg2;
+        private System.Windows.Forms.TextBox attendCourseName2;
+        private System.Windows.Forms.Panel attendrow3;
+        private System.Windows.Forms.Button Attendencebtn3;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox nostdreg3;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.TextBox attendCourseName3;
+        private System.Windows.Forms.Panel attendrow4;
+        private System.Windows.Forms.Button Attendencebtn4;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.TextBox nostdreg4;
+        private System.Windows.Forms.TextBox attendCourseName4;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Panel attendrow5;
+        private System.Windows.Forms.Button Attendencebtn5;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.TextBox nostdreg5;
+        private System.Windows.Forms.TextBox attendCourseName5;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Panel attendrow6;
+        private System.Windows.Forms.Button Attendencebtn6;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.TextBox nostdreg6;
+        private System.Windows.Forms.TextBox attendCourseName6;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Panel attendrow7;
+        private System.Windows.Forms.Button Attendencebtn7;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox nostdreg7;
+        private System.Windows.Forms.TextBox attendCourseName7;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button attenddownbtn;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button attendUpbtn;
         /*private System.Windows.Forms.Panel row3;
 private System.Windows.Forms.Panel row3bar;*/
     }
