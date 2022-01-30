@@ -296,7 +296,6 @@ namespace LabTask
             Dashboardtitle.Text = "Student Dashboard";
             Attendencedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
             coursedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
-            button5.BackColor = Color.FromArgb(24, 30, 54);
             nav.Height = studentDashboardbn.Height;
             nav.Top = studentDashboardbn.Top;
             nav.Left = studentDashboardbn.Left;
@@ -325,8 +324,7 @@ namespace LabTask
         {
             Dashboardtitle.Text = "Attendence Dashboard";
             studentDashboardbn.BackColor = Color.FromArgb(24, 30, 54);
-            coursedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
-            button5.BackColor = Color.FromArgb(24, 30, 54);
+            coursedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);;
             nav.Height = Attendencedashboardbtn.Height;
             nav.Top = Attendencedashboardbtn.Top;
             nav.Left = Attendencedashboardbtn.Left;
@@ -354,7 +352,6 @@ namespace LabTask
             Dashboardtitle.Text = "Course Dashboard";
             studentDashboardbn.BackColor = Color.FromArgb(24, 30, 54);
             Attendencedashboardbtn.BackColor = Color.FromArgb(24, 30, 54);
-            button5.BackColor = Color.FromArgb(24, 30, 54);
             nav.Height = coursedashboardbtn.Height;
             nav.Top = coursedashboardbtn.Top;
             nav.Left = coursedashboardbtn.Left;
@@ -1039,6 +1036,265 @@ namespace LabTask
         {
             MyCourses mycourse1 = new MyCourses(RegNo7.Text);
             mycourse1.ShowDialog();
+        }
+
+        private void StdDeleteBtn1_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" +RegNo1.Text+ "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo1.Text+ "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo1.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn2_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo2.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo2.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo2.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn3_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo3.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo3.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo3.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn4_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo4.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo4.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo4.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn5_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo5.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo5.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo5.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn6_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo6.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo6.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo6.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdDeleteBtn7_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Student Where RegistrationNumber = '" + RegNo7.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where StudentRegNo = '" + RegNo7.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Enrollments
+            cmd = new SqlCommand("Delete FROM Enrollments Where StudentRegNo = '" + RegNo7.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeStudentTable();
+        }
+
+        private void StdEdit1_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo1.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void StdEdit2_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo2.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void StdEdit3_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo3.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo4.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo5.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo6.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            AddStudent editStd1 = new AddStudent(RegNo7.Text);
+            editStd1.ShowDialog();
+        }
+
+        private void delete1_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name1.Text + "' And Code = '"+course1.Text+"'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name1.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete2_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name2.Text + "' And Code = '" + course2.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name2.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete3_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name3.Text + "' And Code = '" + course3.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name3.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete4_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name4.Text + "' And Code = '" + course4.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name4.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete5_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name5.Text + "' And Code = '" + course5.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name5.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete6_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name6.Text + "' And Code = '" + course6.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name6.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
+        }
+
+        private void delete7_Click(object sender, EventArgs e)
+        {
+            // Course Delete
+
+            var con = Configuration.getInstance().getConnection();
+            // From Student Table 
+            SqlCommand cmd = new SqlCommand("Delete FROM Course Where Name = '" + name7.Text + "' And Code = '" + course7.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            // From Attendance
+            cmd = new SqlCommand("Delete FROM Attendance Where CourseName = '" + name7.Text + "'", con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Successfully Deleted");
+            InitializeCourseTable();
         }
     }
 }

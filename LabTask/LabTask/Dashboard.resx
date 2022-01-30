@@ -58,26 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH4QEQECwhFcvEKAAAABl0RVh0
-        U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALZSURBVFhH7ddbiM1BHMDxdW3lfllhdyUv7rmk
-        vLEWD/LgkjdEy7OIV0VSXojySInavEjxKvEoeZBYt3XNPSK3dff9nmbW7H//Zy/nrKJMfdrdmfnP/HZm
-        /r85pyKvLG1sGoYdOIQ9GBuabFMvrMEjPMDaUBd6lVkYaCZe4ydaUB/q1Qcb8Ay26zkaYFthjLIKg8xC
-        GsASWN8fW/EGcfLoLbbBPmGkEgsDuAKvEANYhAHYhY/ITh7ZthsDUVixkgoPpgF8wmrsw+dQFz3B40zd
-        F3h2hqO0IHgoDcABr+Br+DtqwkLU4Vqoi77jOMag+0HwQBpAnkuYi77BHFxEtt8ZTETXgwidZ6BYAOcw
-        BUOwHwcwFJNwFtn+FzAdnQcRO2EZ3iEd6AdOoRZVOAqXOi73aNTgJOybPnsZ81A8iNgIT/x1pAM4iRM6
-        8XgYSHaS05iAUTiCb0jbb2Ax2gcRKs1kq3Af6YOe/INwySfDLUjbU+cxFYPh9mTfGrOmc/zOmv4CM9hG
-        vET6wAfshDnAQ+fhS9vzxOWuhOn8PdL2F3AuD28hADvmZTf/3oJ+qEd2WzpyE2ZPn92M7Nhmze2oNAAv
-        G//TtIO5fT2McgWy29IVD2ECc4x1eIq03ay51wCyqdXJViJeOgaTtneHW7oJBrEc95C2txjAraQiZjeX
-        zuXPu3S6Ky63l9QCpFmz2QDm4xh8dcxoTu7hyW5LOVxlLzKDmI3DMHfUGYB6o/BqYBzuIG+gcri1JjHn
-        cC7nbJOAomo0I2+Qcrj/JrE287UrVBrAn1iBu6gN0xQvdPofwF8fgBeMadlPSboaeNtlL59UjwXgafYD
-        xgiMhNevpqGjt6fHArDNXGHflJ//0qya1aMBVIfurYU6g7od+uT5twLoaC9LDcCz06UAOrsLDK7UFagJ
-        3YsXOvm1qhF+JfNLiT99vSI/llWF7q2FOt8Ivxuk/dMxTmBQ6B5KRcUvW1Rs5RAq+j8AAAAASUVORK5C
-        YII=
-</value>
-  </data>
   <data name="coursedashboardbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

@@ -313,7 +313,7 @@ namespace LabTask
                     dateTemp = StdDateTempList[i];
                     MessageBox.Show(dateTemp.ToString());*/
                   MessageBox.Show(AttendenceTable.Rows[DateRowIndexTemp].ItemArray[2].ToString());
-                    SqlCommand cmd = new SqlCommand("Update Attendance Set [Status] = '" + StdStatusTempList[i] + "' Where TimeStamp = '" + AttendenceTable.Rows[DateRowIndexTemp].ItemArray[2] + "'",con);// And CourseName = '" + Coursetitle.Text + "' And StudentRegNo = '" + StdRegTempList[i] + "'", con);
+                    SqlCommand cmd = new SqlCommand("Update Attendance Set [Status] = '" + StdStatusTempList[i] + "' Where TimeStamp = '" + AttendenceTable.Rows[DateRowIndexTemp].ItemArray[2] + "' And CourseName = '" + Coursetitle.Text + "' And StudentRegNo = '" + StdRegTempList[i] + "'", con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Updated");
                 }

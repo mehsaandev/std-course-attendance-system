@@ -33,7 +33,6 @@ namespace LabTask
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.sidebar = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.coursedashboardbtn = new System.Windows.Forms.Button();
             this.Attendencedashboardbtn = new System.Windows.Forms.Button();
             this.studentDashboardbn = new System.Windows.Forms.Button();
@@ -55,46 +54,39 @@ namespace LabTask
             this.CoursePanal = new System.Windows.Forms.FlowLayoutPanel();
             this.row1 = new System.Windows.Forms.Panel();
             this.delete1 = new System.Windows.Forms.Button();
-            this.edit1 = new System.Windows.Forms.Button();
             this.course1 = new System.Windows.Forms.TextBox();
             this.name1 = new System.Windows.Forms.TextBox();
             this.row1bar = new System.Windows.Forms.Panel();
             this.row2 = new System.Windows.Forms.Panel();
             this.delete2 = new System.Windows.Forms.Button();
             this.row2bar = new System.Windows.Forms.Panel();
-            this.edit2 = new System.Windows.Forms.Button();
             this.course2 = new System.Windows.Forms.TextBox();
             this.name2 = new System.Windows.Forms.TextBox();
             this.row3 = new System.Windows.Forms.Panel();
             this.delete3 = new System.Windows.Forms.Button();
             this.row3bar = new System.Windows.Forms.Panel();
             this.course3 = new System.Windows.Forms.TextBox();
-            this.edit3 = new System.Windows.Forms.Button();
             this.name3 = new System.Windows.Forms.TextBox();
             this.row4 = new System.Windows.Forms.Panel();
             this.delete4 = new System.Windows.Forms.Button();
             this.row4bar = new System.Windows.Forms.Panel();
             this.course4 = new System.Windows.Forms.TextBox();
             this.name4 = new System.Windows.Forms.TextBox();
-            this.edit4 = new System.Windows.Forms.Button();
             this.row5 = new System.Windows.Forms.Panel();
             this.delete5 = new System.Windows.Forms.Button();
             this.row5bar = new System.Windows.Forms.Panel();
             this.course5 = new System.Windows.Forms.TextBox();
             this.name5 = new System.Windows.Forms.TextBox();
-            this.edit5 = new System.Windows.Forms.Button();
             this.row6 = new System.Windows.Forms.Panel();
             this.delete6 = new System.Windows.Forms.Button();
             this.row6bar = new System.Windows.Forms.Panel();
             this.course6 = new System.Windows.Forms.TextBox();
             this.name6 = new System.Windows.Forms.TextBox();
-            this.edit6 = new System.Windows.Forms.Button();
             this.row7 = new System.Windows.Forms.Panel();
             this.delete7 = new System.Windows.Forms.Button();
             this.row7bar = new System.Windows.Forms.Panel();
             this.course7 = new System.Windows.Forms.TextBox();
             this.name7 = new System.Windows.Forms.TextBox();
-            this.edit7 = new System.Windows.Forms.Button();
             this.downBtn = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.upbtn = new System.Windows.Forms.Button();
@@ -156,46 +148,39 @@ namespace LabTask
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.attendrow1 = new System.Windows.Forms.Panel();
             this.Attendencebtn1 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
             this.nostdreg1 = new System.Windows.Forms.TextBox();
             this.attendCourseName1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.attendrow2 = new System.Windows.Forms.Panel();
             this.Attendencebtn2 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button28 = new System.Windows.Forms.Button();
             this.nostdreg2 = new System.Windows.Forms.TextBox();
             this.attendCourseName2 = new System.Windows.Forms.TextBox();
             this.attendrow3 = new System.Windows.Forms.Panel();
             this.Attendencebtn3 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.nostdreg3 = new System.Windows.Forms.TextBox();
-            this.button30 = new System.Windows.Forms.Button();
             this.attendCourseName3 = new System.Windows.Forms.TextBox();
             this.attendrow4 = new System.Windows.Forms.Panel();
             this.Attendencebtn4 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.nostdreg4 = new System.Windows.Forms.TextBox();
             this.attendCourseName4 = new System.Windows.Forms.TextBox();
-            this.button32 = new System.Windows.Forms.Button();
             this.attendrow5 = new System.Windows.Forms.Panel();
             this.Attendencebtn5 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.nostdreg5 = new System.Windows.Forms.TextBox();
             this.attendCourseName5 = new System.Windows.Forms.TextBox();
-            this.button34 = new System.Windows.Forms.Button();
             this.attendrow6 = new System.Windows.Forms.Panel();
             this.Attendencebtn6 = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.nostdreg6 = new System.Windows.Forms.TextBox();
             this.attendCourseName6 = new System.Windows.Forms.TextBox();
-            this.button36 = new System.Windows.Forms.Button();
             this.attendrow7 = new System.Windows.Forms.Panel();
             this.Attendencebtn7 = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
             this.nostdreg7 = new System.Windows.Forms.TextBox();
             this.attendCourseName7 = new System.Windows.Forms.TextBox();
-            this.button38 = new System.Windows.Forms.Button();
             this.attenddownbtn = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.attendUpbtn = new System.Windows.Forms.Button();
@@ -235,7 +220,6 @@ namespace LabTask
             // 
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.sidebar.Controls.Add(this.button2);
-            this.sidebar.Controls.Add(this.button5);
             this.sidebar.Controls.Add(this.coursedashboardbtn);
             this.sidebar.Controls.Add(this.Attendencedashboardbtn);
             this.sidebar.Controls.Add(this.studentDashboardbn);
@@ -262,25 +246,6 @@ namespace LabTask
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(0, 270);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 42);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Dashboard";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // coursedashboardbtn
             // 
@@ -461,7 +426,7 @@ namespace LabTask
             this.CourseDashboard.Controls.Add(this.CoursePanal);
             this.CourseDashboard.Controls.Add(this.button7);
             this.CourseDashboard.Controls.Add(this.upbtn);
-            this.CourseDashboard.Location = new System.Drawing.Point(900, 900);
+            this.CourseDashboard.Location = new System.Drawing.Point(192, 77);
             this.CourseDashboard.Name = "CourseDashboard";
             this.CourseDashboard.Size = new System.Drawing.Size(760, 512);
             this.CourseDashboard.TabIndex = 9;
@@ -487,7 +452,6 @@ namespace LabTask
             // 
             this.row1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row1.Controls.Add(this.delete1);
-            this.row1.Controls.Add(this.edit1);
             this.row1.Controls.Add(this.course1);
             this.row1.Controls.Add(this.name1);
             this.row1.Controls.Add(this.row1bar);
@@ -505,22 +469,13 @@ namespace LabTask
             this.delete1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete1.Location = new System.Drawing.Point(600, 3);
+            this.delete1.Location = new System.Drawing.Point(675, 3);
             this.delete1.Name = "delete1";
             this.delete1.Size = new System.Drawing.Size(75, 37);
             this.delete1.TabIndex = 4;
             this.delete1.Text = "Delete";
             this.delete1.UseVisualStyleBackColor = false;
-            // 
-            // edit1
-            // 
-            this.edit1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit1.Location = new System.Drawing.Point(675, 3);
-            this.edit1.Name = "edit1";
-            this.edit1.Size = new System.Drawing.Size(75, 37);
-            this.edit1.TabIndex = 4;
-            this.edit1.Text = "Edit";
-            this.edit1.UseVisualStyleBackColor = true;
+            this.delete1.Click += new System.EventHandler(this.delete1_Click);
             // 
             // course1
             // 
@@ -556,7 +511,6 @@ namespace LabTask
             this.row2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.row2.Controls.Add(this.delete2);
             this.row2.Controls.Add(this.row2bar);
-            this.row2.Controls.Add(this.edit2);
             this.row2.Controls.Add(this.course2);
             this.row2.Controls.Add(this.name2);
             this.row2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -573,12 +527,13 @@ namespace LabTask
             this.delete2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete2.Location = new System.Drawing.Point(600, 3);
+            this.delete2.Location = new System.Drawing.Point(675, 3);
             this.delete2.Name = "delete2";
             this.delete2.Size = new System.Drawing.Size(75, 37);
             this.delete2.TabIndex = 4;
             this.delete2.Text = "Delete";
             this.delete2.UseVisualStyleBackColor = false;
+            this.delete2.Click += new System.EventHandler(this.delete2_Click);
             // 
             // row2bar
             // 
@@ -586,18 +541,8 @@ namespace LabTask
             this.row2bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row2bar.Location = new System.Drawing.Point(200, 0);
             this.row2bar.Name = "row2bar";
-            this.row2bar.Size = new System.Drawing.Size(475, 3);
+            this.row2bar.Size = new System.Drawing.Size(550, 3);
             this.row2bar.TabIndex = 1;
-            // 
-            // edit2
-            // 
-            this.edit2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit2.Location = new System.Drawing.Point(675, 0);
-            this.edit2.Name = "edit2";
-            this.edit2.Size = new System.Drawing.Size(75, 40);
-            this.edit2.TabIndex = 4;
-            this.edit2.Text = "Edit";
-            this.edit2.UseVisualStyleBackColor = true;
             // 
             // course2
             // 
@@ -625,7 +570,6 @@ namespace LabTask
             this.row3.Controls.Add(this.delete3);
             this.row3.Controls.Add(this.row3bar);
             this.row3.Controls.Add(this.course3);
-            this.row3.Controls.Add(this.edit3);
             this.row3.Controls.Add(this.name3);
             this.row3.Dock = System.Windows.Forms.DockStyle.Top;
             this.row3.Location = new System.Drawing.Point(3, 95);
@@ -641,12 +585,13 @@ namespace LabTask
             this.delete3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete3.Location = new System.Drawing.Point(600, 3);
+            this.delete3.Location = new System.Drawing.Point(675, 3);
             this.delete3.Name = "delete3";
             this.delete3.Size = new System.Drawing.Size(75, 37);
             this.delete3.TabIndex = 4;
             this.delete3.Text = "Delete";
             this.delete3.UseVisualStyleBackColor = false;
+            this.delete3.Click += new System.EventHandler(this.delete3_Click);
             // 
             // row3bar
             // 
@@ -654,7 +599,7 @@ namespace LabTask
             this.row3bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row3bar.Location = new System.Drawing.Point(200, 0);
             this.row3bar.Name = "row3bar";
-            this.row3bar.Size = new System.Drawing.Size(475, 3);
+            this.row3bar.Size = new System.Drawing.Size(550, 3);
             this.row3bar.TabIndex = 1;
             // 
             // course3
@@ -666,16 +611,6 @@ namespace LabTask
             this.course3.Name = "course3";
             this.course3.Size = new System.Drawing.Size(100, 40);
             this.course3.TabIndex = 3;
-            // 
-            // edit3
-            // 
-            this.edit3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit3.Location = new System.Drawing.Point(675, 0);
-            this.edit3.Name = "edit3";
-            this.edit3.Size = new System.Drawing.Size(75, 40);
-            this.edit3.TabIndex = 4;
-            this.edit3.Text = "Edit";
-            this.edit3.UseVisualStyleBackColor = true;
             // 
             // name3
             // 
@@ -694,7 +629,6 @@ namespace LabTask
             this.row4.Controls.Add(this.row4bar);
             this.row4.Controls.Add(this.course4);
             this.row4.Controls.Add(this.name4);
-            this.row4.Controls.Add(this.edit4);
             this.row4.Dock = System.Windows.Forms.DockStyle.Top;
             this.row4.Location = new System.Drawing.Point(3, 141);
             this.row4.Name = "row4";
@@ -709,12 +643,13 @@ namespace LabTask
             this.delete4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete4.Location = new System.Drawing.Point(600, 3);
+            this.delete4.Location = new System.Drawing.Point(675, 3);
             this.delete4.Name = "delete4";
             this.delete4.Size = new System.Drawing.Size(75, 37);
             this.delete4.TabIndex = 4;
             this.delete4.Text = "Delete";
             this.delete4.UseVisualStyleBackColor = false;
+            this.delete4.Click += new System.EventHandler(this.delete4_Click);
             // 
             // row4bar
             // 
@@ -722,7 +657,7 @@ namespace LabTask
             this.row4bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row4bar.Location = new System.Drawing.Point(200, 0);
             this.row4bar.Name = "row4bar";
-            this.row4bar.Size = new System.Drawing.Size(475, 3);
+            this.row4bar.Size = new System.Drawing.Size(550, 3);
             this.row4bar.TabIndex = 1;
             // 
             // course4
@@ -745,16 +680,6 @@ namespace LabTask
             this.name4.Size = new System.Drawing.Size(100, 40);
             this.name4.TabIndex = 3;
             // 
-            // edit4
-            // 
-            this.edit4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit4.Location = new System.Drawing.Point(675, 0);
-            this.edit4.Name = "edit4";
-            this.edit4.Size = new System.Drawing.Size(75, 40);
-            this.edit4.TabIndex = 4;
-            this.edit4.Text = "Edit";
-            this.edit4.UseVisualStyleBackColor = true;
-            // 
             // row5
             // 
             this.row5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -762,7 +687,6 @@ namespace LabTask
             this.row5.Controls.Add(this.row5bar);
             this.row5.Controls.Add(this.course5);
             this.row5.Controls.Add(this.name5);
-            this.row5.Controls.Add(this.edit5);
             this.row5.Dock = System.Windows.Forms.DockStyle.Top;
             this.row5.Location = new System.Drawing.Point(3, 187);
             this.row5.Name = "row5";
@@ -777,12 +701,13 @@ namespace LabTask
             this.delete5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete5.Location = new System.Drawing.Point(600, 3);
+            this.delete5.Location = new System.Drawing.Point(675, 3);
             this.delete5.Name = "delete5";
             this.delete5.Size = new System.Drawing.Size(75, 37);
             this.delete5.TabIndex = 4;
             this.delete5.Text = "Delete";
             this.delete5.UseVisualStyleBackColor = false;
+            this.delete5.Click += new System.EventHandler(this.delete5_Click);
             // 
             // row5bar
             // 
@@ -790,7 +715,7 @@ namespace LabTask
             this.row5bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row5bar.Location = new System.Drawing.Point(200, 0);
             this.row5bar.Name = "row5bar";
-            this.row5bar.Size = new System.Drawing.Size(475, 3);
+            this.row5bar.Size = new System.Drawing.Size(550, 3);
             this.row5bar.TabIndex = 1;
             // 
             // course5
@@ -813,16 +738,6 @@ namespace LabTask
             this.name5.Size = new System.Drawing.Size(100, 40);
             this.name5.TabIndex = 3;
             // 
-            // edit5
-            // 
-            this.edit5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit5.Location = new System.Drawing.Point(675, 0);
-            this.edit5.Name = "edit5";
-            this.edit5.Size = new System.Drawing.Size(75, 40);
-            this.edit5.TabIndex = 4;
-            this.edit5.Text = "Edit";
-            this.edit5.UseVisualStyleBackColor = true;
-            // 
             // row6
             // 
             this.row6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -830,7 +745,6 @@ namespace LabTask
             this.row6.Controls.Add(this.row6bar);
             this.row6.Controls.Add(this.course6);
             this.row6.Controls.Add(this.name6);
-            this.row6.Controls.Add(this.edit6);
             this.row6.Dock = System.Windows.Forms.DockStyle.Top;
             this.row6.Location = new System.Drawing.Point(3, 233);
             this.row6.Name = "row6";
@@ -845,12 +759,13 @@ namespace LabTask
             this.delete6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete6.Location = new System.Drawing.Point(600, 3);
+            this.delete6.Location = new System.Drawing.Point(675, 3);
             this.delete6.Name = "delete6";
             this.delete6.Size = new System.Drawing.Size(75, 37);
             this.delete6.TabIndex = 4;
             this.delete6.Text = "Delete";
             this.delete6.UseVisualStyleBackColor = false;
+            this.delete6.Click += new System.EventHandler(this.delete6_Click);
             // 
             // row6bar
             // 
@@ -858,7 +773,7 @@ namespace LabTask
             this.row6bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row6bar.Location = new System.Drawing.Point(200, 0);
             this.row6bar.Name = "row6bar";
-            this.row6bar.Size = new System.Drawing.Size(475, 3);
+            this.row6bar.Size = new System.Drawing.Size(550, 3);
             this.row6bar.TabIndex = 1;
             // 
             // course6
@@ -881,16 +796,6 @@ namespace LabTask
             this.name6.Size = new System.Drawing.Size(100, 40);
             this.name6.TabIndex = 3;
             // 
-            // edit6
-            // 
-            this.edit6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit6.Location = new System.Drawing.Point(675, 0);
-            this.edit6.Name = "edit6";
-            this.edit6.Size = new System.Drawing.Size(75, 40);
-            this.edit6.TabIndex = 4;
-            this.edit6.Text = "Edit";
-            this.edit6.UseVisualStyleBackColor = true;
-            // 
             // row7
             // 
             this.row7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -898,7 +803,6 @@ namespace LabTask
             this.row7.Controls.Add(this.row7bar);
             this.row7.Controls.Add(this.course7);
             this.row7.Controls.Add(this.name7);
-            this.row7.Controls.Add(this.edit7);
             this.row7.Dock = System.Windows.Forms.DockStyle.Top;
             this.row7.Location = new System.Drawing.Point(3, 279);
             this.row7.Name = "row7";
@@ -913,12 +817,13 @@ namespace LabTask
             this.delete7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.delete7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.delete7.Location = new System.Drawing.Point(600, 3);
+            this.delete7.Location = new System.Drawing.Point(675, 3);
             this.delete7.Name = "delete7";
             this.delete7.Size = new System.Drawing.Size(75, 37);
             this.delete7.TabIndex = 4;
             this.delete7.Text = "Delete";
             this.delete7.UseVisualStyleBackColor = false;
+            this.delete7.Click += new System.EventHandler(this.delete7_Click);
             // 
             // row7bar
             // 
@@ -926,7 +831,7 @@ namespace LabTask
             this.row7bar.Dock = System.Windows.Forms.DockStyle.Top;
             this.row7bar.Location = new System.Drawing.Point(200, 0);
             this.row7bar.Name = "row7bar";
-            this.row7bar.Size = new System.Drawing.Size(475, 3);
+            this.row7bar.Size = new System.Drawing.Size(550, 3);
             this.row7bar.TabIndex = 1;
             // 
             // course7
@@ -948,16 +853,6 @@ namespace LabTask
             this.name7.Name = "name7";
             this.name7.Size = new System.Drawing.Size(100, 40);
             this.name7.TabIndex = 3;
-            // 
-            // edit7
-            // 
-            this.edit7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.edit7.Location = new System.Drawing.Point(675, 0);
-            this.edit7.Name = "edit7";
-            this.edit7.Size = new System.Drawing.Size(75, 40);
-            this.edit7.TabIndex = 4;
-            this.edit7.Text = "Edit";
-            this.edit7.UseVisualStyleBackColor = true;
             // 
             // downBtn
             // 
@@ -1012,7 +907,7 @@ namespace LabTask
             this.StudentDashboard.Controls.Add(this.studenttablepanel);
             this.StudentDashboard.Controls.Add(this.stdaddbtn);
             this.StudentDashboard.Controls.Add(this.stdUpbtn);
-            this.StudentDashboard.Location = new System.Drawing.Point(192, 77);
+            this.StudentDashboard.Location = new System.Drawing.Point(900, 900);
             this.StudentDashboard.Name = "StudentDashboard";
             this.StudentDashboard.Size = new System.Drawing.Size(760, 512);
             this.StudentDashboard.TabIndex = 10;
@@ -1078,6 +973,7 @@ namespace LabTask
             this.StdDeleteBtn1.TabIndex = 4;
             this.StdDeleteBtn1.Text = "Delete";
             this.StdDeleteBtn1.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn1.Click += new System.EventHandler(this.StdDeleteBtn1_Click);
             // 
             // StdEdit1
             // 
@@ -1088,6 +984,7 @@ namespace LabTask
             this.StdEdit1.TabIndex = 4;
             this.StdEdit1.Text = "Edit";
             this.StdEdit1.UseVisualStyleBackColor = true;
+            this.StdEdit1.Click += new System.EventHandler(this.StdEdit1_Click);
             // 
             // stdName1
             // 
@@ -1163,6 +1060,7 @@ namespace LabTask
             this.StdDeleteBtn2.TabIndex = 4;
             this.StdDeleteBtn2.Text = "Delete";
             this.StdDeleteBtn2.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn2.Click += new System.EventHandler(this.StdDeleteBtn2_Click);
             // 
             // panel5
             // 
@@ -1182,6 +1080,7 @@ namespace LabTask
             this.StdEdit2.TabIndex = 4;
             this.StdEdit2.Text = "Edit";
             this.StdEdit2.UseVisualStyleBackColor = true;
+            this.StdEdit2.Click += new System.EventHandler(this.StdEdit2_Click);
             // 
             // stdName2
             // 
@@ -1248,6 +1147,7 @@ namespace LabTask
             this.StdDeleteBtn3.TabIndex = 4;
             this.StdDeleteBtn3.Text = "Delete";
             this.StdDeleteBtn3.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn3.Click += new System.EventHandler(this.StdDeleteBtn3_Click);
             // 
             // panel7
             // 
@@ -1277,6 +1177,7 @@ namespace LabTask
             this.StdEdit3.TabIndex = 4;
             this.StdEdit3.Text = "Edit";
             this.StdEdit3.UseVisualStyleBackColor = true;
+            this.StdEdit3.Click += new System.EventHandler(this.StdEdit3_Click);
             // 
             // RegNo3
             // 
@@ -1333,6 +1234,7 @@ namespace LabTask
             this.StdDeleteBtn4.TabIndex = 4;
             this.StdDeleteBtn4.Text = "Delete";
             this.StdDeleteBtn4.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn4.Click += new System.EventHandler(this.StdDeleteBtn4_Click);
             // 
             // panel9
             // 
@@ -1372,6 +1274,7 @@ namespace LabTask
             this.button12.TabIndex = 4;
             this.button12.Text = "Edit";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // stdrow5
             // 
@@ -1418,6 +1321,7 @@ namespace LabTask
             this.StdDeleteBtn5.TabIndex = 4;
             this.StdDeleteBtn5.Text = "Delete";
             this.StdDeleteBtn5.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn5.Click += new System.EventHandler(this.StdDeleteBtn5_Click);
             // 
             // panel11
             // 
@@ -1457,6 +1361,7 @@ namespace LabTask
             this.button14.TabIndex = 4;
             this.button14.Text = "Edit";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // stdrow6
             // 
@@ -1503,6 +1408,7 @@ namespace LabTask
             this.StdDeleteBtn6.TabIndex = 4;
             this.StdDeleteBtn6.Text = "Delete";
             this.StdDeleteBtn6.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn6.Click += new System.EventHandler(this.StdDeleteBtn6_Click);
             // 
             // panel13
             // 
@@ -1542,6 +1448,7 @@ namespace LabTask
             this.button16.TabIndex = 4;
             this.button16.Text = "Edit";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // stdrow7
             // 
@@ -1588,6 +1495,7 @@ namespace LabTask
             this.StdDeleteBtn7.TabIndex = 4;
             this.StdDeleteBtn7.Text = "Delete";
             this.StdDeleteBtn7.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn7.Click += new System.EventHandler(this.StdDeleteBtn7_Click);
             // 
             // panel15
             // 
@@ -1627,6 +1535,7 @@ namespace LabTask
             this.button18.TabIndex = 4;
             this.button18.Text = "Edit";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // stddownbtn
             // 
@@ -1705,7 +1614,6 @@ namespace LabTask
             // 
             this.attendrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.attendrow1.Controls.Add(this.Attendencebtn1);
-            this.attendrow1.Controls.Add(this.button26);
             this.attendrow1.Controls.Add(this.nostdreg1);
             this.attendrow1.Controls.Add(this.attendCourseName1);
             this.attendrow1.Controls.Add(this.panel4);
@@ -1723,23 +1631,13 @@ namespace LabTask
             this.Attendencebtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn1.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn1.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn1.Name = "Attendencebtn1";
             this.Attendencebtn1.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn1.TabIndex = 4;
             this.Attendencebtn1.Text = "Attendence";
             this.Attendencebtn1.UseVisualStyleBackColor = false;
             this.Attendencebtn1.Click += new System.EventHandler(this.Attendencebtn1_Click);
-            // 
-            // button26
-            // 
-            this.button26.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button26.Location = new System.Drawing.Point(675, 3);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 37);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "Edit";
-            this.button26.UseVisualStyleBackColor = true;
             // 
             // nostdreg1
             // 
@@ -1775,7 +1673,6 @@ namespace LabTask
             this.attendrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.attendrow2.Controls.Add(this.Attendencebtn2);
             this.attendrow2.Controls.Add(this.panel8);
-            this.attendrow2.Controls.Add(this.button28);
             this.attendrow2.Controls.Add(this.nostdreg2);
             this.attendrow2.Controls.Add(this.attendCourseName2);
             this.attendrow2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1792,7 +1689,7 @@ namespace LabTask
             this.Attendencebtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn2.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn2.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn2.Name = "Attendencebtn2";
             this.Attendencebtn2.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn2.TabIndex = 4;
@@ -1806,18 +1703,8 @@ namespace LabTask
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(200, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(475, 3);
+            this.panel8.Size = new System.Drawing.Size(550, 3);
             this.panel8.TabIndex = 1;
-            // 
-            // button28
-            // 
-            this.button28.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button28.Location = new System.Drawing.Point(675, 0);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 40);
-            this.button28.TabIndex = 4;
-            this.button28.Text = "Edit";
-            this.button28.UseVisualStyleBackColor = true;
             // 
             // nostdreg2
             // 
@@ -1845,7 +1732,6 @@ namespace LabTask
             this.attendrow3.Controls.Add(this.Attendencebtn3);
             this.attendrow3.Controls.Add(this.panel12);
             this.attendrow3.Controls.Add(this.nostdreg3);
-            this.attendrow3.Controls.Add(this.button30);
             this.attendrow3.Controls.Add(this.attendCourseName3);
             this.attendrow3.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendrow3.Location = new System.Drawing.Point(3, 95);
@@ -1861,7 +1747,7 @@ namespace LabTask
             this.Attendencebtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn3.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn3.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn3.Name = "Attendencebtn3";
             this.Attendencebtn3.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn3.TabIndex = 4;
@@ -1875,7 +1761,7 @@ namespace LabTask
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(200, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(475, 3);
+            this.panel12.Size = new System.Drawing.Size(550, 3);
             this.panel12.TabIndex = 1;
             // 
             // nostdreg3
@@ -1887,16 +1773,6 @@ namespace LabTask
             this.nostdreg3.Name = "nostdreg3";
             this.nostdreg3.Size = new System.Drawing.Size(100, 40);
             this.nostdreg3.TabIndex = 3;
-            // 
-            // button30
-            // 
-            this.button30.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button30.Location = new System.Drawing.Point(675, 0);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 40);
-            this.button30.TabIndex = 4;
-            this.button30.Text = "Edit";
-            this.button30.UseVisualStyleBackColor = true;
             // 
             // attendCourseName3
             // 
@@ -1915,7 +1791,6 @@ namespace LabTask
             this.attendrow4.Controls.Add(this.panel16);
             this.attendrow4.Controls.Add(this.nostdreg4);
             this.attendrow4.Controls.Add(this.attendCourseName4);
-            this.attendrow4.Controls.Add(this.button32);
             this.attendrow4.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendrow4.Location = new System.Drawing.Point(3, 141);
             this.attendrow4.Name = "attendrow4";
@@ -1930,7 +1805,7 @@ namespace LabTask
             this.Attendencebtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn4.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn4.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn4.Name = "Attendencebtn4";
             this.Attendencebtn4.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn4.TabIndex = 4;
@@ -1944,7 +1819,7 @@ namespace LabTask
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(200, 0);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(475, 3);
+            this.panel16.Size = new System.Drawing.Size(550, 3);
             this.panel16.TabIndex = 1;
             // 
             // nostdreg4
@@ -1967,16 +1842,6 @@ namespace LabTask
             this.attendCourseName4.Size = new System.Drawing.Size(100, 40);
             this.attendCourseName4.TabIndex = 3;
             // 
-            // button32
-            // 
-            this.button32.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button32.Location = new System.Drawing.Point(675, 0);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 40);
-            this.button32.TabIndex = 4;
-            this.button32.Text = "Edit";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
             // attendrow5
             // 
             this.attendrow5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -1984,7 +1849,6 @@ namespace LabTask
             this.attendrow5.Controls.Add(this.panel18);
             this.attendrow5.Controls.Add(this.nostdreg5);
             this.attendrow5.Controls.Add(this.attendCourseName5);
-            this.attendrow5.Controls.Add(this.button34);
             this.attendrow5.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendrow5.Location = new System.Drawing.Point(3, 187);
             this.attendrow5.Name = "attendrow5";
@@ -1999,7 +1863,7 @@ namespace LabTask
             this.Attendencebtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn5.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn5.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn5.Name = "Attendencebtn5";
             this.Attendencebtn5.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn5.TabIndex = 4;
@@ -2013,7 +1877,7 @@ namespace LabTask
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(200, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(475, 3);
+            this.panel18.Size = new System.Drawing.Size(550, 3);
             this.panel18.TabIndex = 1;
             // 
             // nostdreg5
@@ -2036,16 +1900,6 @@ namespace LabTask
             this.attendCourseName5.Size = new System.Drawing.Size(100, 40);
             this.attendCourseName5.TabIndex = 3;
             // 
-            // button34
-            // 
-            this.button34.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button34.Location = new System.Drawing.Point(675, 0);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 40);
-            this.button34.TabIndex = 4;
-            this.button34.Text = "Edit";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
             // attendrow6
             // 
             this.attendrow6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -2053,7 +1907,6 @@ namespace LabTask
             this.attendrow6.Controls.Add(this.panel20);
             this.attendrow6.Controls.Add(this.nostdreg6);
             this.attendrow6.Controls.Add(this.attendCourseName6);
-            this.attendrow6.Controls.Add(this.button36);
             this.attendrow6.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendrow6.Location = new System.Drawing.Point(3, 233);
             this.attendrow6.Name = "attendrow6";
@@ -2068,7 +1921,7 @@ namespace LabTask
             this.Attendencebtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn6.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn6.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn6.Name = "Attendencebtn6";
             this.Attendencebtn6.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn6.TabIndex = 4;
@@ -2082,7 +1935,7 @@ namespace LabTask
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(200, 0);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(475, 3);
+            this.panel20.Size = new System.Drawing.Size(550, 3);
             this.panel20.TabIndex = 1;
             // 
             // nostdreg6
@@ -2105,16 +1958,6 @@ namespace LabTask
             this.attendCourseName6.Size = new System.Drawing.Size(100, 40);
             this.attendCourseName6.TabIndex = 3;
             // 
-            // button36
-            // 
-            this.button36.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button36.Location = new System.Drawing.Point(675, 0);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 40);
-            this.button36.TabIndex = 4;
-            this.button36.Text = "Edit";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
             // attendrow7
             // 
             this.attendrow7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
@@ -2122,7 +1965,6 @@ namespace LabTask
             this.attendrow7.Controls.Add(this.panel22);
             this.attendrow7.Controls.Add(this.nostdreg7);
             this.attendrow7.Controls.Add(this.attendCourseName7);
-            this.attendrow7.Controls.Add(this.button38);
             this.attendrow7.Dock = System.Windows.Forms.DockStyle.Top;
             this.attendrow7.Location = new System.Drawing.Point(3, 279);
             this.attendrow7.Name = "attendrow7";
@@ -2137,7 +1979,7 @@ namespace LabTask
             this.Attendencebtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Attendencebtn7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Attendencebtn7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Attendencebtn7.Location = new System.Drawing.Point(555, 3);
+            this.Attendencebtn7.Location = new System.Drawing.Point(630, 3);
             this.Attendencebtn7.Name = "Attendencebtn7";
             this.Attendencebtn7.Size = new System.Drawing.Size(120, 37);
             this.Attendencebtn7.TabIndex = 4;
@@ -2151,7 +1993,7 @@ namespace LabTask
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel22.Location = new System.Drawing.Point(200, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(475, 3);
+            this.panel22.Size = new System.Drawing.Size(550, 3);
             this.panel22.TabIndex = 1;
             // 
             // nostdreg7
@@ -2173,16 +2015,6 @@ namespace LabTask
             this.attendCourseName7.Name = "attendCourseName7";
             this.attendCourseName7.Size = new System.Drawing.Size(100, 40);
             this.attendCourseName7.TabIndex = 3;
-            // 
-            // button38
-            // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button38.Location = new System.Drawing.Point(675, 0);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(75, 40);
-            this.button38.TabIndex = 4;
-            this.button38.Text = "Edit";
-            this.button38.UseVisualStyleBackColor = true;
             // 
             // attenddownbtn
             // 
@@ -2314,7 +2146,6 @@ namespace LabTask
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel nav;
         private System.Windows.Forms.Button studentDashboardbn;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button coursedashboardbtn;
         private System.Windows.Forms.Button Attendencedashboardbtn;
         private System.Windows.Forms.Button button2;
@@ -2332,46 +2163,39 @@ namespace LabTask
         private System.Windows.Forms.FlowLayoutPanel CoursePanal;
         private System.Windows.Forms.Panel row1;
         private System.Windows.Forms.Button delete1;
-        private System.Windows.Forms.Button edit1;
         private System.Windows.Forms.TextBox course1;
         private System.Windows.Forms.TextBox name1;
         private System.Windows.Forms.Panel row1bar;
         private System.Windows.Forms.Panel row2;
         private System.Windows.Forms.Button delete2;
         private System.Windows.Forms.Panel row2bar;
-        private System.Windows.Forms.Button edit2;
         private System.Windows.Forms.TextBox course2;
         private System.Windows.Forms.TextBox name2;
         private System.Windows.Forms.Panel row3;
         private System.Windows.Forms.Button delete3;
         private System.Windows.Forms.Panel row3bar;
         private System.Windows.Forms.TextBox course3;
-        private System.Windows.Forms.Button edit3;
         private System.Windows.Forms.TextBox name3;
         private System.Windows.Forms.Panel row4;
         private System.Windows.Forms.Button delete4;
         private System.Windows.Forms.Panel row4bar;
         private System.Windows.Forms.TextBox course4;
         private System.Windows.Forms.TextBox name4;
-        private System.Windows.Forms.Button edit4;
         private System.Windows.Forms.Panel row5;
         private System.Windows.Forms.Button delete5;
         private System.Windows.Forms.Panel row5bar;
         private System.Windows.Forms.TextBox course5;
         private System.Windows.Forms.TextBox name5;
-        private System.Windows.Forms.Button edit5;
         private System.Windows.Forms.Panel row6;
         private System.Windows.Forms.Button delete6;
         private System.Windows.Forms.Panel row6bar;
         private System.Windows.Forms.TextBox course6;
         private System.Windows.Forms.TextBox name6;
-        private System.Windows.Forms.Button edit6;
         private System.Windows.Forms.Panel row7;
         private System.Windows.Forms.Button delete7;
         private System.Windows.Forms.Panel row7bar;
         private System.Windows.Forms.TextBox course7;
         private System.Windows.Forms.TextBox name7;
-        private System.Windows.Forms.Button edit7;
         private System.Windows.Forms.Button downBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button upbtn;
@@ -2433,46 +2257,39 @@ namespace LabTask
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel attendrow1;
         private System.Windows.Forms.Button Attendencebtn1;
-        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.TextBox nostdreg1;
         private System.Windows.Forms.TextBox attendCourseName1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel attendrow2;
         private System.Windows.Forms.Button Attendencebtn2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.TextBox nostdreg2;
         private System.Windows.Forms.TextBox attendCourseName2;
         private System.Windows.Forms.Panel attendrow3;
         private System.Windows.Forms.Button Attendencebtn3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TextBox nostdreg3;
-        private System.Windows.Forms.Button button30;
         private System.Windows.Forms.TextBox attendCourseName3;
         private System.Windows.Forms.Panel attendrow4;
         private System.Windows.Forms.Button Attendencebtn4;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.TextBox nostdreg4;
         private System.Windows.Forms.TextBox attendCourseName4;
-        private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Panel attendrow5;
         private System.Windows.Forms.Button Attendencebtn5;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.TextBox nostdreg5;
         private System.Windows.Forms.TextBox attendCourseName5;
-        private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Panel attendrow6;
         private System.Windows.Forms.Button Attendencebtn6;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.TextBox nostdreg6;
         private System.Windows.Forms.TextBox attendCourseName6;
-        private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Panel attendrow7;
         private System.Windows.Forms.Button Attendencebtn7;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.TextBox nostdreg7;
         private System.Windows.Forms.TextBox attendCourseName7;
-        private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button attenddownbtn;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button attendUpbtn;

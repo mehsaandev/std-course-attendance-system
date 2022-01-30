@@ -142,7 +142,7 @@ namespace LabTask
             this.title.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.title.Font = new System.Drawing.Font("Yu Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.title.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.title.Location = new System.Drawing.Point(134, 31);
+            this.title.Location = new System.Drawing.Point(0, 28);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(253, 38);
             this.title.TabIndex = 5;
