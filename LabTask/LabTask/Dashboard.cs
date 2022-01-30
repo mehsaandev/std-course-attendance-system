@@ -1004,5 +1004,41 @@ namespace LabTask
             AttendenceForm attend1 = new AttendenceForm(attendCourseName7.Text);
             attend1.ShowDialog();
         }
+
+        private void mycourse2_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo2.Text);
+            mycourse1.ShowDialog();
+        }
+
+        private void mycourse3_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo3.Text);
+            mycourse1.ShowDialog();
+        }
+
+        private void mycourse4_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo4.Text);
+            mycourse1.ShowDialog();
+        }
+
+        private void mycourse5_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo5.Text);
+            mycourse1.ShowDialog();
+        }
+
+        private void mycourse6_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo6.Text);
+            mycourse1.ShowDialog();
+        }
+
+        private void mycourse7_Click(object sender, EventArgs e)
+        {
+            MyCourses mycourse1 = new MyCourses(RegNo7.Text);
+            mycourse1.ShowDialog();
+        }
     }
 }

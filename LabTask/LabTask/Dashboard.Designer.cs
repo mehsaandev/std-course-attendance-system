@@ -102,49 +102,49 @@ namespace LabTask
             this.studenttablepanel = new System.Windows.Forms.FlowLayoutPanel();
             this.stdrow1 = new System.Windows.Forms.Panel();
             this.mycourse1 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn1 = new System.Windows.Forms.Button();
+            this.StdEdit1 = new System.Windows.Forms.Button();
             this.stdName1 = new System.Windows.Forms.TextBox();
             this.RegNo1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.stdrow2 = new System.Windows.Forms.Panel();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.mycourse2 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.StdEdit2 = new System.Windows.Forms.Button();
             this.stdName2 = new System.Windows.Forms.TextBox();
             this.RegNo2 = new System.Windows.Forms.TextBox();
             this.stdrow3 = new System.Windows.Forms.Panel();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.mycourse3 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn3 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.stdName3 = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.StdEdit3 = new System.Windows.Forms.Button();
             this.RegNo3 = new System.Windows.Forms.TextBox();
             this.stdrow4 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.mycourse4 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn4 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.stdName4 = new System.Windows.Forms.TextBox();
             this.RegNo4 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.stdrow5 = new System.Windows.Forms.Panel();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.mycourse5 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn5 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.stdName5 = new System.Windows.Forms.TextBox();
             this.RegNo5 = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.stdrow6 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.mycourse6 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn6 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.stdName6 = new System.Windows.Forms.TextBox();
             this.RegNo6 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.stdrow7 = new System.Windows.Forms.Panel();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.mycourse7 = new System.Windows.Forms.Button();
+            this.StdDeleteBtn7 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.stdName7 = new System.Windows.Forms.TextBox();
             this.RegNo7 = new System.Windows.Forms.TextBox();
@@ -1012,7 +1012,7 @@ namespace LabTask
             this.StudentDashboard.Controls.Add(this.studenttablepanel);
             this.StudentDashboard.Controls.Add(this.stdaddbtn);
             this.StudentDashboard.Controls.Add(this.stdUpbtn);
-            this.StudentDashboard.Location = new System.Drawing.Point(900, 900);
+            this.StudentDashboard.Location = new System.Drawing.Point(192, 77);
             this.StudentDashboard.Name = "StudentDashboard";
             this.StudentDashboard.Size = new System.Drawing.Size(760, 512);
             this.StudentDashboard.TabIndex = 10;
@@ -1037,8 +1037,8 @@ namespace LabTask
             // 
             this.stdrow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
             this.stdrow1.Controls.Add(this.mycourse1);
-            this.stdrow1.Controls.Add(this.button1);
-            this.stdrow1.Controls.Add(this.button3);
+            this.stdrow1.Controls.Add(this.StdDeleteBtn1);
+            this.stdrow1.Controls.Add(this.StdEdit1);
             this.stdrow1.Controls.Add(this.stdName1);
             this.stdrow1.Controls.Add(this.RegNo1);
             this.stdrow1.Controls.Add(this.panel3);
@@ -1064,30 +1064,30 @@ namespace LabTask
             this.mycourse1.UseVisualStyleBackColor = false;
             this.mycourse1.Click += new System.EventHandler(this.mycourse1_Click);
             // 
-            // button1
+            // StdDeleteBtn1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(600, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn1.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn1.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn1.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn1.Name = "StdDeleteBtn1";
+            this.StdDeleteBtn1.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn1.TabIndex = 4;
+            this.StdDeleteBtn1.Text = "Delete";
+            this.StdDeleteBtn1.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // StdEdit1
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.Location = new System.Drawing.Point(675, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 37);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.StdEdit1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdEdit1.Location = new System.Drawing.Point(675, 3);
+            this.StdEdit1.Name = "StdEdit1";
+            this.StdEdit1.Size = new System.Drawing.Size(75, 37);
+            this.StdEdit1.TabIndex = 4;
+            this.StdEdit1.Text = "Edit";
+            this.StdEdit1.UseVisualStyleBackColor = true;
             // 
             // stdName1
             // 
@@ -1121,10 +1121,10 @@ namespace LabTask
             // stdrow2
             // 
             this.stdrow2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow2.Controls.Add(this.button20);
-            this.stdrow2.Controls.Add(this.button4);
+            this.stdrow2.Controls.Add(this.mycourse2);
+            this.stdrow2.Controls.Add(this.StdDeleteBtn2);
             this.stdrow2.Controls.Add(this.panel5);
-            this.stdrow2.Controls.Add(this.button8);
+            this.stdrow2.Controls.Add(this.StdEdit2);
             this.stdrow2.Controls.Add(this.stdName2);
             this.stdrow2.Controls.Add(this.RegNo2);
             this.stdrow2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1133,35 +1133,36 @@ namespace LabTask
             this.stdrow2.Size = new System.Drawing.Size(750, 40);
             this.stdrow2.TabIndex = 2;
             // 
-            // button20
+            // mycourse2
             // 
-            this.button20.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button20.Location = new System.Drawing.Point(525, 3);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 37);
-            this.button20.TabIndex = 4;
-            this.button20.Text = "Courses";
-            this.button20.UseVisualStyleBackColor = false;
+            this.mycourse2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse2.FlatAppearance.BorderSize = 0;
+            this.mycourse2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse2.Location = new System.Drawing.Point(525, 3);
+            this.mycourse2.Name = "mycourse2";
+            this.mycourse2.Size = new System.Drawing.Size(75, 37);
+            this.mycourse2.TabIndex = 4;
+            this.mycourse2.Text = "Courses";
+            this.mycourse2.UseVisualStyleBackColor = false;
+            this.mycourse2.Click += new System.EventHandler(this.mycourse2_Click);
             // 
-            // button4
+            // StdDeleteBtn2
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(600, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 37);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn2.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn2.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn2.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn2.Name = "StdDeleteBtn2";
+            this.StdDeleteBtn2.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn2.TabIndex = 4;
+            this.StdDeleteBtn2.Text = "Delete";
+            this.StdDeleteBtn2.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -1172,15 +1173,15 @@ namespace LabTask
             this.panel5.Size = new System.Drawing.Size(475, 3);
             this.panel5.TabIndex = 1;
             // 
-            // button8
+            // StdEdit2
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8.Location = new System.Drawing.Point(675, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 40);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Edit";
-            this.button8.UseVisualStyleBackColor = true;
+            this.StdEdit2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdEdit2.Location = new System.Drawing.Point(675, 0);
+            this.StdEdit2.Name = "StdEdit2";
+            this.StdEdit2.Size = new System.Drawing.Size(75, 40);
+            this.StdEdit2.TabIndex = 4;
+            this.StdEdit2.Text = "Edit";
+            this.StdEdit2.UseVisualStyleBackColor = true;
             // 
             // stdName2
             // 
@@ -1205,11 +1206,11 @@ namespace LabTask
             // stdrow3
             // 
             this.stdrow3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow3.Controls.Add(this.button21);
-            this.stdrow3.Controls.Add(this.button9);
+            this.stdrow3.Controls.Add(this.mycourse3);
+            this.stdrow3.Controls.Add(this.StdDeleteBtn3);
             this.stdrow3.Controls.Add(this.panel7);
             this.stdrow3.Controls.Add(this.stdName3);
-            this.stdrow3.Controls.Add(this.button10);
+            this.stdrow3.Controls.Add(this.StdEdit3);
             this.stdrow3.Controls.Add(this.RegNo3);
             this.stdrow3.Dock = System.Windows.Forms.DockStyle.Top;
             this.stdrow3.Location = new System.Drawing.Point(3, 95);
@@ -1217,35 +1218,36 @@ namespace LabTask
             this.stdrow3.Size = new System.Drawing.Size(750, 40);
             this.stdrow3.TabIndex = 2;
             // 
-            // button21
+            // mycourse3
             // 
-            this.button21.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button21.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button21.Location = new System.Drawing.Point(525, 3);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 37);
-            this.button21.TabIndex = 4;
-            this.button21.Text = "Courses";
-            this.button21.UseVisualStyleBackColor = false;
+            this.mycourse3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse3.FlatAppearance.BorderSize = 0;
+            this.mycourse3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse3.Location = new System.Drawing.Point(525, 3);
+            this.mycourse3.Name = "mycourse3";
+            this.mycourse3.Size = new System.Drawing.Size(75, 37);
+            this.mycourse3.TabIndex = 4;
+            this.mycourse3.Text = "Courses";
+            this.mycourse3.UseVisualStyleBackColor = false;
+            this.mycourse3.Click += new System.EventHandler(this.mycourse3_Click);
             // 
-            // button9
+            // StdDeleteBtn3
             // 
-            this.button9.BackColor = System.Drawing.Color.Red;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(600, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 37);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Delete";
-            this.button9.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn3.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn3.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn3.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn3.Name = "StdDeleteBtn3";
+            this.StdDeleteBtn3.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn3.TabIndex = 4;
+            this.StdDeleteBtn3.Text = "Delete";
+            this.StdDeleteBtn3.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
@@ -1266,15 +1268,15 @@ namespace LabTask
             this.stdName3.Size = new System.Drawing.Size(100, 40);
             this.stdName3.TabIndex = 3;
             // 
-            // button10
+            // StdEdit3
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button10.Location = new System.Drawing.Point(675, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 40);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "Edit";
-            this.button10.UseVisualStyleBackColor = true;
+            this.StdEdit3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdEdit3.Location = new System.Drawing.Point(675, 0);
+            this.StdEdit3.Name = "StdEdit3";
+            this.StdEdit3.Size = new System.Drawing.Size(75, 40);
+            this.StdEdit3.TabIndex = 4;
+            this.StdEdit3.Text = "Edit";
+            this.StdEdit3.UseVisualStyleBackColor = true;
             // 
             // RegNo3
             // 
@@ -1289,8 +1291,8 @@ namespace LabTask
             // stdrow4
             // 
             this.stdrow4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow4.Controls.Add(this.button22);
-            this.stdrow4.Controls.Add(this.button11);
+            this.stdrow4.Controls.Add(this.mycourse4);
+            this.stdrow4.Controls.Add(this.StdDeleteBtn4);
             this.stdrow4.Controls.Add(this.panel9);
             this.stdrow4.Controls.Add(this.stdName4);
             this.stdrow4.Controls.Add(this.RegNo4);
@@ -1301,35 +1303,36 @@ namespace LabTask
             this.stdrow4.Size = new System.Drawing.Size(750, 40);
             this.stdrow4.TabIndex = 2;
             // 
-            // button22
+            // mycourse4
             // 
-            this.button22.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button22.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button22.Location = new System.Drawing.Point(525, 3);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 37);
-            this.button22.TabIndex = 4;
-            this.button22.Text = "Courses";
-            this.button22.UseVisualStyleBackColor = false;
+            this.mycourse4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse4.FlatAppearance.BorderSize = 0;
+            this.mycourse4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse4.Location = new System.Drawing.Point(525, 3);
+            this.mycourse4.Name = "mycourse4";
+            this.mycourse4.Size = new System.Drawing.Size(75, 37);
+            this.mycourse4.TabIndex = 4;
+            this.mycourse4.Text = "Courses";
+            this.mycourse4.UseVisualStyleBackColor = false;
+            this.mycourse4.Click += new System.EventHandler(this.mycourse4_Click);
             // 
-            // button11
+            // StdDeleteBtn4
             // 
-            this.button11.BackColor = System.Drawing.Color.Red;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.Location = new System.Drawing.Point(600, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 37);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "Delete";
-            this.button11.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn4.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn4.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn4.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn4.Name = "StdDeleteBtn4";
+            this.StdDeleteBtn4.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn4.TabIndex = 4;
+            this.StdDeleteBtn4.Text = "Delete";
+            this.StdDeleteBtn4.UseVisualStyleBackColor = false;
             // 
             // panel9
             // 
@@ -1373,8 +1376,8 @@ namespace LabTask
             // stdrow5
             // 
             this.stdrow5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow5.Controls.Add(this.button23);
-            this.stdrow5.Controls.Add(this.button13);
+            this.stdrow5.Controls.Add(this.mycourse5);
+            this.stdrow5.Controls.Add(this.StdDeleteBtn5);
             this.stdrow5.Controls.Add(this.panel11);
             this.stdrow5.Controls.Add(this.stdName5);
             this.stdrow5.Controls.Add(this.RegNo5);
@@ -1385,35 +1388,36 @@ namespace LabTask
             this.stdrow5.Size = new System.Drawing.Size(750, 40);
             this.stdrow5.TabIndex = 2;
             // 
-            // button23
+            // mycourse5
             // 
-            this.button23.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button23.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button23.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button23.Location = new System.Drawing.Point(525, 3);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 37);
-            this.button23.TabIndex = 4;
-            this.button23.Text = "Courses";
-            this.button23.UseVisualStyleBackColor = false;
+            this.mycourse5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse5.FlatAppearance.BorderSize = 0;
+            this.mycourse5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse5.Location = new System.Drawing.Point(525, 3);
+            this.mycourse5.Name = "mycourse5";
+            this.mycourse5.Size = new System.Drawing.Size(75, 37);
+            this.mycourse5.TabIndex = 4;
+            this.mycourse5.Text = "Courses";
+            this.mycourse5.UseVisualStyleBackColor = false;
+            this.mycourse5.Click += new System.EventHandler(this.mycourse5_Click);
             // 
-            // button13
+            // StdDeleteBtn5
             // 
-            this.button13.BackColor = System.Drawing.Color.Red;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button13.Location = new System.Drawing.Point(600, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 37);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Delete";
-            this.button13.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn5.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn5.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn5.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn5.Name = "StdDeleteBtn5";
+            this.StdDeleteBtn5.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn5.TabIndex = 4;
+            this.StdDeleteBtn5.Text = "Delete";
+            this.StdDeleteBtn5.UseVisualStyleBackColor = false;
             // 
             // panel11
             // 
@@ -1457,8 +1461,8 @@ namespace LabTask
             // stdrow6
             // 
             this.stdrow6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow6.Controls.Add(this.button24);
-            this.stdrow6.Controls.Add(this.button15);
+            this.stdrow6.Controls.Add(this.mycourse6);
+            this.stdrow6.Controls.Add(this.StdDeleteBtn6);
             this.stdrow6.Controls.Add(this.panel13);
             this.stdrow6.Controls.Add(this.stdName6);
             this.stdrow6.Controls.Add(this.RegNo6);
@@ -1469,35 +1473,36 @@ namespace LabTask
             this.stdrow6.Size = new System.Drawing.Size(750, 40);
             this.stdrow6.TabIndex = 2;
             // 
-            // button24
+            // mycourse6
             // 
-            this.button24.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button24.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button24.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button24.Location = new System.Drawing.Point(525, 3);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 37);
-            this.button24.TabIndex = 4;
-            this.button24.Text = "Courses";
-            this.button24.UseVisualStyleBackColor = false;
+            this.mycourse6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse6.FlatAppearance.BorderSize = 0;
+            this.mycourse6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse6.Location = new System.Drawing.Point(525, 3);
+            this.mycourse6.Name = "mycourse6";
+            this.mycourse6.Size = new System.Drawing.Size(75, 37);
+            this.mycourse6.TabIndex = 4;
+            this.mycourse6.Text = "Courses";
+            this.mycourse6.UseVisualStyleBackColor = false;
+            this.mycourse6.Click += new System.EventHandler(this.mycourse6_Click);
             // 
-            // button15
+            // StdDeleteBtn6
             // 
-            this.button15.BackColor = System.Drawing.Color.Red;
-            this.button15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button15.Location = new System.Drawing.Point(600, 3);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 37);
-            this.button15.TabIndex = 4;
-            this.button15.Text = "Delete";
-            this.button15.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn6.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn6.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn6.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn6.Name = "StdDeleteBtn6";
+            this.StdDeleteBtn6.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn6.TabIndex = 4;
+            this.StdDeleteBtn6.Text = "Delete";
+            this.StdDeleteBtn6.UseVisualStyleBackColor = false;
             // 
             // panel13
             // 
@@ -1541,8 +1546,8 @@ namespace LabTask
             // stdrow7
             // 
             this.stdrow7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(110)))), ((int)(((byte)(118)))));
-            this.stdrow7.Controls.Add(this.button25);
-            this.stdrow7.Controls.Add(this.button17);
+            this.stdrow7.Controls.Add(this.mycourse7);
+            this.stdrow7.Controls.Add(this.StdDeleteBtn7);
             this.stdrow7.Controls.Add(this.panel15);
             this.stdrow7.Controls.Add(this.stdName7);
             this.stdrow7.Controls.Add(this.RegNo7);
@@ -1553,35 +1558,36 @@ namespace LabTask
             this.stdrow7.Size = new System.Drawing.Size(750, 40);
             this.stdrow7.TabIndex = 2;
             // 
-            // button25
+            // mycourse7
             // 
-            this.button25.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button25.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button25.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button25.Location = new System.Drawing.Point(525, 3);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 37);
-            this.button25.TabIndex = 4;
-            this.button25.Text = "Courses";
-            this.button25.UseVisualStyleBackColor = false;
+            this.mycourse7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.mycourse7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.mycourse7.FlatAppearance.BorderSize = 0;
+            this.mycourse7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mycourse7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.mycourse7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.mycourse7.Location = new System.Drawing.Point(525, 3);
+            this.mycourse7.Name = "mycourse7";
+            this.mycourse7.Size = new System.Drawing.Size(75, 37);
+            this.mycourse7.TabIndex = 4;
+            this.mycourse7.Text = "Courses";
+            this.mycourse7.UseVisualStyleBackColor = false;
+            this.mycourse7.Click += new System.EventHandler(this.mycourse7_Click);
             // 
-            // button17
+            // StdDeleteBtn7
             // 
-            this.button17.BackColor = System.Drawing.Color.Red;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button17.Location = new System.Drawing.Point(600, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 37);
-            this.button17.TabIndex = 4;
-            this.button17.Text = "Delete";
-            this.button17.UseVisualStyleBackColor = false;
+            this.StdDeleteBtn7.BackColor = System.Drawing.Color.Red;
+            this.StdDeleteBtn7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.StdDeleteBtn7.FlatAppearance.BorderSize = 0;
+            this.StdDeleteBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StdDeleteBtn7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StdDeleteBtn7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StdDeleteBtn7.Location = new System.Drawing.Point(600, 3);
+            this.StdDeleteBtn7.Name = "StdDeleteBtn7";
+            this.StdDeleteBtn7.Size = new System.Drawing.Size(75, 37);
+            this.StdDeleteBtn7.TabIndex = 4;
+            this.StdDeleteBtn7.Text = "Delete";
+            this.StdDeleteBtn7.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -1674,7 +1680,7 @@ namespace LabTask
             this.AttendanceDashBoard.Controls.Add(this.flowLayoutPanel1);
             this.AttendanceDashBoard.Controls.Add(this.button40);
             this.AttendanceDashBoard.Controls.Add(this.attendUpbtn);
-            this.AttendanceDashBoard.Location = new System.Drawing.Point(192, 77);
+            this.AttendanceDashBoard.Location = new System.Drawing.Point(900, 900);
             this.AttendanceDashBoard.Name = "AttendanceDashBoard";
             this.AttendanceDashBoard.Size = new System.Drawing.Size(760, 512);
             this.AttendanceDashBoard.TabIndex = 11;
@@ -2372,43 +2378,43 @@ namespace LabTask
         private System.Windows.Forms.Panel StudentDashboard;
         private System.Windows.Forms.FlowLayoutPanel studenttablepanel;
         private System.Windows.Forms.Panel stdrow1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button StdDeleteBtn1;
+        private System.Windows.Forms.Button StdEdit1;
         private System.Windows.Forms.TextBox stdName1;
         private System.Windows.Forms.TextBox RegNo1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel stdrow2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button StdDeleteBtn2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button StdEdit2;
         private System.Windows.Forms.TextBox stdName2;
         private System.Windows.Forms.TextBox RegNo2;
         private System.Windows.Forms.Panel stdrow3;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button StdDeleteBtn3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox stdName3;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button StdEdit3;
         private System.Windows.Forms.TextBox RegNo3;
         private System.Windows.Forms.Panel stdrow4;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button StdDeleteBtn4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox stdName4;
         private System.Windows.Forms.TextBox RegNo4;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel stdrow5;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button StdDeleteBtn5;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox stdName5;
         private System.Windows.Forms.TextBox RegNo5;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Panel stdrow6;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button StdDeleteBtn6;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.TextBox stdName6;
         private System.Windows.Forms.TextBox RegNo6;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel stdrow7;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button StdDeleteBtn7;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.TextBox stdName7;
         private System.Windows.Forms.TextBox RegNo7;
@@ -2417,12 +2423,12 @@ namespace LabTask
         private System.Windows.Forms.Button stdaddbtn;
         private System.Windows.Forms.Button stdUpbtn;
         private System.Windows.Forms.Button mycourse1;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button mycourse2;
+        private System.Windows.Forms.Button mycourse3;
+        private System.Windows.Forms.Button mycourse4;
+        private System.Windows.Forms.Button mycourse5;
+        private System.Windows.Forms.Button mycourse6;
+        private System.Windows.Forms.Button mycourse7;
         private System.Windows.Forms.Panel AttendanceDashBoard;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel attendrow1;
